@@ -2599,1114 +2599,1165 @@ COPY public.fastfoodnutritionmenu (id, "Company", "Item", "Calories", "CaloriesF
 --
 
 COPY public.nutritional_info (id, snack_name, id_snack, company_name, id_company, "Calories", "CaloriesFromFat", "TotalFat(g)", "SaturatedFat(g)", "TransFat(g)", "Cholesterol(mg)", "Sodium(mg)", "Carbs(g)", "Fiber(g)", "Sugars(g)", "Protein(g)", "createdAt", "updatedAt") FROM stdin;
-1	 	4	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-2	10 Piece Chicken Nuggets	674	Wendy’s	2	420	27	5	0	80	850	24	1	0	22	403	2023-09-18 16:40:40.770275-03	\N
-3	16 fl oz	597	Burger King	6	190	0	0	0	0	0	60	52	0	51	0	2023-09-18 16:40:40.770275-03	\N
-4	1% Chocolate Milk	714	Wendy’s	2	150	\N	1.5	0	10	170	26	0	23	7	168	2023-09-18 16:40:40.770275-03	\N
-5	1% Low Fat Chocolate Milk (8 fl oz)	544	Burger King	6	160	25	2.5	1.5	0	15	150	26	0	25	8	2023-09-18 16:40:40.770275-03	\N
-6	1% Low Fat Chocolate Milk Jug	292	McDonald’s	1	170	25	3	1.5	0	5	150	26	1	25	9	2023-09-18 16:40:40.770275-03	\N
-7	1% Low Fat Milk Jug	291	McDonald’s	1	100	20	2.5	1.5	0	10	125	12	0	12	8	2023-09-18 16:40:40.770275-03	\N
-8	1% White Milk	715	Wendy’s	2	90	2	1.5	0	10	105	10	0	10	7	95	2023-09-18 16:40:40.770275-03	\N
-9	20 fl oz	382	Burger King	6	10	0	0	0	0	0	70	4	0	0	0	2023-09-18 16:40:40.770275-03	\N
-10	29 fl oz	628	Burger King	6	15	0	0	0	0	0	105	5	0	0	0	2023-09-18 16:40:40.770275-03	\N
-11	38 fl oz	605	Burger King	6	510	0	0	0	0	0	115	138	0	138	0	2023-09-18 16:40:40.770275-03	\N
-12	3 Piece Chicken Tenders	669	Wendy’s	2	330	16	2.5	0	75	1010	22	0	0	24	309	2023-09-18 16:40:40.770275-03	\N
-13	40 fl oz	637	Burger King	6	240	0	0	0	0	0	0	71	0	71	0	2023-09-18 16:40:40.770275-03	\N
-14	4 Piece Chicken McNuggets Happy Meal	248	McDonald’s	1	395	\N	17	3.5	0	35	510	41	1	14	19	2023-09-18 16:40:40.770275-03	\N
-15	4 Piece Chicken Nuggets	670	Wendy’s	2	170	11	2	0	35	340	10	0	0	9	163	2023-09-18 16:40:40.770275-03	\N
-16	4 Piece Chicken Tenders	671	Wendy’s	2	430	21	3.5	0	100	1350	29	0	1	32	403	2023-09-18 16:40:40.770275-03	\N
-17	6 Picece Chicken Nuggets	672	Wendy’s	2	250	16	3.5	0	50	510	14	1	0	13	241	2023-09-18 16:40:40.770275-03	\N
-18	6 Piece Chicken McNuggets® Happy Meal	249	McDonald’s	1	475	\N	22	4.5	0	50	680	46	2	14	24	2023-09-18 16:40:40.770275-03	\N
-19	6 Piece Chicken Tenders	673	Wendy’s	2	650	32	5	0	150	2020	43	0	1	48	608	2023-09-18 16:40:40.770275-03	\N
-20	7UP® (12 fl oz)	863	KFC	5	140	0	0	0	0	50	35	0	35	0	175	2023-09-18 16:40:40.770275-03	\N
-21	7-Up (16 fl oz)	139	Taco Bell	4	190	\N	\N	\N	\N	70	46	\N	\N	46	\N	2023-09-18 16:40:40.770275-03	\N
-22	7UP® (16 fl oz)	864	KFC	5	190	0	0	0	0	70	46	0	46	0	236	2023-09-18 16:40:40.770275-03	\N
-23	7-Up (20 fl oz)	1111	Taco Bell	4	240	\N	\N	\N	\N	85	58	\N	\N	58	\N	2023-09-18 16:40:40.770275-03	\N
-24	7UP® (20 fl oz)	865	KFC	5	240	0	0	0	0	85	58	0	58	0	298	2023-09-18 16:40:40.770275-03	\N
-25	7-Up (30 fl oz)	5	Taco Bell	4	350	\N	\N	\N	\N	125	87	\N	\N	87	\N	2023-09-18 16:40:40.770275-03	\N
-26	7UP® (30 fl oz)	866	KFC	5	350	0	0	0	0	125	87	0	87	0	437	2023-09-18 16:40:40.770275-03	\N
-27	Additional Options	578	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-28	All-Natural Lemonade, Large	716	Wendy’s	2	380	0	0	0	0	0	100	0	93	0	473	2023-09-18 16:40:40.770275-03	\N
-29	All-Natural Lemonade, Medium	717	Wendy’s	2	330	0	0	0	0	0	86	0	81	0	411	2023-09-18 16:40:40.770275-03	\N
-30	All-Natural Lemonade, Small	718	Wendy’s	2	190	0	0	0	0	0	50	0	47	0	237	2023-09-18 16:40:40.770275-03	\N
-31	American Cheese (slice)	579	Burger King	6	40	30	3.5	2	0	10	180	1	0	0	2	2023-09-18 16:40:40.770275-03	\N
-32	Angus Bacon & Cheese	15	McDonald’s	1	790	350	39	17	2	145	2070	63	4	13	45	2023-09-18 16:40:40.770275-03	\N
-33	Angus Bacon & Cheese Snack Wrap	32	McDonald’s	1	390	190	21	9	1	75	1080	28	1	4	21	2023-09-18 16:40:40.770275-03	\N
-34	Angus Chipotle BBQ Bacon	33	McDonald’s	1	800	350	39	18	2	145	2020	66	4	16	45	2023-09-18 16:40:40.770275-03	\N
-35	Angus Chipotle BBQ Bacon Snack Wrap	34	McDonald’s	1	400	190	22	10	1	75	1060	30	1	6	21	2023-09-18 16:40:40.770275-03	\N
-36	Angus Deluxe	16	McDonald’s	1	750	350	39	16	2	135	1700	61	4	10	40	2023-09-18 16:40:40.770275-03	\N
-37	Angus Deluxe Snack Wrap	35	McDonald’s	1	410	220	25	10	1.5	75	990	27	2	3	20	2023-09-18 16:40:40.770275-03	\N
-38	Angus Mushroom & Swiss	17	McDonald’s	1	770	360	40	17	2	135	1170	59	4	8	44	2023-09-18 16:40:40.770275-03	\N
-39	Angus Mushroom & Swiss Snack Wrap	36	McDonald’s	1	430	230	26	10	1.5	75	730	27	2	2	22	2023-09-18 16:40:40.770275-03	\N
-40	Apple Bites	700	Wendy’s	2	35	0	0	0	0	0	9	2	7	0	42	2023-09-18 16:40:40.770275-03	\N
-41	Apple Dippers with Low Fat Caramel Dip	267	McDonald’s	1	100	5	0.5	0	0	5	35	23	0	15	0	2023-09-18 16:40:40.770275-03	\N
-42	Apple Kiwi Fruit Tea, Large	719	Wendy’s	2	330	0	0	0	0	60	83	0	80	0	410	2023-09-18 16:40:40.770275-03	\N
-43	Apple Kiwi Fruit Tea, Medium	720	Wendy’s	2	300	0	0	0	0	50	76	0	73	0	373	2023-09-18 16:40:40.770275-03	\N
-44	Apple Kiwi Fruit Tea, Small	721	Wendy’s	2	170	0	0	0	0	30	44	0	42	0	212	2023-09-18 16:40:40.770275-03	\N
-45	Apple Pecan Chicken Salad, Full Size	687	Wendy’s	2	560	24	7	0	115	1020	52	7	40	38	569	2023-09-18 16:40:40.770275-03	\N
-46	Apple Pecan Chicken Salad, Half Size	688	Wendy’s	2	340	17	4	0	55	550	29	4	22	20	346	2023-09-18 16:40:40.770275-03	\N
-47	Apple Turnover	203	KFC	5	230	10	2.5	0	0	140	32	\N	12	2	242.5	2023-09-18 16:40:40.770275-03	\N
-48	Artisan Egg Sandwich with Bacon	799	Wendy’s	2	320	17	8	0	245	750	25	1	4	18	314	2023-09-18 16:40:40.770275-03	\N
-49	Artisan Egg Sandwich with Sausage	800	Wendy’s	2	480	33	13	0	275	980	27	1	4	21	476	2023-09-18 16:40:40.770275-03	\N
-50	Baconator	660	Wendy’s	2	950	62	24	3	205	1630	40	2	8	59	923	2023-09-18 16:40:40.770275-03	\N
-343	Diet Pepsi® (20 fl oz)	79	Taco Bell	4	0	\N	\N	\N	\N	95	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-51	Baconator Fries	701	Wendy’s	2	490	28	9	0	35	550	45	4	2	14	487	2023-09-18 16:40:40.770275-03	\N
-52	Bacon Breakfast Bowl	801	Wendy’s	2	510	28	9	0	245	1390	44	4	2	19	502	2023-09-18 16:40:40.770275-03	\N
-53	Bacon Cheese Baked Potato	702	Wendy’s	2	440	14	6	0	35	550	64	7	4	17	433	2023-09-18 16:40:40.770275-03	\N
-54	Bacon Cheeseburger	501	Burger King	6	320	140	16	7	0.5	55	710	27	1	7	17	2023-09-18 16:40:40.770275-03	\N
-55	Bacon & Cheese Crispy Chicken Sandwich	506	Burger King	6	800	460	52	13	1	95	1650	55	2	8	30	2023-09-18 16:40:40.770275-03	\N
-56	Bacon & Cheese Whopper® Sandwich	483	Burger King	6	790	460	51	17	2	125	1560	50	2	11	35	2023-09-18 16:40:40.770275-03	\N
-57	Bacon Club Chalupa	974	Taco Bell	4	440	240	27	5	0	50	840	31	2	3	20	2023-09-18 16:40:40.770275-03	\N
-58	Bacon Club Chalupa – Specialties	1018	Taco Bell	4	440	240	27	5	0	50	840	31	2	3	20	2023-09-18 16:40:40.770275-03	\N
-59	Bacon Double Cheeseburger	502	Burger King	6	420	210	24	10	1.5	90	740	27	1	7	25	2023-09-18 16:40:40.770275-03	\N
-60	Bacon, Egg & Cheese Bagel	243	McDonald’s	1	560	240	27	9	0.5	260	1300	56	3	7	24	2023-09-18 16:40:40.770275-03	\N
-61	Bacon, Egg & Cheese Biscuit	566	Burger King	6	400	230	26	13	0	170	1270	29	1	3	13	2023-09-18 16:40:40.770275-03	\N
-62	Bacon, Egg & Cheese Biscuit (Large Size Biscuit)	75	McDonald’s	1	480	240	27	12	0	235	1270	43	3	4	15	2023-09-18 16:40:40.770275-03	\N
-63	Bacon, Egg & Cheese Biscuit (Regular Size Biscuit)	74	McDonald’s	1	420	210	23	12	0	235	1160	37	2	3	15	2023-09-18 16:40:40.770275-03	\N
-64	Bacon, Egg & Cheese McGriddles®	225	McDonald’s	1	420	160	18	8	0	240	1110	48	2	15	15	2023-09-18 16:40:40.770275-03	\N
-65	Bacon King Sandwich	489	Burger King	6	1150	710	79	31	3.5	240	2150	49	2	10	61	2023-09-18 16:40:40.770275-03	\N
-66	Baked Hot Apple Pie	261	McDonald’s	1	250	110	13	7	0	0	170	32	4	13	2	2023-09-18 16:40:40.770275-03	\N
-67	Barbecue Dipping Sauce (1 oz)	583	Burger King	6	40	0	0	0	0	0	310	11	0	10	0	2023-09-18 16:40:40.770275-03	\N
-68	Barbeque Sauce	56	McDonald’s	1	50	0	0	0	0	0	260	12	0	10	0	2023-09-18 16:40:40.770275-03	\N
-69	Barq’s® Root Beer‡	611	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-70	Barq’s Root Beer, Large	722	Wendy’s	2	450	0	0	0	0	180	122	0	122	0	572	2023-09-18 16:40:40.770275-03	\N
-71	Barq’s Root Beer, Medium	723	Wendy’s	2	360	0	0	0	0	150	98	0	98	0	458	2023-09-18 16:40:40.770275-03	\N
-72	Barq’s Root Beer, Small	724	Wendy’s	2	220	0	0	0	0	90	61	0	61	0	281	2023-09-18 16:40:40.770275-03	\N
-73	BBQ Bacon Crispy Chicken Sandwich	507	Burger King	6	790	440	49	10	0.5	80	1630	60	2	13	28	2023-09-18 16:40:40.770275-03	\N
-74	BBQ Baked Beans	850	KFC	5	190	1	0	0	0	650	34	7	15	11	194	2023-09-18 16:40:40.770275-03	\N
-75	BBQ Baked Beans (Family)	170	KFC	5	830	5	1	0	0	2810	148	31	63	47	847	2023-09-18 16:40:40.770275-03	\N
-76	BBQ – Dipping Sauce Cup	211	KFC	5	45	0	0	0	0	150	11	0	11	0	56	2023-09-18 16:40:40.770275-03	\N
-77	Bean Burrito	1064	Taco Bell	4	350	80	9	3.5	0	5	1000	54	11	3	13	2023-09-18 16:40:40.770275-03	\N
-78	Bean Burrito (V)	998	Taco Bell	4	350	80	9	3.5	0	5	1000	54	11	3	13	2023-09-18 16:40:40.770275-03	\N
-79	Beef Burrito – Value Menu	1057	Taco Bell	4	430	170	19	5	0	20	970	51	4	3	12	2023-09-18 16:40:40.770275-03	\N
-80	Beef Quesarito	1013	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-18 16:40:40.770275-03	\N
-81	Beefy 5-Layer Burrito	999	Taco Bell	4	490	160	18	7	0	30	1250	63	9	5	18	2023-09-18 16:40:40.770275-03	\N
-82	Berry Burst Chicken Salad, Full Size	689	Wendy’s	2	460	17	4.5	0	105	1090	41	7	29	41	453	2023-09-18 16:40:40.770275-03	\N
-83	Berry Burst Chicken Salad, Half Size	690	Wendy’s	2	290	13	2.5	0	50	570	23	5	15	23	285	2023-09-18 16:40:40.770275-03	\N
-84	Beverage	107	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-85	Big Breakfast® (Large Size Biscuit)	229	McDonald’s	1	800	470	52	18	0	555	1680	56	4	3	28	2023-09-18 16:40:40.770275-03	\N
-86	Big Breakfast® (Regular Size Biscuit)	228	McDonald’s	1	740	430	48	17	0	555	1560	51	3	3	28	2023-09-18 16:40:40.770275-03	\N
-87	Big Breakfast with Hotcakes (Large Size Biscuit)	231	McDonald’s	1	1150	540	60	20	0	575	2260	116	7	17	36	2023-09-18 16:40:40.770275-03	\N
-88	Big Breakfast with Hotcakes (Regular Size Biscuit)	230	McDonald’s	1	1090	510	56	19	0	575	2150	111	6	17	36	2023-09-18 16:40:40.770275-03	\N
-89	BIG FISH Sandwich	520	Burger King	6	510	250	28	4.5	0	30	1180	51	2	7	16	2023-09-18 16:40:40.770275-03	\N
-90	Biggie Breakfast Sandwich	802	Wendy’s	2	610	40	15	0	290	1400	37	2	7	27	605	2023-09-18 16:40:40.770275-03	\N
-91	Big Mac®	12	McDonald’s	1	540	260	29	10	1.5	75	1040	45	3	9	25	2023-09-18 16:40:40.770275-03	\N
-92	Big N’ Tasty®	13	McDonald’s	1	460	220	24	8	1.5	70	720	37	3	8	24	2023-09-18 16:40:40.770275-03	\N
-93	Big N’ Tasty® with Cheese	14	McDonald’s	1	510	250	28	11	1.5	85	960	38	3	8	27	2023-09-18 16:40:40.770275-03	\N
-94	Biscuit	851	KFC	5	180	8	4.5	0	0	520	22	1	1	4	181.5	2023-09-18 16:40:40.770275-03	\N
-95	BK® Café	138	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-96	BK® Café Caramel Frappe- 12 fl oz	657	Burger King	6	300	80	8	5	0	35	210	50	0	41	7	2023-09-18 16:40:40.770275-03	\N
-97	BK® Café Caramel Frappe- 16 fl oz	658	Burger King	6	400	90	10	7	0	40	280	68	0	56	9	2023-09-18 16:40:40.770275-03	\N
-98	BK® Café Caramel Frappe- 20 fl oz	659	Burger King	6	500	110	12	8	0	50	350	86	0	71	11	2023-09-18 16:40:40.770275-03	\N
-194	Cheesy Roll Up – Specialties	1024	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-18 16:40:40.770275-03	\N
-99	BK® Café Coffee- 12 fl oz	643	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-100	BK® Café Coffee- 16 fl oz	644	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-101	BK® Café Coffee- 20 fl oz	586	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-102	BK® Café Decaf Coffee- 12 fl oz	645	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-103	BK® Café Decaf Coffee- 16 fl oz	646	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-104	BK® Café Decaf Coffee- 20 fl oz	647	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-105	BK® Café Iced Mocha Coffee- 12 fl oz	651	Burger King	6	180	70	8	4	0	25	40	27	1	25	2	2023-09-18 16:40:40.770275-03	\N
-106	BK® Café Iced Mocha Coffee- 16 fl oz	652	Burger King	6	240	90	10	6	0	30	55	35	1	32	2	2023-09-18 16:40:40.770275-03	\N
-107	BK® Café Iced Mocha Coffee- 20 fl oz	653	Burger King	6	300	120	13	7	0	40	70	45	2	41	3	2023-09-18 16:40:40.770275-03	\N
-108	BK® Café Iced Vanilla Coffee- 12 fl oz	648	Burger King	6	150	70	8	4	0	25	30	21	0	21	1	2023-09-18 16:40:40.770275-03	\N
-109	BK® Café Iced Vanilla Coffee- 16 fl oz	649	Burger King	6	200	90	10	5	0	30	40	27	0	27	2	2023-09-18 16:40:40.770275-03	\N
-110	BK® Café Iced Vanilla Coffee- 20 fl oz	650	Burger King	6	260	110	13	7	0	40	50	34	0	34	2	2023-09-18 16:40:40.770275-03	\N
-111	BK® Café Mocha Frappe- 12 fl oz	654	Burger King	6	300	80	8	5	0	30	200	50	1	41	7	2023-09-18 16:40:40.770275-03	\N
-112	BK® Café Mocha Frappe- 16 fl oz	655	Burger King	6	400	90	10	7	0	40	270	68	1	58	9	2023-09-18 16:40:40.770275-03	\N
-113	BK® Café Mocha Frappe- 20 fl oz	656	Burger King	6	510	110	13	8	0	50	350	87	1	71	12	2023-09-18 16:40:40.770275-03	\N
-114	BK™ Ultimate Breakfast Platter	570	Burger King	6	930	390	44	11	0	390	2230	110	4	40	24	2023-09-18 16:40:40.770275-03	\N
-115	Black Bean Chalupa	1065	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-18 16:40:40.770275-03	\N
-116	Black Bean Chalupa – Online Exclusive	981	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-18 16:40:40.770275-03	\N
-117	Black Bean Chalupa – Specialties	1019	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-18 16:40:40.770275-03	\N
-118	Black Bean Crunchwrap Supreme	1066	Taco Bell	4	510	160	17	4.5	0	5	1080	77	8	6	13	2023-09-18 16:40:40.770275-03	\N
-119	Black Bean Crunchwrap Supreme – Specialties	1020	Taco Bell	4	510	160	17	4.5	0	5	1080	77	8	6	13	2023-09-18 16:40:40.770275-03	\N
-120	Black Bean Quesarito	1067	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-18 16:40:40.770275-03	\N
-121	Black Bean Quesarito – Online Exclusive	982	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-18 16:40:40.770275-03	\N
-122	Black Bean Quesarito – Specialties	1021	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-18 16:40:40.770275-03	\N
-123	Black Bean Quesarito (V)	1014	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-18 16:40:40.770275-03	\N
-124	Black Beans & Rice	1068	Taco Bell	4	170	30	3.5	0	0	0	320	31	4	0	4	2023-09-18 16:40:40.770275-03	\N
-125	Black Beans & Rice (V)	53	Taco Bell	4	170	30	3.5	0	0	0	320	31	4	0	4	2023-09-18 16:40:40.770275-03	\N
-126	Black Beans (V)	1035	Taco Bell	4	50	10	1	0	0	0	135	8	3	0	2	2023-09-18 16:40:40.770275-03	\N
-127	Blue Raspberry Freeze™ (16 oz)	975	Taco Bell	4	120	0	0	0	0	0	35	30	0	30	0	2023-09-18 16:40:40.770275-03	\N
-128	Blue Raspberry Freeze™ (16 oz) (New)	1043	Taco Bell	4	120	0	0	0	0	0	35	30	0	30	0	2023-09-18 16:40:40.770275-03	\N
-129	Blue Raspberry Freeze™ (20 oz)	976	Taco Bell	4	150	0	0	0	0	0	40	38	0	38	0	2023-09-18 16:40:40.770275-03	\N
-130	Blue Raspberry Freeze™ (20 oz) (New)	1044	Taco Bell	4	150	0	0	0	0	0	40	38	0	38	0	2023-09-18 16:40:40.770275-03	\N
-131	Breakfast Burrito Jr.	568	Burger King	6	370	210	23	8	0	150	930	27	3	2	15	2023-09-18 16:40:40.770275-03	\N
-132	Breakfast Crunchwrap – Bacon	1080	Taco Bell	4	670	370	41	12	0	140	1270	50	4	3	21	2023-09-18 16:40:40.770275-03	\N
-133	Breakfast Crunchwrap – Sausage	1081	Taco Bell	4	720	430	47	15	0	145	1210	51	4	3	21	2023-09-18 16:40:40.770275-03	\N
-134	Breakfast Crunchwrap – Steak	1082	Taco Bell	4	660	350	38	12	0	145	1300	51	4	3	24	2023-09-18 16:40:40.770275-03	\N
-135	Breakfast Salsa Packet (V)	1083	Taco Bell	4	0	0	0	0	0	0	50	\N	0	0	0	2023-09-18 16:40:40.770275-03	\N
-136	Breakfast Syrup (1 oz)	582	Burger King	6	120	0	0	0	0	0	15	30	0	18	0	2023-09-18 16:40:40.770275-03	\N
-137	Breast	824	KFC	5	540	40	7	0	100	1390	14	2	1	31	517	2023-09-18 16:40:40.770275-03	\N
-138	Brewed Unsweetened Iced Tea, Large	725	Wendy’s	2	5	0	0	0	0	25	2	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-139	Brewed Unsweetened Iced Tea, Medium	726	Wendy’s	2	0	0	0	0	0	15	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-140	Brewed Unsweetened Iced Tea, Small	727	Wendy’s	2	0	0	0	0	0	10	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-141	Brisk® Mango Iced Tea (16 fl oz)	1095	Taco Bell	4	100	\N	\N	\N	\N	50	26	\N	\N	26	\N	2023-09-18 16:40:40.770275-03	\N
-142	Brisk® Mango Iced Tea (20 fl oz)	1112	Taco Bell	4	120	\N	\N	\N	\N	60	32	\N	\N	32	\N	2023-09-18 16:40:40.770275-03	\N
-143	Brisk® Mango Iced Tea (30 fl oz)	101	Taco Bell	4	180	\N	\N	\N	\N	90	48	\N	\N	48	\N	2023-09-18 16:40:40.770275-03	\N
-144	Brisk® Unsweetened No Lemon Iced Tea (16 fl oz)	1096	Taco Bell	4	0	\N	\N	\N	\N	60	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-145	Brisk® Unsweetened No Lemon Iced Tea (20 fl oz)	1113	Taco Bell	4	0	\N	\N	\N	\N	75	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-146	Brisk® Unsweetened No Lemon Iced Tea (30 fl oz)	102	Taco Bell	4	0	\N	\N	\N	\N	115	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-147	Buffalo Dipping Sauce (1 oz)	585	Burger King	6	80	70	8	1.5	0	5	360	2	0	1	0	2023-09-18 16:40:40.770275-03	\N
-148	Burrito Supreme® – Beef	1000	Taco Bell	4	390	130	14	6	0	25	1110	51	9	4	16	2023-09-18 16:40:40.770275-03	\N
-149	Burrito Supreme® – Chicken	1001	Taco Bell	4	370	100	11	4.5	0	35	1110	49	8	4	19	2023-09-18 16:40:40.770275-03	\N
-150	Burrito Supreme® – Steak	1002	Taco Bell	4	370	110	12	5	0	30	1090	49	7	4	18	2023-09-18 16:40:40.770275-03	\N
-151	Butter Garlic Croutons	115	McDonald’s	1	60	15	1.5	0	0	0	140	10	1	0	2	2023-09-18 16:40:40.770275-03	\N
-152	Buttery Garlic Croutons- Packet	528	Burger King	6	60	20	2.5	0	0	10	180	9	0	1	1	2023-09-18 16:40:40.770275-03	\N
-153	Caesar Side Salad	196	Wendy’s	2	240	15	4	0	30	500	19	3	4	8	240	2023-09-18 16:40:40.770275-03	\N
-154	Caesar Side Salad	691	KFC	5	40	2	1	0	5	90	2	1	1	3	39	2023-09-18 16:40:40.770275-03	\N
-155	Café Valley Chocolate Chip Cake (1 Slice)	204	KFC	5	300	15	3	0	50	260	39	1	27	4	326	2023-09-18 16:40:40.770275-03	\N
-156	Café Valley Lemon Cake (1 Slice)	205	KFC	5	220	10	2	0	30	170	30	0	20	2	240	2023-09-18 16:40:40.770275-03	\N
-157	Café Valley Mini Chocolate Chip Cake	206	KFC	5	300	12	2.5	0	40	190	49	1	35	3	334.5	2023-09-18 16:40:40.770275-03	\N
-158	Café Valley Mini Lemon Cake	207	KFC	5	300	13	2.5	0	50	230	43	0	31	3	330.5	2023-09-18 16:40:40.770275-03	\N
-159	Cappuccino (Large)	411	McDonald’s	1	180	90	10	6	0	30	130	13	0	13	9	2023-09-18 16:40:40.770275-03	\N
-160	Cappuccino (Medium)	410	McDonald’s	1	140	70	8	4.5	0	25	105	11	0	11	8	2023-09-18 16:40:40.770275-03	\N
-161	Cappuccino (Small)	409	McDonald’s	1	120	60	7	4	0	20	85	9	0	9	6	2023-09-18 16:40:40.770275-03	\N
-162	Cappuccino with Sugar Free Vanilla Syrup (Large)	436	McDonald’s	1	150	70	8	4.5	0	25	160	22	0	11	8	2023-09-18 16:40:40.770275-03	\N
-163	Cappuccino with Sugar Free Vanilla Syrup (Medium)	435	McDonald’s	1	120	60	6	3.5	0	20	130	18	0	9	6	2023-09-18 16:40:40.770275-03	\N
-164	Cappuccino with Sugar Free Vanilla Syrup (Small)	434	McDonald’s	1	100	50	5	3	0	15	105	15	0	7	5	2023-09-18 16:40:40.770275-03	\N
-165	Capri Sun® 100% Apple Juice	639	Burger King	6	80	0	0	0	0	0	25	20	0	20	0	2023-09-18 16:40:40.770275-03	\N
-166	Capri Sun® 100% Apple Juice (6 fl oz)	545	Burger King	6	80	0	0	0	0	0	25	20	0	20	0	2023-09-18 16:40:40.770275-03	\N
-167	Capri Sun® 100% Juice Fruit Punch	860	KFC	5	80	0	0	0	0	25	21	0	20	0	100	2023-09-18 16:40:40.770275-03	\N
-168	Caramel Cappuccino (Large)	418	McDonald’s	1	290	70	8	4.5	0	25	190	49	0	49	8	2023-09-18 16:40:40.770275-03	\N
-169	Caramel Cappuccino (Medium)	417	McDonald’s	1	240	50	6	3.5	0	20	150	41	0	40	6	2023-09-18 16:40:40.770275-03	\N
-170	Caramel Cappuccino (Small)	416	McDonald’s	1	200	45	5	3	0	15	125	32	0	32	5	2023-09-18 16:40:40.770275-03	\N
-171	Caramel Iced Coffee, Medium	728	Wendy’s	2	240	8	5	0	25	45	40	0	36	3	278	2023-09-18 16:40:40.770275-03	\N
-172	Caramel Iced Coffee, Small	729	Wendy’s	2	160	6	3.5	0	20	30	26	0	24	2	186	2023-09-18 16:40:40.770275-03	\N
-173	Caramel Latte (Large)	421	McDonald’s	1	330	80	9	5	0	30	210	52	0	51	9	2023-09-18 16:40:40.770275-03	\N
-174	Caramel Latte (Medium)	420	McDonald’s	1	280	70	8	4.5	0	25	170	43	0	43	8	2023-09-18 16:40:40.770275-03	\N
-175	Caramel Latte (Small)	419	McDonald’s	1	230	60	7	4	0	20	140	35	0	35	7	2023-09-18 16:40:40.770275-03	\N
-176	Caramel Mocha (Large)	463	McDonald’s	1	360	130	14	8	0.5	35	220	47	0	46	10	2023-09-18 16:40:40.770275-03	\N
-177	Caramel Mocha (Medium)	464	McDonald’s	1	290	100	12	7	0	25	180	39	0	38	8	2023-09-18 16:40:40.770275-03	\N
-178	Caramel Mocha (Small)	465	McDonald’s	1	250	90	11	6	0	25	150	33	0	31	7	2023-09-18 16:40:40.770275-03	\N
-179	Caramel Sundae	553	Burger King	6	240	50	5	3.5	0	20	210	42	0	33	5	2023-09-18 16:40:40.770275-03	\N
-180	Chalupa Supreme® – Beef	984	Taco Bell	4	350	170	18	5	0	25	560	33	4	3	13	2023-09-18 16:40:40.770275-03	\N
-181	Chalupa Supreme® – Chicken	985	Taco Bell	4	330	140	15	3.5	0	35	560	31	2	3	16	2023-09-18 16:40:40.770275-03	\N
-182	Chalupa Supreme® – Specialties	1022	Taco Bell	4	350	170	18	5	0	25	560	33	4	3	13	2023-09-18 16:40:40.770275-03	\N
-183	Chalupa Supreme® – Steak	986	Taco Bell	4	330	140	16	4	0	30	530	32	2	3	15	2023-09-18 16:40:40.770275-03	\N
-184	Cheddar Bacon King Sandwich	490	Burger King	6	1190	750	84	33	3.5	235	1930	50	2	11	64	2023-09-18 16:40:40.770275-03	\N
-185	Cheese Baked Potato	703	Wendy’s	2	430	13	7	0	30	560	65	7	5	14	428	2023-09-18 16:40:40.770275-03	\N
-186	Cheeseburger	541	McDonald’s	1	300	110	12	6	0.5	40	750	33	2	6	15	2023-09-18 16:40:40.770275-03	\N
-187	Cheeseburger	541	Burger King	6	280	120	13	6	0.5	45	560	27	1	7	15	2023-09-18 16:40:40.770275-03	\N
-188	Cheese Quesadilla	1069	Taco Bell	4	470	230	25	12	0.5	50	990	37	4	2	19	2023-09-18 16:40:40.770275-03	\N
-189	Cheesy Bean & Rice Burrito	1070	Taco Bell	4	420	140	16	4	0	\N	880	56	7	3	10	2023-09-18 16:40:40.770275-03	\N
-190	Cheesy Bean & Rice Burrito – Value Menu	1058	Taco Bell	4	420	140	16	4	0	\N	880	56	7	3	10	2023-09-18 16:40:40.770275-03	\N
-191	Cheesy Gordita Crunch	987	Taco Bell	4	500	250	28	10	0.5	55	850	41	5	4	20	2023-09-18 16:40:40.770275-03	\N
-192	Cheesy Gordita Crunch – Specialties	1023	Taco Bell	4	500	250	28	10	0.5	55	850	41	5	4	20	2023-09-18 16:40:40.770275-03	\N
-193	Cheesy Roll Up	1071	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-18 16:40:40.770275-03	\N
-195	Cheesy Roll Up – Value Menu	1059	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-18 16:40:40.770275-03	\N
-196	Cheesy Toasted Breakfast Burrito – Bacon	1084	Taco Bell	4	350	150	16	4.5	0	115	870	36	2	3	13	2023-09-18 16:40:40.770275-03	\N
-197	Cheesy Toasted Breakfast Burrito – Fiesta Potato (V)	1085	Taco Bell	4	340	130	14	3.5	0	100	750	43	3	3	10	2023-09-18 16:40:40.770275-03	\N
-198	Cheesy Toasted Breakfast Burrito – Sausage	1086	Taco Bell	4	340	160	17	5	0	110	730	36	2	3	11	2023-09-18 16:40:40.770275-03	\N
-199	Cherry Coke®‡	616	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-200	Chicken Breast	52	KFC	5	770	60	10	0	105	1530	21	1	1	35	746	2023-09-18 16:40:40.770275-03	\N
-201	Chicken Chipotle Melt – Value Menu	1060	Taco Bell	4	190	80	9	3	0	35	530	15	1	\N	12	2023-09-18 16:40:40.770275-03	\N
-202	Chicken Drumstick	821	KFC	5	250	21	3.5	0	50	530	6	1	0	11	242.5	2023-09-18 16:40:40.770275-03	\N
-203	Chicken Fries – 9 pc.	518	Burger King	6	280	150	17	2.5	0	35	850	20	1	1	13	2023-09-18 16:40:40.770275-03	\N
-204	Chicken Littles	181	KFC	5	300	15	2.5	0	30	620	27	1	3	14	291.5	2023-09-18 16:40:40.770275-03	\N
-205	Chicken Littles – Buffalo	182	KFC	5	310	17	2.5	0	30	790	27	1	3	14	301.5	2023-09-18 16:40:40.770275-03	\N
-206	Chicken Littles – Honey BBQ	183	KFC	5	320	15	2.5	0	30	680	31	1	7	14	315.5	2023-09-18 16:40:40.770275-03	\N
-207	Chicken Littles – Nashville Hot	184	KFC	5	340	19	3	0	30	680	27	1	3	14	332	2023-09-18 16:40:40.770275-03	\N
-208	Chicken McNuggets® (10 piece)	55	McDonald’s	1	470	270	30	5	0	65	900	30	2	0	22	2023-09-18 16:40:40.770275-03	\N
-209	Chicken McNuggets® (4 piece)	93	McDonald’s	1	190	110	12	2	0	25	360	12	1	0	9	2023-09-18 16:40:40.770275-03	\N
-210	Chicken McNuggets® (6 piece)	54	McDonald’s	1	280	160	18	3	0	40	540	18	1	0	13	2023-09-18 16:40:40.770275-03	\N
-211	Chicken Nuggets- 10pc	512	Burger King	6	430	240	27	4.5	0	55	780	27	2	0	20	2023-09-18 16:40:40.770275-03	\N
-212	Chicken Nuggets- 20pc	513	Burger King	6	860	490	54	9	0	115	1570	53	3	1	39	2023-09-18 16:40:40.770275-03	\N
-213	Chicken Nuggets- 4pc	510	Burger King	6	170	100	11	1.5	0	25	310	11	1	0	8	2023-09-18 16:40:40.770275-03	\N
-214	Chicken Nuggets- 6pc	511	Burger King	6	260	150	16	2.5	0	35	470	16	1	0	12	2023-09-18 16:40:40.770275-03	\N
-215	Chicken Pot Pie	193	KFC	5	720	41	25	0	80	1750	60	7	5	26	724	2023-09-18 16:40:40.770275-03	\N
-216	Chicken Selects® Premium Breast Strips (3 pc)	60	McDonald’s	1	400	210	24	3.5	0	50	1010	23	0	0	23	2023-09-18 16:40:40.770275-03	\N
-217	Chicken Selects® Premium Breast Strips (5 pc)	41	McDonald’s	1	660	360	40	6	0	85	1680	39	0	0	38	2023-09-18 16:40:40.770275-03	\N
-218	Chicken Thigh	822	KFC	5	500	40	7	0	100	970	11	1	1	22	486	2023-09-18 16:40:40.770275-03	\N
-219	Chicken Whole Wing	823	KFC	5	290	25	4	0	45	520	6	1	1	10	285	2023-09-18 16:40:40.770275-03	\N
-220	Chili & Cheese Baked Potato	704	Wendy’s	2	460	11	5	0	35	710	71	8	7	19	453	2023-09-18 16:40:40.770275-03	\N
-221	Chili Cheese Burrito (regional)	1003	Taco Bell	4	370	150	17	8	0	35	970	40	4	2	16	2023-09-18 16:40:40.770275-03	\N
-222	Chili Cheese Fries	706	Wendy’s	2	500	25	8	0.5	35	710	53	6	4	16	496	2023-09-18 16:40:40.770275-03	\N
-223	Chili, Large	705	Wendy’s	2	250	7	3	0.5	50	1170	23	5	9	23	239	2023-09-18 16:40:40.770275-03	\N
-224	Chili, Small	234	Wendy’s	2	170	5	2	0	35	780	16	4	6	15	163	2023-09-18 16:40:40.770275-03	\N
-225	Chipotle BBQ Snack Wrap® (Crispy)	30	McDonald’s	1	330	140	15	4.5	0	30	810	35	1	4	14	2023-09-18 16:40:40.770275-03	\N
-226	Chipotle BBQ Snack Wrap® (Grilled)	31	McDonald’s	1	260	80	9	3.5	0	45	830	28	1	5	18	2023-09-18 16:40:40.770275-03	\N
-227	Chips and Nacho Cheese Sauce	1072	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-18 16:40:40.770275-03	\N
-228	Chips and Nacho Cheese Sauce (V)	1007	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-18 16:40:40.770275-03	\N
-229	Chips and Nacho Cheese Sauce – Value Menu	1061	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-18 16:40:40.770275-03	\N
-230	Chocolate Chip Cookie	264	McDonald’s	1	160	70	8	3.5	0	10	90	21	1	15	2	2023-09-18 16:40:40.770275-03	\N
-231	Chocolate Chip Cookie	208	KFC	5	120	6	3	0	\N	70	18	1	12	1	134	2023-09-18 16:40:40.770275-03	\N
-232	Chocolate Chip Cookies (each)	554	Burger King	6	160	70	8	4	0	10	125	24	1	15	2	2023-09-18 16:40:40.770275-03	\N
-233	Chocolate Chunk Cookie	790	Wendy’s	2	310	16	8	0	20	210	40	2	24	3	339	2023-09-18 16:40:40.770275-03	\N
-234	Chocolate McCafé® Shake (12 fl oz cup)	268	McDonald’s	1	580	150	17	10	1	50	240	94	1	77	11	2023-09-18 16:40:40.770275-03	\N
-235	Chocolate McCafé® Shake (16 fl oz cup)	269	McDonald’s	1	720	180	20	12	1	60	300	119	1	98	15	2023-09-18 16:40:40.770275-03	\N
-236	Chocolate McCafé® Shake (22 fl oz cup)	270	McDonald’s	1	880	220	24	15	1.5	75	370	147	1	121	18	2023-09-18 16:40:40.770275-03	\N
-237	Chocolate Milk 1%	861	KFC	5	150	\N	1.5	0	10	170	26	0	23	7	167.5	2023-09-18 16:40:40.770275-03	\N
-238	Chocolate Oreo® Shake	593	Burger King	6	740	190	22	13	0.5	70	680	121	1	101	17	2023-09-18 16:40:40.770275-03	\N
-239	Chocolate Triple Thick® Shake (12 fl oz cup)	271	McDonald’s	1	440	90	10	6	0.5	40	190	76	1	63	10	2023-09-18 16:40:40.770275-03	\N
-240	Chocolate Triple Thick® Shake (16 fl oz cup)	272	McDonald’s	1	580	120	14	8	1	50	250	102	1	84	13	2023-09-18 16:40:40.770275-03	\N
-241	Chocolate Triple Thick® Shake (21 fl oz cup)	273	McDonald’s	1	770	160	18	11	1	70	330	134	1	111	18	2023-09-18 16:40:40.770275-03	\N
-290	Crispy Chicken Sandwich	676	Burger King	6	670	370	41	7	0	60	1080	54	2	8	23	2023-09-18 16:40:40.770275-03	\N
-242	Chocolate Triple Thick® Shake (32 fl oz cup)	274	McDonald’s	1	1160	240	27	16	2	100	510	203	2	168	27	2023-09-18 16:40:40.770275-03	\N
-243	Cinnabon® Delights™ (12 Pack – Serves 4)	1074	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-18 16:40:40.770275-03	\N
-244	Cinnabon® Delights™ (12 Pack – Serves 4) (V)	1088	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-18 16:40:40.770275-03	\N
-245	Cinnabon® Delights™ (12 Pk – Serves 4) (V)	1037	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-18 16:40:40.770275-03	\N
-246	Cinnabon® Delights™ (2 Pack)	1073	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-18 16:40:40.770275-03	\N
-247	Cinnabon® Delights™ (2 Pack) (V)	1087	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-18 16:40:40.770275-03	\N
-248	Cinnabon® Delights™ (2 Pk) (V)	1036	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-18 16:40:40.770275-03	\N
-249	Cinnamon Melts	262	McDonald’s	1	460	170	19	9	0	15	370	66	3	32	6	2023-09-18 16:40:40.770275-03	\N
-250	Cinnamon Twists	1075	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-18 16:40:40.770275-03	\N
-251	Cinnamon Twists (V)	1038	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-18 16:40:40.770275-03	\N
-252	Cinnamon Twists – Value Menu	1062	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-18 16:40:40.770275-03	\N
-253	Classic Chicken Sandwich	185	KFC	5	650	35	4.5	0	90	1260	49	1	6	34	626.5	2023-09-18 16:40:40.770275-03	\N
-254	Classic Chocolate Frosty, Junior	782	Wendy’s	2	200	5	3	0	20	90	33	0	27	6	224	2023-09-18 16:40:40.770275-03	\N
-255	Classic Chocolate Frosty, Large	783	Wendy’s	2	590	15	10	0.5	60	260	99	0	81	17	664	2023-09-18 16:40:40.770275-03	\N
-256	Classic Chocolate Frosty, Medium	784	Wendy’s	2	470	12	8	0.5	50	210	79	0	65	13	530	2023-09-18 16:40:40.770275-03	\N
-257	Classic Chocolate Frosty, Small	785	Wendy’s	2	350	9	6	0	35	150	58	0	47	10	393	2023-09-18 16:40:40.770275-03	\N
-258	Classic Lemonade (1/2 Gallon)	867	KFC	5	880	0	0	0	0	780	234	0	228	0	1108	2023-09-18 16:40:40.770275-03	\N
-259	Classic Lemonade (20 fl oz)	868	KFC	5	140	0	0	0	0	130	39	0	38	0	178	2023-09-18 16:40:40.770275-03	\N
-260	Club Salad with Crispy Chicken – no dressing	522	Burger King	6	540	300	33	10	0	95	1380	31	3	5	31	2023-09-18 16:40:40.770275-03	\N
-261	Coca Cola classic®‡	137	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-262	Coca-Cola® Classic (Child)	298	McDonald’s	1	110	0	0	0	0	0	5	29	0	29	0	2023-09-18 16:40:40.770275-03	\N
-263	Coca-Cola® Classic (Large)	301	McDonald’s	1	310	0	0	0	0	0	20	86	0	86	0	2023-09-18 16:40:40.770275-03	\N
-264	Coca-Cola® Classic (Medium)	300	McDonald’s	1	210	0	0	0	0	0	15	58	0	58	0	2023-09-18 16:40:40.770275-03	\N
-265	Coca-Cola® Classic (Small)	299	McDonald’s	1	150	0	0	0	0	0	10	40	0	40	0	2023-09-18 16:40:40.770275-03	\N
-266	Coca-Cola, Large	730	Wendy’s	2	400	0	0	0	0	90	109	0	109	0	509	2023-09-18 16:40:40.770275-03	\N
-267	Coca-Cola, Medium	731	Wendy’s	2	320	0	0	0	0	70	87	0	87	0	407	2023-09-18 16:40:40.770275-03	\N
-268	Coca-Cola, Small	732	Wendy’s	2	200	0	0	0	0	45	54	0	54	0	254	2023-09-18 16:40:40.770275-03	\N
-269	Coca-Cola Zero Sugar, Large	733	Wendy’s	2	0	0	0	0	0	100	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-270	Coca-Cola Zero Sugar, Medium	734	Wendy’s	2	0	0	0	0	0	80	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-271	Coca-Cola Zero Sugar, Small	735	Wendy’s	2	0	0	0	0	0	50	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-272	Code Red Mountain Dew® (12 fl oz)	869	KFC	5	170	0	0	0	0	50	46	0	46	0	216	2023-09-18 16:40:40.770275-03	\N
-273	Code Red Mountain Dew® (16 fl oz)	870	KFC	5	230	0	0	0	0	65	62	0	62	0	292	2023-09-18 16:40:40.770275-03	\N
-274	Code Red Mountain Dew® (20 fl oz)	871	KFC	5	290	0	0	0	0	85	77	0	77	0	367	2023-09-18 16:40:40.770275-03	\N
-275	Code Red Mountain Dew® (30 fl oz)	872	KFC	5	430	0	0	0	0	125	116	0	115	0	545	2023-09-18 16:40:40.770275-03	\N
-276	Coffee Cream	325	McDonald’s	1	20	20	2	1.5	0	10	15	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-277	Coffee (Large)	324	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-278	Coffee (Small)	323	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-279	Coleslaw	852	KFC	5	170	12	2	0	\N	180	14	4	10	1	181	2023-09-18 16:40:40.770275-03	\N
-280	Coleslaw (Family)	171	KFC	5	640	46	7	0	15	670	54	14	37	4	680	2023-09-18 16:40:40.770275-03	\N
-281	Colonel’s Buttery Spread	212	KFC	5	35	4	1.5	0	0	35	0	0	0	0	36.5	2023-09-18 16:40:40.770275-03	\N
-282	Corn on the Cob	853	KFC	5	70	\N	0	0	0	0	17	2	3	2	71	2023-09-18 16:40:40.770275-03	\N
-283	Corn on the Cob (Family)	172	KFC	5	280	2	0	0	0	15	67	8	11	9	282	2023-09-18 16:40:40.770275-03	\N
-284	Country Fried Steak without Peppered White Gravy	972	KFC	5	360	24	7	1	35	750	22	2	0	13	354	2023-09-18 16:40:40.770275-03	\N
-285	Country Fried Steak with Peppered White Gravy	973	KFC	5	390	26	7	1	35	910	26	2	0	13	384	2023-09-18 16:40:40.770275-03	\N
-286	Creamy Ranch Sauce	43	McDonald’s	1	170	160	18	3	0	10	270	2	0	1	0	2023-09-18 16:40:40.770275-03	\N
-287	Crispy Chicken BLT	675	Wendy’s	2	420	23	6	0	50	950	35	2	5	20	411	2023-09-18 16:40:40.770275-03	\N
-288	Crispy Chicken Jr.	508	Burger King	6	450	270	30	5	0	30	780	34	2	5	12	2023-09-18 16:40:40.770275-03	\N
-289	Crispy Chicken Sandwich	676	Wendy’s	2	330	16	3	0	30	600	33	2	4	14	323	2023-09-18 16:40:40.770275-03	\N
-291	Crispy Colonel’s Sandwich	186	KFC	5	470	24	3.5	0	60	1170	39	\N	4	24	453.5	2023-09-18 16:40:40.770275-03	\N
-292	Crispy Colonel’s Sandwich – Buffalo	187	KFC	5	500	27	4	0	60	1500	39	\N	4	24	484	2023-09-18 16:40:40.770275-03	\N
-293	Crispy Colonel’s Sandwich – Honey BBQ	188	KFC	5	510	25	3.5	0	60	1290	48	\N	12	24	501.5	2023-09-18 16:40:40.770275-03	\N
-294	Crispy Colonel’s Sandwich – Nashville Hot	189	KFC	5	540	32	4.5	0	60	1290	40	\N	5	24	525.5	2023-09-18 16:40:40.770275-03	\N
-295	Crispy Taco	519	Burger King	6	170	80	9	3	0	10	410	19	2	1	5	2023-09-18 16:40:40.770275-03	\N
-296	Crispy Twister®	190	KFC	5	630	34	7	0	70	1260	53	4	3	28	612	2023-09-18 16:40:40.770275-03	\N
-297	CROISSAN’WICH® Bacon, Egg & Cheese	558	Burger King	6	370	190	21	9	0	170	760	30	1	4	14	2023-09-18 16:40:40.770275-03	\N
-298	CROISSAN’WICH® Egg & Cheese	555	Burger King	6	340	170	18	8	0	160	610	29	1	4	12	2023-09-18 16:40:40.770275-03	\N
-299	CROISSAN’WICH® Ham, Egg & Cheese	557	Burger King	6	370	170	19	8	0	175	1030	30	1	5	17	2023-09-18 16:40:40.770275-03	\N
-300	CROISSAN’WICH® Sausage, Egg & Cheese	556	Burger King	6	500	300	33	13	0	195	930	30	1	4	19	2023-09-18 16:40:40.770275-03	\N
-301	Crunchwrap Supreme® – Specialties	1025	Taco Bell	4	530	190	21	6	0	25	1200	71	6	6	16	2023-09-18 16:40:40.770275-03	\N
-302	Crunchy Taco	988	Taco Bell	4	170	80	9	3.5	0	25	310	13	3	\N	8	2023-09-18 16:40:40.770275-03	\N
-303	Crunchy Taco – Specialties	1026	Taco Bell	4	170	80	9	3.5	0	25	310	13	3	\N	8	2023-09-18 16:40:40.770275-03	\N
-304	Crunchy Taco Supreme®	989	Taco Bell	4	190	100	11	4.5	0	25	340	15	3	2	8	2023-09-18 16:40:40.770275-03	\N
-305	Dasani® Water	294	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-306	Dave’s Double	661	Wendy’s	2	810	51	20	3	175	1280	41	3	8	49	789	2023-09-18 16:40:40.770275-03	\N
-307	Dave’s Single	662	Wendy’s	2	570	34	13	1.5	100	1110	40	3	9	30	562	2023-09-18 16:40:40.770275-03	\N
-308	Dave’s Triple	663	Wendy’s	2	1090	72	30	4	260	1650	43	3	9	71	1058	2023-09-18 16:40:40.770275-03	\N
-309	Detroit Double Cheesy Pizza Slice	132	Pizza Hut	3	280	12	6	0	30	560	31	2	2	13	\N	2023-09-18 16:40:40.770275-03	\N
-310	Detroit Double Pepperoni Pizza Slice	133	Pizza Hut	3	330	17	7	0	40	720	30	2	2	14	\N	2023-09-18 16:40:40.770275-03	\N
-311	Detroit Meaty Pizza Slice	134	Pizza Hut	3	320	16	6	0	35	640	31	2	2	14	\N	2023-09-18 16:40:40.770275-03	\N
-312	Detroit Supremo Pizza Slice	135	Pizza Hut	3	290	13	6	0	30	570	31	2	2	13	\N	2023-09-18 16:40:40.770275-03	\N
-313	Diablo Sauce Packet (V)	1039	Taco Bell	4	0	0	0	0	0	0	30	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-314	Diet Coke®‡	159	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-315	Diet Coke® (Child)	302	McDonald’s	1	0	0	0	0	0	0	15	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-316	Diet Coke, Large	736	Wendy’s	2	0	0	0	0	0	125	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-317	Diet Coke® (Large)	305	McDonald’s	1	0	0	0	0	0	0	45	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-318	Diet Coke, Medium	737	Wendy’s	2	0	0	0	0	0	100	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-319	Diet Coke® (Medium)	304	McDonald’s	1	0	0	0	0	0	0	30	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-320	Diet Coke, Small	738	Wendy’s	2	0	0	0	0	0	45	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-321	Diet Coke® (Small)	303	McDonald’s	1	0	0	0	0	0	0	20	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-322	Diet Dr Pepper® (12 fl oz)	873	KFC	5	0	0	0	0	0	70	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-323	Diet Dr Pepper® (16 fl oz)	874	Taco Bell	4	0	\N	\N	\N	\N	95	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-324	Diet Dr Pepper® (16 fl oz)	1097	KFC	5	0	0	0	0	0	95	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-325	Diet Dr Pepper® (20 fl oz)	39	Taco Bell	4	0	\N	\N	\N	\N	120	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-326	Diet Dr Pepper® (20 fl oz)	875	KFC	5	0	0	0	0	0	120	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-327	Diet Dr Pepper® (30 fl oz)	876	Taco Bell	4	0	\N	\N	\N	\N	180	1	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-328	Diet Dr Pepper® (30 fl oz)	103	KFC	5	0	0	0	0	0	180	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-329	Diet Mist Twst® (12 fl oz)	877	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-330	Diet Mist Twst® (16 fl oz)	878	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-331	Diet Mist Twst® (20 fl oz)	879	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-332	Diet Mist Twst® (30 fl oz)	880	KFC	5	5	0	0	0	0	95	0	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-333	Diet Mountain Dew® (12 fl oz)	881	KFC	5	0	0	0	0	0	55	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-334	Diet Mountain Dew® (16 fl oz)	882	KFC	5	5	0	0	0	0	75	1	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-335	Diet Mountain Dew® (20 fl oz)	695	KFC	5	10	0	0	0	0	90	1	0	1	0	11	2023-09-18 16:40:40.770275-03	\N
-336	Diet Mountain Dew® (30 fl oz)	883	KFC	5	10	0	0	0	0	140	1	0	1	0	11	2023-09-18 16:40:40.770275-03	\N
-337	Diet Mtn Dew® (16 fl oz)	1098	Taco Bell	4	5	\N	\N	\N	\N	75	1	\N	\N	1	\N	2023-09-18 16:40:40.770275-03	\N
-338	Diet Mtn Dew® (20 fl oz)	78	Taco Bell	4	10	\N	\N	\N	\N	90	1	\N	\N	1	\N	2023-09-18 16:40:40.770275-03	\N
-339	Diet Mtn Dew® (30 fl oz)	104	Taco Bell	4	10	\N	\N	\N	\N	140	1	\N	\N	1	\N	2023-09-18 16:40:40.770275-03	\N
-340	Diet Pepsi® (12 fl oz)	884	KFC	5	0	0	0	0	0	55	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-341	Diet Pepsi® (16 fl oz)	1099	Taco Bell	4	0	\N	\N	\N	\N	75	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-342	Diet Pepsi® (16 fl oz)	885	KFC	5	0	0	0	0	0	75	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-344	Diet Pepsi® (20 fl oz)	79	KFC	5	0	0	0	0	0	95	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-345	Diet Pepsi® (30 fl oz)	119	Taco Bell	4	0	\N	\N	\N	\N	140	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-346	Diet Pepsi® (30 fl oz)	887	KFC	5	0	0	0	0	0	140	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-347	Diet Pepsi® Wild Cherry Pepsi® (12 fl oz)	888	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-348	Diet Pepsi® Wild Cherry Pepsi® (16 fl oz)	889	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-349	Diet Pepsi® Wild Cherry Pepsi® (20 fl oz)	890	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-350	Diet Pepsi® Wild Cherry Pepsi® (30 fl oz)	891	KFC	5	0	0	0	0	0	95	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-351	Double Cheeseburger	499	McDonald’s	1	440	210	23	11	1.5	80	1150	34	2	7	25	2023-09-18 16:40:40.770275-03	\N
-352	Double Cheeseburger	499	Burger King	6	390	190	21	9	1.5	85	590	27	1	7	23	2023-09-18 16:40:40.770275-03	\N
-353	Double Chocolate Chunk Cookie	791	Wendy’s	2	290	14	7	0	20	230	39	4	21	4	314	2023-09-18 16:40:40.770275-03	\N
-354	Double CROISSAN’WICH® with Ham & Sausage	562	Burger King	6	580	340	38	16	0.5	220	1530	31	1	5	27	2023-09-18 16:40:40.770275-03	\N
-355	Double CROISSAN’WICH® with Sausage	561	Burger King	6	710	470	52	20	0.5	240	1420	31	1	5	29	2023-09-18 16:40:40.770275-03	\N
-356	Double CROISSAN’WICH® with Sausage & Bacon	560	Burger King	6	580	340	40	16	0.5	215	1260	31	1	5	23	2023-09-18 16:40:40.770275-03	\N
-357	Double Hamburger	498	Burger King	6	350	160	18	7	1	70	410	26	1	6	21	2023-09-18 16:40:40.770275-03	\N
-358	Double Quarter Pounder® with Cheese	11	McDonald’s	1	740	380	42	19	2.5	155	1380	40	3	9	48	2023-09-18 16:40:40.770275-03	\N
-359	Double Quarter Pound King Sandwich	492	Burger King	6	900	480	54	25	3	210	1740	50	2	11	56	2023-09-18 16:40:40.770275-03	\N
-360	Double Stack	664	Wendy’s	2	390	21	9	1.5	90	740	26	1	6	25	380	2023-09-18 16:40:40.770275-03	\N
-361	Double Stacker King	494	Burger King	6	1050	610	68	28	3.5	235	1870	49	1	11	61	2023-09-18 16:40:40.770275-03	\N
-362	Double Whopper® Sandwich	484	Burger King	6	900	520	58	20	3	175	1050	49	2	11	48	2023-09-18 16:40:40.770275-03	\N
-363	Double Whopper® Sandwich with Cheese	485	Burger King	6	980	580	64	24	3	195	1410	50	2	11	52	2023-09-18 16:40:40.770275-03	\N
-364	Dragon Fruit Freeze (16 oz)	1045	Taco Bell	4	190	0	0	0	0	0	50	49	0	47	0	2023-09-18 16:40:40.770275-03	\N
-365	Dragon Fruit Freeze (20 oz)	1046	Taco Bell	4	230	0	0	0	0	0	60	59	0	57	0	2023-09-18 16:40:40.770275-03	\N
-366	Dr. Pepper®‡	606	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-367	Dr Pepper® (12 fl oz)	892	KFC	5	140	0	0	0	0	45	39	0	38	0	178	2023-09-18 16:40:40.770275-03	\N
-368	Dr Pepper® (16 fl oz)	1100	Taco Bell	4	190	\N	\N	\N	\N	60	52	\N	\N	51	\N	2023-09-18 16:40:40.770275-03	\N
-369	Dr Pepper® (16 fl oz)	893	KFC	5	190	0	0	0	0	60	52	0	51	0	241	2023-09-18 16:40:40.770275-03	\N
-370	Dr Pepper® (20 fl oz)	80	Taco Bell	4	240	\N	\N	\N	\N	75	65	\N	\N	64	\N	2023-09-18 16:40:40.770275-03	\N
-371	Dr Pepper® (20 fl oz)	894	KFC	5	240	0	0	0	0	75	65	0	64	0	304	2023-09-18 16:40:40.770275-03	\N
-372	Dr Pepper® (30 fl oz)	895	Taco Bell	4	360	\N	\N	\N	\N	110	98	\N	\N	96	\N	2023-09-18 16:40:40.770275-03	\N
-373	Dr Pepper® (30 fl oz)	895	KFC	5	360	0	0	0	0	110	98	0	96	0	456	2023-09-18 16:40:40.770275-03	\N
-374	Dr Pepper, Large	739	Wendy’s	2	240	0	0	0	0	70	66	0	64	0	304	2023-09-18 16:40:40.770275-03	\N
-375	Dr Pepper, Medium	740	Wendy’s	2	190	0	0	0	0	55	53	0	51	0	241	2023-09-18 16:40:40.770275-03	\N
-376	Dr Pepper, Small	741	Wendy’s	2	120	0	0	0	0	35	33	0	32	0	152	2023-09-18 16:40:40.770275-03	\N
-377	Drumstick	38	KFC	5	190	14	2.5	0	40	510	6	1	0	9	183.5	2023-09-18 16:40:40.770275-03	\N
-378	Dutch Apple Pie	375	Burger King	6	340	130	14	6	0	0	310	51	1	25	3	2023-09-18 16:40:40.770275-03	\N
-379	Egg McMuffin®	117	McDonald’s	1	300	110	12	5	0	260	820	30	2	3	18	2023-09-18 16:40:40.770275-03	\N
-380	EGG-NORMOUS BURRITOΡ	569	Burger King	6	780	380	42	15	0	355	1960	68	3	4	32	2023-09-18 16:40:40.770275-03	\N
-381	English Muffin	73	McDonald’s	1	160	30	3	0.5	0	0	280	27	2	2	5	2023-09-18 16:40:40.770275-03	\N
-382	EQUAL® 0\nCalorie Sweetener	327	McDonald’s	1	0	0	0	0	0	0	0	1	0	1	0	2023-09-18 16:40:40.770275-03	\N
-383	EXTRA CRISPY  Chicken Breast	830	KFC	5	530	35	6	0	105	1150	18	0	0	35	501	2023-09-18 16:40:40.770275-03	\N
-384	EXTRA CRISPY  Chicken Drumstick	831	KFC	5	170	12	2	0	50	390	5	0	0	10	162	2023-09-18 16:40:40.770275-03	\N
-385	EXTRA CRISPY  Chicken Thigh	832	KFC	5	330	23	4.5	0	100	700	9	0	0	22	312.5	2023-09-18 16:40:40.770275-03	\N
-386	EXTRA CRISPY  Chicken Whole Wing	833	KFC	5	170	13	2	0	45	340	5	0	0	10	162	2023-09-18 16:40:40.770275-03	\N
-387	EXTRA CRISPY  Tender (each)	843	KFC	5	220	16	2.5	0	25	460	9	\N	0	10	212.5	2023-09-18 16:40:40.770275-03	\N
-388	Extra Long Cheeseburger	500	Burger King	6	630	330	37	14	1.5	100	1050	45	2	9	29	2023-09-18 16:40:40.770275-03	\N
-389	Fanta® Orange‡	620	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-390	Fanta Orange, Large	742	Wendy’s	2	430	0	0	0	0	110	117	0	115	0	545	2023-09-18 16:40:40.770275-03	\N
-391	Fanta Orange, Medium	743	Wendy’s	2	340	0	0	0	0	85	94	0	92	0	432	2023-09-18 16:40:40.770275-03	\N
-392	Fanta Orange, Small	744	Wendy’s	2	210	0	0	0	0	55	59	0	58	0	268	2023-09-18 16:40:40.770275-03	\N
-393	Fat FREE Milk (8 fl oz)	543	Burger King	6	90	0	0	0	0	5	125	13	0	12	9	2023-09-18 16:40:40.770275-03	\N
-394	Filet-O-Fish®	18	McDonald’s	1	380	170	18	3.5	0	40	640	38	2	5	15	2023-09-18 16:40:40.770275-03	\N
-395	Fire Sauce Packet (V)	1040	Taco Bell	4	0	0	0	0	0	0	55	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-396	Flame Broiled Burgers	106	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-397	FOUNTAIN BEVERAGES (30 OZ)	100	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-398	Frappe Caramel (Large)	471	McDonald’s	1	680	260	29	18	1.5	85	200	94	0	88	10	2023-09-18 16:40:40.770275-03	\N
-399	Frappe Caramel (Medium)	470	McDonald’s	1	550	220	24	15	1	70	160	76	0	71	8	2023-09-18 16:40:40.770275-03	\N
-400	Frappe Caramel (Small)	469	McDonald’s	1	450	180	20	13	1	55	135	61	0	57	6	2023-09-18 16:40:40.770275-03	\N
-401	Frappe Mocha (Large)	474	McDonald’s	1	680	250	28	18	1	80	200	96	1	87	10	2023-09-18 16:40:40.770275-03	\N
-402	Frappe Mocha (Medium)	473	McDonald’s	1	560	210	24	15	1	65	160	78	1	70	8	2023-09-18 16:40:40.770275-03	\N
-403	Frappe Mocha (Small)	472	McDonald’s	1	450	180	20	13	1	55	130	62	1	56	7	2023-09-18 16:40:40.770275-03	\N
-404	Frappes	158	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-405	French Fries – large	536	Burger King	6	430	160	18	2.5	0	0	410	66	7	2	5	2023-09-18 16:40:40.770275-03	\N
-406	French Fries – medium	535	Burger King	6	380	140	16	2	0	0	360	58	6	1	4	2023-09-18 16:40:40.770275-03	\N
-407	French Fries – small	534	Burger King	6	320	120	13	2	0	0	300	49	5	1	4	2023-09-18 16:40:40.770275-03	\N
-408	French Fries – value (unsalted)	533	Burger King	6	220	80	9	1.5	0	0	210	34	3	1	2	2023-09-18 16:40:40.770275-03	\N
-409	French Toast Sticks (3 piece)	576	Burger King	6	230	100	11	2	0	0	260	29	1	8	3	2023-09-18 16:40:40.770275-03	\N
-410	French Toast Sticks (5 piece)	577	Burger King	6	380	160	18	3	0	0	430	49	2	13	5	2023-09-18 16:40:40.770275-03	\N
-411	Fresh-Baked Biscuit with Applewood Smoked Bacon	803	Wendy’s	2	410	24	13	0	235	970	34	1	5	15	413	2023-09-18 16:40:40.770275-03	\N
-412	Fresh Baked Biscuit with Natural Sausage	804	Wendy’s	2	590	41	19	0	270	1270	36	1	6	20	595	2023-09-18 16:40:40.770275-03	\N
-413	Frozen Coke® – 16 oz	641	Burger King	6	130	0	0	0	0	0	50	35	0	35	0	2023-09-18 16:40:40.770275-03	\N
-414	Fruit & Maple Oatmeal	244	McDonald’s	1	290	40	4.5	2	0	10	160	57	5	32	5	2023-09-18 16:40:40.770275-03	\N
-415	Fruit & Maple Oatmeal without Brown Sugar	245	McDonald’s	1	260	40	4.5	2	0	10	115	48	5	18	5	2023-09-18 16:40:40.770275-03	\N
-416	Fruit ‘n Yogurt Parfait (7 oz)	250	McDonald’s	1	160	20	2	1	0	5	85	31	1	21	4	2023-09-18 16:40:40.770275-03	\N
-417	Fully Loaded Biscuit	563	Burger King	6	640	400	45	20	0	225	2190	31	1	4	28	2023-09-18 16:40:40.770275-03	\N
-418	Fully Loaded CROISSAN’WICH®	559	Burger King	6	610	360	40	17	0.5	225	1680	31	1	5	28	2023-09-18 16:40:40.770275-03	\N
-419	G2 – Fruit Punch (16 fl oz)	1101	Taco Bell	4	30	\N	\N	\N	\N	140	7	\N	\N	6	\N	2023-09-18 16:40:40.770275-03	\N
-420	G2 – Fruit Punch (20 fl oz)	81	Taco Bell	4	35	\N	\N	\N	\N	180	9	\N	\N	8	\N	2023-09-18 16:40:40.770275-03	\N
-421	G2 – Fruit Punch (30 fl oz)	121	Taco Bell	4	50	\N	\N	\N	\N	270	13	\N	\N	12	\N	2023-09-18 16:40:40.770275-03	\N
-422	Garden Chicken Salad with Crispy Chicken – no dressing	521	Burger King	6	440	220	25	7	0	75	930	31	3	4	25	2023-09-18 16:40:40.770275-03	\N
-423	Garden Side Salad	692	Wendy’s	2	250	18	4	0	20	460	18	2	4	7	251	2023-09-18 16:40:40.770275-03	\N
-424	Garden Side Salad – w/o dressing	523	Burger King	6	60	35	4	2.5	0	10	95	3	1	2	4	2023-09-18 16:40:40.770275-03	\N
-425	Grande Toasted Breakfast Burrito – Bacon	1089	Taco Bell	4	560	270	30	10	0	230	1290	49	4	3	24	2023-09-18 16:40:40.770275-03	\N
-426	Grande Toasted Breakfast Burrito – Sausage	1090	Taco Bell	4	560	280	31	10	0	230	1150	49	4	3	22	2023-09-18 16:40:40.770275-03	\N
-427	Grande Toasted Breakfast Burrito – Steak	1091	Taco Bell	4	560	250	28	9	0	240	1310	50	4	3	27	2023-09-18 16:40:40.770275-03	\N
-428	Grape Jam	241	McDonald’s	1	35	0	0	0	0	0	0	9	0	9	0	2023-09-18 16:40:40.770275-03	\N
-429	Grape Jelly Packet	213	KFC	5	35	0	0	0	0	10	9	0	7	0	42	2023-09-18 16:40:40.770275-03	\N
-430	Gravy and Sausage Bowl	805	Wendy’s	2	450	22	6	0	220	1260	50	4	2	12	446	2023-09-18 16:40:40.770275-03	\N
-431	Green Beans	161	KFC	5	25	0	0	0	0	300	5	3	1	1	25	2023-09-18 16:40:40.770275-03	\N
-432	Green Beans (Family)	173	KFC	5	80	0	0	0	0	930	15	9	3	4	79	2023-09-18 16:40:40.770275-03	\N
-433	Grilled Asiago Ranch Club	677	Wendy’s	2	530	23	7	0	120	1220	36	3	6	43	500	2023-09-18 16:40:40.770275-03	\N
-434	Grilled Chicken Sandwich	678	Wendy’s	2	370	10	2	0	90	830	38	3	8	34	346	2023-09-18 16:40:40.770275-03	\N
-435	Grilled Chicken Wrap	679	Wendy’s	2	270	10	3.5	0	55	640	24	2	3	20	257	2023-09-18 16:40:40.770275-03	\N
-436	Hamburger	6	McDonald’s	1	250	80	9	3.5	0.5	25	520	31	2	6	12	2023-09-18 16:40:40.770275-03	\N
-437	Hamburger	496	Burger King	6	240	90	10	3.5	0.5	35	380	26	1	6	13	2023-09-18 16:40:40.770275-03	\N
-438	Hamburger Happy Meal	246	McDonald’s	1	475	\N	16	\N	0	40	690	62	2	20	22	2023-09-18 16:40:40.770275-03	\N
-439	Ham, Egg, & Cheese Biscuit	564	Burger King	6	400	210	24	12	0	175	1550	29	1	3	17	2023-09-18 16:40:40.770275-03	\N
-440	Hand Tossed Slices Backyard BBQ Chicken Large	1128	Pizza Hut	3	300	10	4.5	0	30	530	40	2	7	14	\N	2023-09-18 16:40:40.770275-03	\N
-441	Hand Tossed Slices Backyard BBQ Chicken Medium	1127	Pizza Hut	3	220	7	3	0	20	390	31	2	6	10	\N	2023-09-18 16:40:40.770275-03	\N
-442	Hand Tossed Slices Backyard BBQ Chicken Small	1126	Pizza Hut	3	140	4	2	0	15	250	20	1	4	6	\N	2023-09-18 16:40:40.770275-03	\N
-443	Hand Tossed Slices Beyond Meat® Pepperoni Large	1130	Pizza Hut	3	280	10	5	0	20	560	35	3	2	12	\N	2023-09-18 16:40:40.770275-03	\N
-727	Mtn Dew® (30 fl oz)	122	Taco Bell	4	410	\N	\N	\N	\N	125	110	\N	\N	109	\N	2023-09-18 16:40:40.770275-03	\N
-444	Hand Tossed Slices Beyond Meat® Pepperoni Medium	1129	Pizza Hut	3	200	7	3.5	0	15	410	26	2	1	9	\N	2023-09-18 16:40:40.770275-03	\N
-445	Hand Tossed Slices  Buffalo Chicken Large	1133	Pizza Hut	3	270	8	4	0	30	740	37	2	2	13	\N	2023-09-18 16:40:40.770275-03	\N
-446	Hand Tossed Slices  Buffalo Chicken Medium	1132	Pizza Hut	3	200	5	2.5	0	20	560	28	2	1	9	\N	2023-09-18 16:40:40.770275-03	\N
-447	Hand Tossed Slices  Buffalo Chicken Small	1131	Pizza Hut	3	130	\N	1.5	0	10	380	19	\N	\N	6	\N	2023-09-18 16:40:40.770275-03	\N
-448	Hand Tossed Slices Cheese Large	1136	Pizza Hut	3	290	10	5	0	30	540	34	3	2	13	\N	2023-09-18 16:40:40.770275-03	\N
-449	Hand Tossed Slices Cheese Medium	1135	Pizza Hut	3	210	8	3.5	0	20	390	26	2	1	10	\N	2023-09-18 16:40:40.770275-03	\N
-450	Hand Tossed Slices Cheese Small	1134	Pizza Hut	3	130	\N	2	0	10	250	17	1	\N	6	\N	2023-09-18 16:40:40.770275-03	\N
-451	Hand Tossed Slices Chicken Bacon Parmesan Large	1139	Pizza Hut	3	310	13	5	0	35	560	33	2	1	16	\N	2023-09-18 16:40:40.770275-03	\N
-452	Hand Tossed Slices Chicken Bacon Parmesan Medium	1138	Pizza Hut	3	230	9	4	0	25	410	25	2	1	11	\N	2023-09-18 16:40:40.770275-03	\N
-453	Hand Tossed Slices Chicken Bacon Parmesan Small	1137	Pizza Hut	3	150	6	2.5	0	15	270	16	1	\N	7	\N	2023-09-18 16:40:40.770275-03	\N
-454	Hand Tossed Slices Hawaiian Chicken Large	1142	Pizza Hut	3	280	9	4	0	30	580	36	3	3	15	\N	2023-09-18 16:40:40.770275-03	\N
-455	Hand Tossed Slices Hawaiian Chicken Medium	1141	Pizza Hut	3	210	6	3	0	20	420	27	2	2	10	\N	2023-09-18 16:40:40.770275-03	\N
-456	Hand Tossed Slices Hawaiian Chicken Small	1140	Pizza Hut	3	130	4	1.5	0	10	270	17	1	1	7	\N	2023-09-18 16:40:40.770275-03	\N
-457	Hand Tossed Slices Meat Lover’s® Large	1145	Pizza Hut	3	390	21	8	0	45	830	34	3	2	17	\N	2023-09-18 16:40:40.770275-03	\N
-458	Hand Tossed Slices Meat Lover’s® Medium	1144	Pizza Hut	3	290	15	6	0	30	590	26	2	1	12	\N	2023-09-18 16:40:40.770275-03	\N
-459	Hand Tossed Slices Meat Lover’s® Small	1143	Pizza Hut	3	180	9	3.5	0	20	370	17	1	\N	7	\N	2023-09-18 16:40:40.770275-03	\N
-460	Hand Tossed Slices Pepperoni Large	1147	Pizza Hut	3	300	13	6	0	30	590	34	3	2	13	\N	2023-09-18 16:40:40.770275-03	\N
-461	Hand Tossed Slices Pepperoni Lover’s® Large	1150	Pizza Hut	3	370	18	8	0	50	740	35	3	2	17	\N	2023-09-18 16:40:40.770275-03	\N
-462	Hand Tossed Slices Pepperoni Lover’s® Medium	1149	Pizza Hut	3	270	13	6	0	35	530	26	2	1	12	\N	2023-09-18 16:40:40.770275-03	\N
-463	Hand Tossed Slices Pepperoni Lover’s® Small	1148	Pizza Hut	3	160	7	3	0	20	310	17	1	\N	7	\N	2023-09-18 16:40:40.770275-03	\N
-464	Hand Tossed Slices Pepperoni Medium	1146	Pizza Hut	3	220	9	4	0	20	420	25	2	1	9	\N	2023-09-18 16:40:40.770275-03	\N
-465	Hand Tossed Slices Pepperoni Small	247	Pizza Hut	3	130	5	2	0	10	260	16	1	\N	6	\N	2023-09-18 16:40:40.770275-03	\N
-466	Hand Tossed Slices Supreme Large	1153	Pizza Hut	3	320	14	6	0	35	630	35	3	2	14	\N	2023-09-18 16:40:40.770275-03	\N
-467	Hand Tossed Slices Supreme Medium	1152	Pizza Hut	3	240	10	4	0	25	450	26	2	2	10	\N	2023-09-18 16:40:40.770275-03	\N
-468	Hand Tossed Slices Supreme Small	1151	Pizza Hut	3	150	6	2.5	0	15	280	17	1	1	6	\N	2023-09-18 16:40:40.770275-03	\N
-469	Hand Tossed Slices Ultimate Cheese Lover’s® Large	1156	Pizza Hut	3	310	13	6	0	35	540	33	2	1	15	\N	2023-09-18 16:40:40.770275-03	\N
-470	Hand Tossed Slices Ultimate Cheese Lover’s® Medium	1155	Pizza Hut	3	230	10	4.5	0	25	390	25	2	1	11	\N	2023-09-18 16:40:40.770275-03	\N
-471	Hand Tossed Slices Ultimate Cheese Lover’s® Small	1154	Pizza Hut	3	150	6	2.5	0	15	250	16	1	\N	6	\N	2023-09-18 16:40:40.770275-03	\N
-472	Hand Tossed Slices Veggie Lover’s® Large	1159	Pizza Hut	3	260	9	4	0	20	510	36	3	3	11	\N	2023-09-18 16:40:40.770275-03	\N
-473	Hand Tossed Slices Veggie Lover’s® Medium	1158	Pizza Hut	3	200	6	2.5	0	15	370	27	2	2	8	\N	2023-09-18 16:40:40.770275-03	\N
-474	Hand Tossed Slices Veggie Lover’s® Small	1157	Pizza Hut	3	120	4	1.5	0	10	230	17	1	1	5	\N	2023-09-18 16:40:40.770275-03	\N
-475	Hash Brown	240	McDonald’s	1	150	80	9	1.5	0	0	310	15	2	0	1	2023-09-18 16:40:40.770275-03	\N
-476	Hash Brown	1076	Taco Bell	4	160	100	12	1	0	0	270	13	2	0	1	2023-09-18 16:40:40.770275-03	\N
-477	Hash Browns – large	575	Burger King	6	670	390	44	9	0	0	1530	65	9	0	5	2023-09-18 16:40:40.770275-03	\N
-478	Hash Browns – medium	574	Burger King	6	500	290	33	7	0	0	1140	48	7	0	4	2023-09-18 16:40:40.770275-03	\N
-479	Hash Browns – small	573	Burger King	6	250	150	16	3.5	0	0	580	24	3	0	2	2023-09-18 16:40:40.770275-03	\N
-480	Hash Brown Toasted Breakfast Burrito – Bacon	1092	Taco Bell	4	570	300	33	10	0	135	1270	49	4	2	21	2023-09-18 16:40:40.770275-03	\N
-481	Hash Brown Toasted Breakfast Burrito – Sausage	1093	Taco Bell	4	570	300	34	10	0	130	1130	49	4	2	18	2023-09-18 16:40:40.770275-03	\N
-482	Hash Brown Toasted Breakfast Burrito – Steak	1094	Taco Bell	4	570	270	30	9	0	140	1290	50	4	2	24	2023-09-18 16:40:40.770275-03	\N
-483	Hash Brown (V)	214	Taco Bell	4	160	100	12	1	0	0	270	13	2	0	1	2023-09-18 16:40:40.770275-03	\N
-484	Hazelnut Cappuccino (Large)	424	McDonald’s	1	290	70	8	4.5	0	25	105	51	0	51	7	2023-09-18 16:40:40.770275-03	\N
-485	Hazelnut Cappuccino (Medium)	423	McDonald’s	1	240	50	6	3.5	0	20	85	42	0	42	6	2023-09-18 16:40:40.770275-03	\N
-486	Hazelnut Cappuccino (Small)	422	McDonald’s	1	200	45	5	3	0	15	70	34	0	34	5	2023-09-18 16:40:40.770275-03	\N
-487	Hazelnut Latte (Large)	427	McDonald’s	1	330	80	9	5	0	30	130	53	0	53	9	2023-09-18 16:40:40.770275-03	\N
-488	Hazelnut Latte (Medium)	426	McDonald’s	1	280	70	8	4.5	0	25	110	45	0	45	8	2023-09-18 16:40:40.770275-03	\N
-489	Hazelnut Latte (Small)	425	McDonald’s	1	230	60	7	4	0	20	90	36	0	36	7	2023-09-18 16:40:40.770275-03	\N
-490	Heinz Buttermilk Dressing	198	KFC	5	160	17	2	0	10	220	1	0	1	0	163	2023-09-18 16:40:40.770275-03	\N
-491	HERSHEY®’S Chocolate Milk Shake	595	Burger King	6	610	140	16	10	0	60	500	103	1	88	14	2023-09-18 16:40:40.770275-03	\N
-492	HERSHEY®’s Chocolate Sundae	552	Burger King	6	260	45	5	3	0	20	160	49	1	43	5	2023-09-18 16:40:40.770275-03	\N
-493	HERSHEY®’S Sundae Pie	547	Burger King	6	310	170	19	12	0	10	220	32	1	22	3	2023-09-18 16:40:40.770275-03	\N
-494	Hi-C Flashin’ Fruit Punch, Large	745	Wendy’s	2	420	0	0	0	0	140	115	0	113	0	533	2023-09-18 16:40:40.770275-03	\N
-495	Hi-C Flashin’ Fruit Punch, Medium	746	Wendy’s	2	340	0	0	0	0	115	92	0	90	0	430	2023-09-18 16:40:40.770275-03	\N
-496	Hi-C Flashin’ Fruit Punch, Small	747	Wendy’s	2	210	0	0	0	0	70	58	0	56	0	266	2023-09-18 16:40:40.770275-03	\N
-497	Hi-C® Fruit Punch‡	625	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-498	Hi-C® Orange Lavaburst (Child)	310	McDonald’s	1	120	0	0	0	0	0	0	32	0	32	0	2023-09-18 16:40:40.770275-03	\N
-499	Hi-C® Orange Lavaburst (Large)	313	McDonald’s	1	350	0	0	0	0	0	10	94	0	94	0	2023-09-18 16:40:40.770275-03	\N
-500	Hi-C® Orange Lavaburst (Medium)	312	McDonald’s	1	240	0	0	0	0	0	10	64	0	64	0	2023-09-18 16:40:40.770275-03	\N
-501	Hi-C® Orange Lavaburst (Small)	311	McDonald’s	1	160	0	0	0	0	0	5	44	0	44	0	2023-09-18 16:40:40.770275-03	\N
-502	Hidden Valley The Original Ranch Fat Free Dressing	199	KFC	5	35	0	0	0	0	410	8	0	2	1	36	2023-09-18 16:40:40.770275-03	\N
-503	Homestyle Asiago Ranch Chicken Club	681	Wendy’s	2	660	34	9	0	100	1650	52	3	7	38	638	2023-09-18 16:40:40.770275-03	\N
-504	Homestyle Chicken Sandwich	682	Wendy’s	2	510	22	4	0	70	1150	51	3	6	28	492	2023-09-18 16:40:40.770275-03	\N
-505	Honest Tropical Green Tea, Large	748	Wendy’s	2	110	0	0	0	0	55	29	0	29	0	139	2023-09-18 16:40:40.770275-03	\N
-506	Honest Tropical Green Tea, Medium	749	Wendy’s	2	90	0	0	0	0	40	22	0	22	0	112	2023-09-18 16:40:40.770275-03	\N
-507	Honest Tropical Green Tea, Small	750	Wendy’s	2	60	0	0	0	0	25	14	0	14	0	74	2023-09-18 16:40:40.770275-03	\N
-508	Honey	57	McDonald’s	1	50	0	0	0	0	0	0	12	0	11	0	2023-09-18 16:40:40.770275-03	\N
-509	Honey BBQ Sandwich	191	KFC	5	350	\N	0.5	0	55	1350	55	2	22	24	348.5	2023-09-18 16:40:40.770275-03	\N
-510	Honey Butter Chicken Biscuit	806	Wendy’s	2	500	26	12	0	50	1120	48	1	9	19	502	2023-09-18 16:40:40.770275-03	\N
-511	Honey Mustard Dipping Sauce (1oz)	588	Burger King	6	90	60	6	1	0	10	180	8	0	7	0	2023-09-18 16:40:40.770275-03	\N
-512	Honey Mustard – Dipping Sauce Cup	854	KFC	5	110	9	1.5	0	\N	120	6	0	6	0	117.5	2023-09-18 16:40:40.770275-03	\N
-513	Honey Mustard Snack Wrap® (Crispy)	28	McDonald’s	1	330	140	16	4.5	0	30	780	34	1	4	14	2023-09-18 16:40:40.770275-03	\N
-514	Honey Mustard Snack Wrap® (Grilled)	29	McDonald’s	1	260	80	9	3.5	0	45	800	27	1	4	18	2023-09-18 16:40:40.770275-03	\N
-515	Honey Sauce Packet	855	KFC	5	30	0	0	0	0	0	8	0	5	0	35	2023-09-18 16:40:40.770275-03	\N
-516	Hotcakes	1	McDonald’s	1	350	80	9	2	0	20	590	60	3	14	8	2023-09-18 16:40:40.770275-03	\N
-517	Hotcakes and Sausage	238	McDonald’s	1	520	210	24	7	0	50	930	61	3	14	15	2023-09-18 16:40:40.770275-03	\N
-518	Hotcake Syrup	118	McDonald’s	1	180	0	0	0	0	0	20	45	0	32	0	2023-09-18 16:40:40.770275-03	\N
-519	Hot Caramel Sundae	255	McDonald’s	1	340	70	8	5	0	30	160	60	1	44	7	2023-09-18 16:40:40.770275-03	\N
-520	Hot Chocolate (Large)	446	McDonald’s	1	460	160	18	10	0.5	40	220	63	0	54	13	2023-09-18 16:40:40.770275-03	\N
-521	Hot Chocolate (Medium)	445	McDonald’s	1	380	130	15	9	0.5	30	170	53	0	45	10	2023-09-18 16:40:40.770275-03	\N
-522	Hot Chocolate (Small)	444	McDonald’s	1	300	110	12	7	0	25	135	41	0	35	8	2023-09-18 16:40:40.770275-03	\N
-523	Hot Chocolate with Nonfat Milk (Large)	386	McDonald’s	1	390	50	6	3.5	0	10	250	68	0	59	16	2023-09-18 16:40:40.770275-03	\N
-524	Hot Chocolate with Nonfat Milk (Medium)	385	McDonald’s	1	310	50	6	3.5	0	10	190	55	0	47	11	2023-09-18 16:40:40.770275-03	\N
-525	Hot Chocolate with Nonfat Milk (Small)	384	McDonald’s	1	250	45	5	3	0	10	140	43	0	37	8	2023-09-18 16:40:40.770275-03	\N
-526	Hot Coffees	642	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-527	Hot Fudge Sundae	256	McDonald’s	1	330	90	10	7	0	25	180	54	2	48	8	2023-09-18 16:40:40.770275-03	\N
-528	Hot Mustard Sauce	58	McDonald’s	1	60	20	2.5	0	0	5	250	9	2	6	1	2023-09-18 16:40:40.770275-03	\N
-529	Hot Sauce Packet (V)	1041	Taco Bell	4	0	0	0	0	0	0	45	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-530	Hot Tea	751	Wendy’s	2	0	0	0	0	0	0	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-531	House Side Salad	197	KFC	5	15	0	0	0	0	10	3	2	2	1	16	2023-09-18 16:40:40.770275-03	\N
-532	Iced Caramel Latte (Large)	452	McDonald’s	1	230	50	6	3.5	0	15	150	40	0	40	6	2023-09-18 16:40:40.770275-03	\N
-533	Iced Caramel Latte (Medium)	451	McDonald’s	1	180	40	4.5	2.5	0	15	120	31	0	31	4	2023-09-18 16:40:40.770275-03	\N
-534	Iced Caramel Latte (Small)	450	McDonald’s	1	160	25	3	1.5	0	10	100	29	0	29	3	2023-09-18 16:40:40.770275-03	\N
-535	Iced Caramel Mocha (Large)	466	McDonald’s	1	380	140	16	9	0.5	35	210	48	0	46	10	2023-09-18 16:40:40.770275-03	\N
-536	Iced Caramel Mocha (Medium)	467	McDonald’s	1	300	120	14	8	0	30	160	36	0	33	8	2023-09-18 16:40:40.770275-03	\N
-537	Iced Caramel Mocha (Small)	468	McDonald’s	1	240	100	12	7	0	25	130	29	0	26	6	2023-09-18 16:40:40.770275-03	\N
-538	Iced Coffee– Caramel (Large)	332	McDonald’s	1	270	100	11	7	0	40	160	41	0	41	2	2023-09-18 16:40:40.770275-03	\N
-539	Iced Coffee– Caramel (Medium)	331	McDonald’s	1	190	70	8	5	0	30	115	27	0	27	2	2023-09-18 16:40:40.770275-03	\N
-540	Iced Coffee– Caramel (Small)	330	McDonald’s	1	130	50	5	3.5	0	20	80	21	0	20	1	2023-09-18 16:40:40.770275-03	\N
-541	Iced Coffee– Hazelnut (Large)	335	McDonald’s	1	270	100	11	7	0	40	85	43	0	43	2	2023-09-18 16:40:40.770275-03	\N
-542	Iced Coffee– Hazelnut (Medium)	334	McDonald’s	1	190	70	8	5	0	30	60	29	0	29	2	2023-09-18 16:40:40.770275-03	\N
-543	Iced Coffee– Hazelnut (Small)	333	McDonald’s	1	130	50	5	3.5	0	20	40	21	0	21	1	2023-09-18 16:40:40.770275-03	\N
-544	Iced Coffee– Regular (Large)	338	McDonald’s	1	280	100	11	7	0	40	85	45	0	45	2	2023-09-18 16:40:40.770275-03	\N
-545	Iced Coffee– Regular (Medium)	337	McDonald’s	1	200	70	8	5	0	30	60	30	0	30	2	2023-09-18 16:40:40.770275-03	\N
-546	Iced Coffee– Regular (Small)	336	McDonald’s	1	140	50	5	3.5	0	20	40	22	0	22	1	2023-09-18 16:40:40.770275-03	\N
-547	Iced Coffees	62	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-548	Iced Coffee– Vanilla (Large)	341	McDonald’s	1	270	100	11	7	0	40	80	43	0	43	2	2023-09-18 16:40:40.770275-03	\N
-549	Iced Coffee– Vanilla (Medium)	340	McDonald’s	1	190	70	8	5	0	30	60	29	0	28	2	2023-09-18 16:40:40.770275-03	\N
-550	Iced Coffee– Vanilla (Small)	339	McDonald’s	1	130	50	5	3.5	0	20	40	21	0	21	1	2023-09-18 16:40:40.770275-03	\N
-551	Iced Coffee with Sugar Free Vanilla Syrup (Large)	344	McDonald’s	1	120	100	11	7	0	40	140	16	0	2	2	2023-09-18 16:40:40.770275-03	\N
-552	Iced Coffee with Sugar Free Vanilla Syrup (Medium)	343	McDonald’s	1	90	70	8	5	0	30	100	11	0	2	2	2023-09-18 16:40:40.770275-03	\N
-553	Iced Coffee with Sugar Free Vanilla Syrup (Small)	342	McDonald’s	1	60	50	5	3.5	0	20	70	8	0	1	1	2023-09-18 16:40:40.770275-03	\N
-554	Iced Hazelnut Latte (Large)	455	McDonald’s	1	230	50	6	3.5	0	15	85	41	0	41	6	2023-09-18 16:40:40.770275-03	\N
-555	Iced Hazelnut Latte (Medium)	454	McDonald’s	1	180	40	4.5	2.5	0	15	65	33	0	33	4	2023-09-18 16:40:40.770275-03	\N
-556	Iced Hazelnut Latte (Small)	453	McDonald’s	1	160	25	3	1.5	0	10	45	31	0	31	3	2023-09-18 16:40:40.770275-03	\N
-557	Iced Latte (Large)	449	McDonald’s	1	140	70	8	4.5	0	25	105	10	0	10	7	2023-09-18 16:40:40.770275-03	\N
-558	Iced Latte (Medium)	448	McDonald’s	1	100	50	6	3.5	0	15	80	8	0	8	6	2023-09-18 16:40:40.770275-03	\N
-559	Iced Latte (Small)	447	McDonald’s	1	80	40	4.5	2.5	0	15	65	6	0	6	4	2023-09-18 16:40:40.770275-03	\N
-560	Iced Latte with Sugar Free Vanilla Syrup (Large)	461	McDonald’s	1	110	50	6	3.5	0	15	130	19	0	8	6	2023-09-18 16:40:40.770275-03	\N
-561	Iced Latte with Sugar Free Vanilla Syrup (Medium)	460	McDonald’s	1	90	40	5	3	0	15	105	14	0	6	5	2023-09-18 16:40:40.770275-03	\N
-562	Iced Latte with Sugar Free Vanilla Syrup (Small)	459	McDonald’s	1	60	30	3	2	0	10	80	12	0	4	3	2023-09-18 16:40:40.770275-03	\N
-563	Iced Mocha (Medium)	462	McDonald’s	1	310	120	13	8	0	25	140	42	0	35	7	2023-09-18 16:40:40.770275-03	\N
-564	Iced Mocha with Nonfat Milk (Medium)	402	McDonald’s	1	270	70	8	4.5	0	10	140	43	0	35	7	2023-09-18 16:40:40.770275-03	\N
-565	Iced Nonfat Caramel Latte (Large)	392	McDonald’s	1	190	0	0	0	0	5	150	40	0	40	6	2023-09-18 16:40:40.770275-03	\N
-566	Iced Nonfat Caramel Latte (Medium)	391	McDonald’s	1	150	0	0	0	0	5	120	32	0	32	5	2023-09-18 16:40:40.770275-03	\N
-567	Iced Nonfat Caramel Latte (Small)	390	McDonald’s	1	140	0	0	0	0	0	105	30	0	30	3	2023-09-18 16:40:40.770275-03	\N
-568	Iced Nonfat Caramel Mocha (Large)	403	McDonald’s	1	300	60	6	4	0	10	230	49	0	45	11	2023-09-18 16:40:40.770275-03	\N
-569	Iced Nonfat Caramel Mocha (Medium)	404	McDonald’s	1	240	60	6	4	0	10	190	37	0	34	9	2023-09-18 16:40:40.770275-03	\N
-570	Iced Nonfat Caramel Mocha (Small)	405	McDonald’s	1	200	50	6	4	0	10	140	29	0	26	6	2023-09-18 16:40:40.770275-03	\N
-571	Iced Nonfat Hazelnut Latte (Large)	395	McDonald’s	1	190	0	0	0	0	5	80	42	0	42	6	2023-09-18 16:40:40.770275-03	\N
-572	Iced Nonfat Hazelnut Latte (Medium)	394	McDonald’s	1	150	0	0	0	0	5	70	33	0	33	5	2023-09-18 16:40:40.770275-03	\N
-573	Iced Nonfat Hazelnut Latte (Small)	393	McDonald’s	1	140	0	0	0	0	0	50	32	0	32	3	2023-09-18 16:40:40.770275-03	\N
-574	Iced Nonfat Latte (Large)	389	McDonald’s	1	70	0	0	0	0	5	105	11	0	11	7	2023-09-18 16:40:40.770275-03	\N
-575	Iced Nonfat Latte (Medium)	388	McDonald’s	1	60	0	0	0	0	5	90	9	0	9	6	2023-09-18 16:40:40.770275-03	\N
-576	Iced Nonfat Latte (Small)	387	McDonald’s	1	50	0	0	0	0	5	70	7	0	7	5	2023-09-18 16:40:40.770275-03	\N
-577	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Large)	401	McDonald’s	1	60	0	0	0	0	5	130	19	0	8	6	2023-09-18 16:40:40.770275-03	\N
-578	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Medium)	400	McDonald’s	1	50	0	0	0	0	5	100	14	0	6	5	2023-09-18 16:40:40.770275-03	\N
-579	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Small)	399	McDonald’s	1	40	0	0	0	0	0	85	13	0	5	4	2023-09-18 16:40:40.770275-03	\N
-580	Iced Nonfat Vanilla Latte (Large)	398	McDonald’s	1	190	0	0	0	0	5	85	41	0	41	6	2023-09-18 16:40:40.770275-03	\N
-581	Iced Nonfat Vanilla Latte (Medium)	397	McDonald’s	1	150	0	0	0	0	5	70	33	0	33	5	2023-09-18 16:40:40.770275-03	\N
-582	Iced Nonfat Vanilla Latte (Small)	396	McDonald’s	1	140	0	0	0	0	0	50	31	0	31	3	2023-09-18 16:40:40.770275-03	\N
-583	Iced Tea (Child)	319	McDonald’s	1	0	0	0	0	0	0	5	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-584	Iced Tea (Large)	322	McDonald’s	1	0	0	0	0	0	0	20	1	0	0	0	2023-09-18 16:40:40.770275-03	\N
-585	Iced Tea (Medium)	321	McDonald’s	1	0	0	0	0	0	0	15	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-586	Iced Tea (Small)	320	McDonald’s	1	0	0	0	0	0	0	10	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-587	Iced Vanilla Latte (Large)	458	McDonald’s	1	230	50	6	3.5	0	15	85	41	0	41	6	2023-09-18 16:40:40.770275-03	\N
-588	Iced Vanilla Latte (Medium)	457	McDonald’s	1	190	40	4.5	2.5	0	15	70	33	0	33	5	2023-09-18 16:40:40.770275-03	\N
-589	Iced Vanilla Latte (Small)	456	McDonald’s	1	160	25	3	1.5	0	10	45	31	0	31	3	2023-09-18 16:40:40.770275-03	\N
-590	IMPOSSIBLE Whopper® Sandwich	495	Burger King	6	630	310	34	11	0	10	1080	58	4	12	25	2023-09-18 16:40:40.770275-03	\N
-591	Jr. Bacon Cheeseburger	665	Wendy’s	2	380	22	8	1	65	680	25	1	5	19	374	2023-09-18 16:40:40.770275-03	\N
-592	Jr. Cheeseburger	666	Wendy’s	2	280	13	6	1	50	660	26	1	6	16	276	2023-09-18 16:40:40.770275-03	\N
-593	Jr. Cheeseburger Deluxe	667	Wendy’s	2	340	19	7	1	55	660	27	2	7	16	338	2023-09-18 16:40:40.770275-03	\N
-594	Ken’s Golden Italian Dressing	525	Burger King	6	160	150	17	2.5	0	0	380	4	0	3	0	2023-09-18 16:40:40.770275-03	\N
-595	Ken’s Lite Honey Balsamic Vinaigrette	527	Burger King	6	120	70	8	1	0	0	220	14	0	11	0	2023-09-18 16:40:40.770275-03	\N
-596	Ken’s Ranch Dressing	524	Burger King	6	260	250	28	4	0	10	240	2	0	2	1	2023-09-18 16:40:40.770275-03	\N
-597	KENTUCKY FRIED WINGS Buffalo	844	KFC	5	100	7	1.5	0	20	310	3	0	0	5	96.5	2023-09-18 16:40:40.770275-03	\N
-598	KENTUCKY FRIED WINGS Honey BBQ	845	KFC	5	100	6	1	0	20	210	8	0	4	5	100	2023-09-18 16:40:40.770275-03	\N
-599	KENTUCKY FRIED WINGS Nashville Hot	846	KFC	5	130	11	2	0	20	230	4	0	0	5	127	2023-09-18 16:40:40.770275-03	\N
-600	KENTUCKY FRIED WINGS Unsauced	847	KFC	5	80	6	1	0	20	150	3	0	0	5	76	2023-09-18 16:40:40.770275-03	\N
-601	KENTUCKY GRILLED CHICKEN Breast	834	KFC	5	210	7	2	0	130	710	0	0	0	38	174	2023-09-18 16:40:40.770275-03	\N
-602	KENTUCKY GRILLED CHICKEN Drumstick	835	KFC	5	80	4	1	0	55	220	0	0	0	11	70	2023-09-18 16:40:40.770275-03	\N
-603	KENTUCKY GRILLED CHICKEN Thigh	836	KFC	5	150	9	3	0	90	420	0	0	0	17	136	2023-09-18 16:40:40.770275-03	\N
-604	KENTUCKY GRILLED CHICKEN Whole Wing	837	KFC	5	70	3	1	0	45	180	0	0	0	9	62	2023-09-18 16:40:40.770275-03	\N
-605	Ketchup	680	KFC	5	30	0	0	0	0	250	8	0	6	0	36	2023-09-18 16:40:40.770275-03	\N
-606	Ketchup (Packet)	580	Burger King	6	10	0	0	0	0	0	125	3	0	2	0	2023-09-18 16:40:40.770275-03	\N
-607	Ketchup Packet	91	McDonald’s	1	15	0	0	0	0	0	110	3	0	2	0	2023-09-18 16:40:40.770275-03	\N
-608	KFC® Cornbread Muffin	162	KFC	5	210	9	1.5	0	35	240	28	\N	11	3	219.5	2023-09-18 16:40:40.770275-03	\N
-609	KFC® Creamy Parmesan Caesar Dressing	200	KFC	5	260	26	5	0	15	540	4	0	2	2	265	2023-09-18 16:40:40.770275-03	\N
-610	KFC® Famous Bowl	194	KFC	5	740	35	6	0	45	2350	81	6	2	26	722	2023-09-18 16:40:40.770275-03	\N
-611	KFC® Famous Bowl – Snack Size	195	KFC	5	270	14	3.5	0	20	850	27	2	1	11	263.5	2023-09-18 16:40:40.770275-03	\N
-612	KFC® Gizzards	108	KFC	5	300	16	2	0	210	770	18	\N	0	20	282	2023-09-18 16:40:40.770275-03	\N
-613	KFC® Livers	235	KFC	5	230	13	2.5	0	285	750	12	0	0	17	215.5	2023-09-18 16:40:40.770275-03	\N
-614	KFC Sauce – Dipping Sauce Cup	856	KFC	5	90	8	1.5	0	10	170	5	0	5	0	96.5	2023-09-18 16:40:40.770275-03	\N
-615	Kiddie Cone	253	McDonald’s	1	45	10	1	0.5	0	5	20	8	0	6	1	2023-09-18 16:40:40.770275-03	\N
-616	Kids 2 Piece Chicken Tenders	794	Wendy’s	2	200	10	1.5	0	45	620	13	0	0	15	187	2023-09-18 16:40:40.770275-03	\N
-617	Kids 4 Piece Chicken Nuggets	795	Wendy’s	2	170	11	2	0	35	340	10	0	0	9	163	2023-09-18 16:40:40.770275-03	\N
-618	Kids Cheeseburger	796	Wendy’s	2	280	13	6	0.5	50	540	25	1	5	15	276	2023-09-18 16:40:40.770275-03	\N
-619	Kids Grilled Chicken Wrap	797	Wendy’s	2	270	10	3.5	0	55	640	24	2	3	20	257	2023-09-18 16:40:40.770275-03	\N
-620	Kids Hamburger	798	Wendy’s	2	240	9	3.5	0.5	40	350	24	1	5	13	236	2023-09-18 16:40:40.770275-03	\N
-621	Kids Oatmeal	537	Burger King	6	170	30	3	1.5	0	5	260	32	3	12	4	2023-09-18 16:40:40.770275-03	\N
-622	Large French Fries	90	McDonald’s	1	500	220	25	3.5	0	0	350	63	6	0	6	2023-09-18 16:40:40.770275-03	\N
-623	Latte (Large)	414	McDonald’s	1	210	100	11	7	0	35	150	16	0	16	11	2023-09-18 16:40:40.770275-03	\N
-624	Latte (Medium)	413	McDonald’s	1	180	90	10	6	0	30	130	13	0	13	10	2023-09-18 16:40:40.770275-03	\N
-625	Latte (Small) 	412	McDonald’s	1	150	70	8	4.5	0	25	105	11	0	11	8	2023-09-18 16:40:40.770275-03	\N
-626	Latte with Sugar Free Vanilla Syrup (Large)	440	McDonald’s	1	180	90	10	6	0	30	180	25	0	13	10	2023-09-18 16:40:40.770275-03	\N
-627	Latte with Sugar Free Vanilla Syrup (Medium)	439	McDonald’s	1	160	70	8	5	0	25	150	21	0	11	8	2023-09-18 16:40:40.770275-03	\N
-628	Latte with Sugar Free Vanilla Syrup (Small)	437	McDonald’s	1	130	60	7	4	0	20	125	17	0	10	7	2023-09-18 16:40:40.770275-03	\N
-629	Lemon Juice Packet	857	KFC	5	5	0	0	0	0	20	1	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-630	Limeade, Large	752	Wendy’s	2	460	0	0	0	0	55	117	0	111	0	571	2023-09-18 16:40:40.770275-03	\N
-631	Limeade, Medium	753	Wendy’s	2	380	0	0	0	0	45	98	0	93	0	473	2023-09-18 16:40:40.770275-03	\N
-632	Limeade, Small	754	Wendy’s	2	230	0	0	0	0	30	59	0	56	0	286	2023-09-18 16:40:40.770275-03	\N
-633	Limited Time Cinnabon Dessert  Biscuits	816	KFC	5	290	13	7	0	\N	580	40	2	17	4	310	2023-09-18 16:40:40.770275-03	\N
-634	Limited Time ORIGINAL RECIPE CHICKEN Chicken Breast	817	KFC	5	390	21	4	0	120	1190	11	2	0	39	355	2023-09-18 16:40:40.770275-03	\N
-635	Limited Time ORIGINAL RECIPE CHICKEN Chicken Limited Time Drumstick	818	KFC	5	130	8	1.5	0	55	430	4	1	0	12	119.5	2023-09-18 16:40:40.770275-03	\N
-636	Limited Time ORIGINAL RECIPE CHICKEN Chicken Thigh	819	KFC	5	280	19	4.5	0	100	910	8	1	0	19	265.5	2023-09-18 16:40:40.770275-03	\N
-637	Limited Time ORIGINAL RECIPE CHICKEN Chicken Whole Wing	820	KFC	5	130	8	2	0	55	380	3	0	0	10	122	2023-09-18 16:40:40.770275-03	\N
-638	Lipton® Brisk® Lemon Tea (12 fl oz)	896	KFC	5	80	0	0	0	0	40	22	0	22	0	102	2023-09-18 16:40:40.770275-03	\N
-639	Lipton® Brisk® Lemon Tea (16 fl oz)	897	KFC	5	110	0	0	0	0	55	29	0	29	0	139	2023-09-18 16:40:40.770275-03	\N
-640	Lipton® Brisk® Lemon Tea (20 fl oz)	898	KFC	5	140	0	0	0	0	70	36	0	36	0	176	2023-09-18 16:40:40.770275-03	\N
-641	Lipton® Brisk® Lemon Tea (30 fl oz)	899	KFC	5	210	0	0	0	0	105	55	0	54	0	264	2023-09-18 16:40:40.770275-03	\N
-642	Lipton® Brisk® No Calorie Peach Iced Green Tea (12 fl oz)	900	KFC	5	0	0	0	0	0	105	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-643	Lipton® Brisk® No Calorie Peach Iced Green Tea (16 fl oz)	901	KFC	5	0	0	0	0	0	140	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-644	Lipton® Brisk® No Calorie Peach Iced Green Tea (20 fl oz)	902	KFC	5	5	0	0	0	0	180	0	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-645	Lipton® Brisk® No Calorie Peach Iced Green Tea (30 fl oz)	903	KFC	5	10	0	0	0	0	270	0	0	0	0	10	2023-09-18 16:40:40.770275-03	\N
-646	Lipton® Brisk® Raspberry Tea (12 fl oz)	904	KFC	5	80	0	0	0	0	45	20	0	20	0	100	2023-09-18 16:40:40.770275-03	\N
-647	Lipton® Brisk® Raspberry Tea (16 fl oz)	905	KFC	5	100	0	0	0	0	55	26	0	26	0	126	2023-09-18 16:40:40.770275-03	\N
-648	Lipton® Brisk® Raspberry Tea (20 fl oz)	906	KFC	5	130	0	0	0	0	70	33	0	33	0	163	2023-09-18 16:40:40.770275-03	\N
-649	Lipton® Brisk® Raspberry Tea (30 fl oz)	907	KFC	5	190	0	0	0	0	110	49	0	49	0	239	2023-09-18 16:40:40.770275-03	\N
-650	Lipton® Brisk® Sweet Iced Tea (12 fl oz)	908	KFC	5	80	0	0	0	0	45	22	0	21	0	101	2023-09-18 16:40:40.770275-03	\N
-651	Lipton® Brisk® Sweet Iced Tea (16 fl oz)	909	KFC	5	110	0	0	0	0	65	29	0	29	0	139	2023-09-18 16:40:40.770275-03	\N
-652	Lipton® Brisk® Sweet Iced Tea (20 fl oz)	910	KFC	5	130	0	0	0	0	80	36	0	36	0	166	2023-09-18 16:40:40.770275-03	\N
-653	Lipton® Brisk® Sweet Iced Tea (30 fl oz)	911	KFC	5	200	0	0	0	0	120	54	0	54	0	254	2023-09-18 16:40:40.770275-03	\N
-654	Lipton® Brisk® Unsweetened No Lemon Iced Tea (12 fl oz)	912	KFC	5	0	0	0	0	0	45	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-655	Lipton® Brisk® Unsweetened No Lemon Iced Tea (16 fl oz)	913	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-656	Lipton® Brisk® Unsweetened No Lemon Iced Tea (20 fl oz)	914	KFC	5	0	0	0	0	0	75	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-657	Lipton® Brisk® Unsweetened No Lemon Iced Tea (30 fl oz)	915	KFC	5	0	0	0	0	0	115	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-658	Loaded Nacho Taco	977	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-18 16:40:40.770275-03	\N
-659	Loaded Nacho Taco (New)	990	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-18 16:40:40.770275-03	\N
-660	Loaded Nacho Taco – Value Menu	1063	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-18 16:40:40.770275-03	\N
-661	Low Fat Caramel Dip	251	McDonald’s	1	70	5	0.5	0	0	5	35	15	0	9	0	2023-09-18 16:40:40.770275-03	\N
-662	Lowfat Milk – CA (Regional)	1047	Taco Bell	4	100	20	2	1.5	0	10	130	13	0	12	9	2023-09-18 16:40:40.770275-03	\N
-663	Lowfat Milk – Federal (Regional)	1048	Taco Bell	4	80	20	2	1.5	0	10	100	10	0	9	7	2023-09-18 16:40:40.770275-03	\N
-664	Macaroni & Cheese	163	KFC	5	140	6	1.5	0	\N	590	17	1	2	5	138.5	2023-09-18 16:40:40.770275-03	\N
-665	Macaroni & Cheese (Family)	174	KFC	5	540	23	6	0	10	2220	66	5	8	18	536	2023-09-18 16:40:40.770275-03	\N
-666	Macaroni Salad	164	KFC	5	140	8	1	0	15	290	14	0	9	1	149	2023-09-18 16:40:40.770275-03	\N
-667	Macaroni Salad (Family)	175	KFC	5	480	28	3.5	0	55	990	50	0	30	3	510.5	2023-09-18 16:40:40.770275-03	\N
-668	Mac Snack Wrap	37	McDonald’s	1	330	170	19	7	1	45	690	26	1	3	15	2023-09-18 16:40:40.770275-03	\N
-669	Manzanita Sol® (12 fl oz)	916	KFC	5	160	0	0	0	0	35	42	0	42	0	202	2023-09-18 16:40:40.770275-03	\N
-670	Manzanita Sol® (16 fl oz)	917	KFC	5	210	0	0	0	0	45	57	0	57	0	267	2023-09-18 16:40:40.770275-03	\N
-671	Manzanita Sol® (20 fl oz)	918	KFC	5	260	0	0	0	0	55	71	0	71	0	331	2023-09-18 16:40:40.770275-03	\N
-672	Manzanita Sol® (30 fl oz)	919	KFC	5	400	0	0	0	0	80	106	0	106	0	506	2023-09-18 16:40:40.770275-03	\N
-673	Marzetti Light Italian Dressing	201	KFC	5	15	\N	0	0	0	510	2	0	1	0	16	2023-09-18 16:40:40.770275-03	\N
-674	Mashed Potatoes	165	KFC	5	110	\N	0.5	0	0	330	17	1	0	2	108.5	2023-09-18 16:40:40.770275-03	\N
-675	Mashed Potatoes (Family)	176	KFC	5	460	15	3	0	0	1410	72	6	0	9	454	2023-09-18 16:40:40.770275-03	\N
-676	Mashed Potatoes With Gravy	166	KFC	5	130	\N	1	0	0	520	20	1	0	3	128	2023-09-18 16:40:40.770275-03	\N
-677	Mashed Potatoes With Gravy (Family)	177	KFC	5	590	21	5	0	0	2590	88	6	1	12	584	2023-09-18 16:40:40.770275-03	\N
-678	Mayonnaise (Packet)	526	Burger King	6	80	80	9	0.5	0	10	75	1	0	0	0	2023-09-18 16:40:40.770275-03	\N
-679	McCafe Coffees – Whole Milk	105	McDonald’s	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-680	McChicken ®	19	McDonald’s	1	360	150	16	3	0	35	830	40	2	5	14	2023-09-18 16:40:40.770275-03	\N
-681	McDonaldland® Cookies	263	McDonald’s	1	260	70	8	2.5	0	0	300	43	1	13	4	2023-09-18 16:40:40.770275-03	\N
-682	McDouble	9	McDonald’s	1	390	170	19	8	1	65	920	33	2	7	22	2023-09-18 16:40:40.770275-03	\N
-683	McFlurry® with M&M’S® Candies (12 fl oz cup)	259	McDonald’s	1	710	230	25	16	1	60	220	105	4	97	15	2023-09-18 16:40:40.770275-03	\N
-684	McFlurry® with OREO® Cookies (12 fl oz cup)	260	McDonald’s	1	580	170	19	10	1	50	320	89	3	73	13	2023-09-18 16:40:40.770275-03	\N
-685	McRib ®	20	McDonald’s	1	500	240	26	10	0	70	980	44	3	11	22	2023-09-18 16:40:40.770275-03	\N
-686	McSkillet™ Burrito with Sausage	233	McDonald’s	1	610	320	36	14	0.5	410	1390	44	3	4	27	2023-09-18 16:40:40.770275-03	\N
-687	Medium French Fries	89	McDonald’s	1	380	170	19	2.5	0	0	270	48	5	0	4	2023-09-18 16:40:40.770275-03	\N
-688	Midnight Berry Freeze™ (16 oz)	978	Taco Bell	4	140	0	0	0	0	0	35	35	0	34	0	2023-09-18 16:40:40.770275-03	\N
-689	Midnight Berry Freeze™ (16 oz) (New)	1049	Taco Bell	4	140	0	0	0	0	0	35	35	0	34	0	2023-09-18 16:40:40.770275-03	\N
-690	Midnight Berry Freeze™ (20 oz)	979	Taco Bell	4	170	0	0	0	0	0	40	43	0	42	0	2023-09-18 16:40:40.770275-03	\N
-691	Midnight Berry Freeze™ (20 oz) (New)	1050	Taco Bell	4	170	0	0	0	0	0	40	43	0	42	0	2023-09-18 16:40:40.770275-03	\N
-692	Mild Sauce Packet (V)	1042	Taco Bell	4	0	0	0	0	0	0	30	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-693	Milk 1%	22	KFC	5	90	2	1.5	0	10	105	10	0	10	7	94.5	2023-09-18 16:40:40.770275-03	\N
-694	Minute Maid® 100% Apple Juice Box	293	McDonald’s	1	100	0	0	0	0	0	15	23	0	22	0	2023-09-18 16:40:40.770275-03	\N
-695	MINUTE MAID® Light Lemonade	630	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-696	Minute Maid Light Lemonade, Large	755	Wendy’s	2	15	0	0	0	0	10	2	0	0	0	15	2023-09-18 16:40:40.770275-03	\N
-697	Minute Maid Light Lemonade, Medium	756	Wendy’s	2	10	0	0	0	0	10	1	0	0	0	10	2023-09-18 16:40:40.770275-03	\N
-698	Minute Maid Light Lemonade, Small	757	Wendy’s	2	5	0	0	0	0	5	1	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-699	Minute Maid® Orange Juice	640	Burger King	6	140	0	0	0	0	0	20	33	0	30	2	2023-09-18 16:40:40.770275-03	\N
-700	Minute Maid® Orange Juice (Large)	297	McDonald’s	1	280	0	0	0	0	0	5	58	0	58	4	2023-09-18 16:40:40.770275-03	\N
-701	Minute Maid® Orange Juice (Medium)	296	McDonald’s	1	190	0	0	0	0	0	0	39	0	39	3	2023-09-18 16:40:40.770275-03	\N
-702	Minute Maid® Orange Juice (Small)	295	McDonald’s	1	150	0	0	0	0	0	0	30	0	30	2	2023-09-18 16:40:40.770275-03	\N
-703	Miranda® Strawberry (12 fl oz)	920	KFC	5	160	0	0	0	0	70	44	0	44	0	204	2023-09-18 16:40:40.770275-03	\N
-704	Miranda® Strawberry (16 fl oz)	921	KFC	5	220	0	0	0	0	95	58	0	58	0	278	2023-09-18 16:40:40.770275-03	\N
-705	Miranda® Strawberry (20 fl oz)	922	KFC	5	270	0	0	0	0	120	73	0	73	0	343	2023-09-18 16:40:40.770275-03	\N
-706	Miranda® Strawberry (30 fl oz)	923	KFC	5	410	0	0	0	0	180	109	0	109	0	519	2023-09-18 16:40:40.770275-03	\N
-707	Mist Twst® (12 fl oz)	924	KFC	5	150	0	0	0	0	35	41	0	41	0	191	2023-09-18 16:40:40.770275-03	\N
-708	Mist Twst® (16 fl oz)	925	KFC	5	200	0	0	0	0	45	54	0	54	0	254	2023-09-18 16:40:40.770275-03	\N
-709	Mist Twst® (20 fl oz)	926	KFC	5	260	0	0	0	0	55	68	0	68	0	328	2023-09-18 16:40:40.770275-03	\N
-710	Mist Twst® (30 fl oz)	927	KFC	5	380	0	0	0	0	80	101	0	101	0	481	2023-09-18 16:40:40.770275-03	\N
-711	MNT DEW Sweet Lightning (20 fl oz)	928	KFC	5	120	0	0	0	0	190	32	0	25	0	145	2023-09-18 16:40:40.770275-03	\N
-712	Mocha Iced Coffee, Medium	758	Wendy’s	2	210	8	5	0	25	40	32	0	28	3	240	2023-09-18 16:40:40.770275-03	\N
-713	Mocha Iced Coffee, Small	759	Wendy’s	2	170	6	3.5	0	20	30	28	0	25	2	197	2023-09-18 16:40:40.770275-03	\N
-714	Mocha (Large)	443	McDonald’s	1	400	130	14	8	0.5	30	190	58	0	49	10	2023-09-18 16:40:40.770275-03	\N
-715	Mocha (Medium)	442	McDonald’s	1	330	110	12	7	0	25	150	48	0	41	7	2023-09-18 16:40:40.770275-03	\N
-716	Mocha (Small)	441	McDonald’s	1	280	100	11	6	0	20	125	40	0	33	6	2023-09-18 16:40:40.770275-03	\N
-717	Mocha with Nonfat Milk (Large)	383	McDonald’s	1	330	50	6	3.5	0	10	190	58	0	50	10	2023-09-18 16:40:40.770275-03	\N
-718	Mocha with Nonfat Milk (Medium)	381	McDonald’s	1	280	50	6	3.5	0	10	160	50	0	42	8	2023-09-18 16:40:40.770275-03	\N
-719	Mocha with Nonfat Milk (Small)	380	McDonald’s	1	240	45	5	3	0	5	130	41	0	34	7	2023-09-18 16:40:40.770275-03	\N
-720	Mott’s® Natural Applesauce	542	Burger King	6	50	0	0	0	0	0	0	13	1	11	0	2023-09-18 16:40:40.770275-03	\N
-721	Mountain Dew® (12 fl oz)	929	KFC	5	160	0	0	0	0	50	44	0	44	0	204	2023-09-18 16:40:40.770275-03	\N
-722	Mountain Dew® (16 fl oz)	930	KFC	5	220	0	0	0	0	70	59	0	58	0	278	2023-09-18 16:40:40.770275-03	\N
-723	Mountain Dew® (20 fl oz)	931	KFC	5	270	0	0	0	0	85	73	0	73	0	343	2023-09-18 16:40:40.770275-03	\N
-724	Mountain Dew® (30 fl oz)	932	KFC	5	410	0	0	0	0	125	110	0	109	0	519	2023-09-18 16:40:40.770275-03	\N
-725	Mtn Dew® (16 fl oz)	1102	Taco Bell	4	220	\N	\N	\N	\N	70	59	\N	\N	58	\N	2023-09-18 16:40:40.770275-03	\N
-726	Mtn Dew® (20 fl oz)	82	Taco Bell	4	270	\N	\N	\N	\N	85	73	\N	\N	73	\N	2023-09-18 16:40:40.770275-03	\N
-728	Mtn Dew® Baja Blast Freeze™ (16 oz)	1051	Taco Bell	4	150	0	0	0	0	0	45	41	0	41	0	2023-09-18 16:40:40.770275-03	\N
-729	Mtn Dew® Baja Blast Freeze™ (20 oz)	1052	Taco Bell	4	190	0	0	0	0	0	55	51	0	51	0	2023-09-18 16:40:40.770275-03	\N
-730	Mtn Dew® Baja Blast™ (16 fl oz)	1103	Taco Bell	4	220	\N	\N	\N	\N	65	59	\N	\N	59	\N	2023-09-18 16:40:40.770275-03	\N
-731	Mtn Dew® Baja Blast™ (20 fl oz)	83	Taco Bell	4	280	\N	\N	\N	\N	80	74	\N	\N	73	\N	2023-09-18 16:40:40.770275-03	\N
-732	Mtn Dew® Baja Blast™ (30 fl oz)	123	Taco Bell	4	420	\N	\N	\N	\N	120	110	\N	\N	110	\N	2023-09-18 16:40:40.770275-03	\N
-733	Mtn Dew® Baja Blast Zero Sugar (16 fl oz)	1104	Taco Bell	4	5	\N	\N	\N	\N	70	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-734	Mtn Dew® Baja Blast Zero Sugar (20 fl oz)	84	Taco Bell	4	10	\N	\N	\N	\N	85	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-735	Mtn Dew® Baja Blast Zero Sugar (30 fl oz)	124	Taco Bell	4	15	\N	\N	\N	\N	125	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-736	Mtn Dew® Kickstart™ Orange Citrus (16 fl oz)	1105	Taco Bell	4	70	\N	\N	\N	\N	75	18	\N	\N	18	\N	2023-09-18 16:40:40.770275-03	\N
-737	Mtn Dew® Kickstart™ Orange Citrus (20 fl oz)	85	Taco Bell	4	90	\N	\N	\N	\N	90	23	\N	\N	22	\N	2023-09-18 16:40:40.770275-03	\N
-738	Mtn Dew® Kickstart™ Orange Citrus (30 fl oz)	125	Taco Bell	4	130	\N	\N	\N	\N	140	34	\N	\N	33	\N	2023-09-18 16:40:40.770275-03	\N
-739	Mug Root Beer® (12 fl oz)	933	KFC	5	140	0	0	0	0	45	39	0	39	0	179	2023-09-18 16:40:40.770275-03	\N
-740	Mug Root Beer® (16 fl oz)	934	KFC	5	190	0	0	0	0	60	52	0	52	0	242	2023-09-18 16:40:40.770275-03	\N
-741	Mug® Root Beer (16 fl oz)	1106	Taco Bell	4	190	\N	\N	\N	\N	60	52	\N	\N	52	\N	2023-09-18 16:40:40.770275-03	\N
-742	Mug Root Beer® (20 fl oz)	935	KFC	5	240	0	0	0	0	75	65	0	65	0	305	2023-09-18 16:40:40.770275-03	\N
-743	Mug® Root Beer (20 fl oz)	86	Taco Bell	4	240	\N	\N	\N	\N	75	65	\N	\N	65	\N	2023-09-18 16:40:40.770275-03	\N
-744	Mug Root Beer® (30 fl oz)	936	KFC	5	360	0	0	0	0	110	98	0	98	0	458	2023-09-18 16:40:40.770275-03	\N
-745	Mug® Root Beer (30 fl oz)	126	Taco Bell	4	360	\N	\N	\N	\N	110	98	\N	\N	98	\N	2023-09-18 16:40:40.770275-03	\N
-746	Musselman’s™ Applesauce	862	KFC	5	45	0	0	0	0	0	12	1	8	0	53	2023-09-18 16:40:40.770275-03	\N
-747	Nacho Cheese Doritos® Locos Taco	991	Taco Bell	4	170	80	9	3.5	0	25	360	13	3	\N	8	2023-09-18 16:40:40.770275-03	\N
-748	Nacho Cheese Doritos® Locos Taco – Specialties	1027	Taco Bell	4	170	80	9	3.5	0	25	360	13	3	\N	8	2023-09-18 16:40:40.770275-03	\N
-749	Nacho Cheese Doritos® Locos Taco Supreme®	992	Taco Bell	4	190	100	11	4.5	0	30	380	15	3	2	8	2023-09-18 16:40:40.770275-03	\N
-750	Nacho Fries	438	Taco Bell	4	320	160	18	1.5	0	\N	630	35	4	2	4	2023-09-18 16:40:40.770275-03	\N
-751	Nacho Fries BellGrande®	980	Taco Bell	4	710	360	40	6	0	30	1440	73	10	4	13	2023-09-18 16:40:40.770275-03	\N
-752	Nacho Fries BellGrande® (New)	1009	Taco Bell	4	710	360	40	6	0	30	1440	73	10	4	13	2023-09-18 16:40:40.770275-03	\N
-753	Nacho Fries (V) (New)	1008	Taco Bell	4	320	160	18	1.5	0	\N	630	35	4	2	4	2023-09-18 16:40:40.770275-03	\N
-754	Nachos BellGrande® – Beef	1010	Taco Bell	4	740	340	38	7	0	25	1050	82	15	5	16	2023-09-18 16:40:40.770275-03	\N
-755	Nachos BellGrande® – Chicken	1011	Taco Bell	4	720	310	35	6	0	35	1050	81	14	5	20	2023-09-18 16:40:40.770275-03	\N
-756	Nachos BellGrande® – Specialties	1028	Taco Bell	4	740	340	38	7	0	25	1050	82	15	5	16	2023-09-18 16:40:40.770275-03	\N
-757	Nachos BellGrande® – Steak	1012	Taco Bell	4	720	320	36	6	0	30	1030	81	14	5	19	2023-09-18 16:40:40.770275-03	\N
-758	Natural-Cut Fries, Junior	707	Wendy’s	2	230	10	2	0	0	15	30	3	0	3	229	2023-09-18 16:40:40.770275-03	\N
-759	Natural-Cut Fries, Large	708	Wendy’s	2	530	24	4.5	0	0	520	70	6	0	7	528	2023-09-18 16:40:40.770275-03	\N
-760	Natural-Cut Fries, Medium	709	Wendy’s	2	420	19	3.5	0	0	420	56	5	0	6	418	2023-09-18 16:40:40.770275-03	\N
-761	Natural-Cut Fries, Small	710	Wendy’s	2	320	15	2.5	0	0	320	43	4	0	5	318	2023-09-18 16:40:40.770275-03	\N
-762	Newman’s Own® Creamy Caesar Dressing	67	McDonald’s	1	190	170	18	3.5	0	20	500	4	0	2	2	2023-09-18 16:40:40.770275-03	\N
-763	Newman’s Own® Creamy Southwest Dressing	66	McDonald’s	1	100	50	6	1	0	20	340	11	0	3	1	2023-09-18 16:40:40.770275-03	\N
-764	Newman’s Own® Low Fat Balsamic Vinaigrette	68	McDonald’s	1	40	25	3	0	0	0	730	4	0	3	0	2023-09-18 16:40:40.770275-03	\N
-765	Newman’s Own® Low Fat Family Recipe Italian Dressing	69	McDonald’s	1	60	20	2.5	0	0	0	730	8	0	1	1	2023-09-18 16:40:40.770275-03	\N
-766	Newman’s Own® Ranch Dressing	70	McDonald’s	1	170	130	15	2.5	0	20	530	9	0	4	1	2023-09-18 16:40:40.770275-03	\N
-767	Nonfat Cappuccino (Large)	351	McDonald’s	1	90	0	0	0	0	5	130	13	0	13	9	2023-09-18 16:40:40.770275-03	\N
-768	Nonfat Cappuccino (Medium)	350	McDonald’s	1	80	0	0	0	0	5	110	12	0	12	8	2023-09-18 16:40:40.770275-03	\N
-769	Nonfat Cappuccino (Small)	349	McDonald’s	1	60	0	0	0	0	5	85	9	0	9	6	2023-09-18 16:40:40.770275-03	\N
-770	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Large)	376	McDonald’s	1	80	0	0	0	0	5	150	22	0	11	8	2023-09-18 16:40:40.770275-03	\N
-771	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Medium)	374	McDonald’s	1	70	0	0	0	0	5	130	19	0	10	7	2023-09-18 16:40:40.770275-03	\N
-772	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Small)	373	McDonald’s	1	50	0	0	0	0	5	100	15	0	8	5	2023-09-18 16:40:40.770275-03	\N
-773	Nonfat Caramel Cappuccino (Large)	357	McDonald’s	1	230	0	0	0	0	5	180	49	0	49	7	2023-09-18 16:40:40.770275-03	\N
-774	Nonfat Caramel Cappuccino (Medium)	356	McDonald’s	1	190	0	0	0	0	5	150	41	0	41	6	2023-09-18 16:40:40.770275-03	\N
-775	Nonfat Caramel Cappuccino (Small)	355	McDonald’s	1	150	0	0	0	0	5	120	33	0	32	5	2023-09-18 16:40:40.770275-03	\N
-776	Nonfat Caramel Latte (Large)	360	McDonald’s	1	260	0	0	0	0	5	220	53	0	53	10	2023-09-18 16:40:40.770275-03	\N
-777	Nonfat Caramel Latte (Medium)	359	McDonald’s	1	220	0	0	0	0	5	180	45	0	45	9	2023-09-18 16:40:40.770275-03	\N
-778	Nonfat Caramel Latte (Small)	358	McDonald’s	1	170	0	0	0	0	5	150	36	0	36	7	2023-09-18 16:40:40.770275-03	\N
-779	Nonfat Caramel Mocha (Large)	406	McDonald’s	1	280	35	4	2.5	0	10	260	49	0	46	12	2023-09-18 16:40:40.770275-03	\N
-780	Nonfat Caramel Mocha (Medium)	407	McDonald’s	1	240	35	4	2.5	0	5	200	41	0	38	9	2023-09-18 16:40:40.770275-03	\N
-781	Nonfat Caramel Mocha (Small)	408	McDonald’s	1	200	35	4	2.5	0	5	170	34	0	31	8	2023-09-18 16:40:40.770275-03	\N
-782	Nonfat Hazelnut Cappuccino (Large)	363	McDonald’s	1	230	0	0	0	0	5	100	51	0	51	7	2023-09-18 16:40:40.770275-03	\N
-783	Nonfat Hazelnut Cappuccino (Medium)	362	McDonald’s	1	190	0	0	0	0	5	90	43	0	43	6	2023-09-18 16:40:40.770275-03	\N
-784	Nonfat Hazelnut Cappuccino (Small)	361	McDonald’s	1	150	0	0	0	0	5	70	34	0	34	5	2023-09-18 16:40:40.770275-03	\N
-785	Nonfat Hazelnut Latte (Large)	366	McDonald’s	1	260	0	0	0	0	5	135	55	0	55	10	2023-09-18 16:40:40.770275-03	\N
-786	Nonfat Hazelnut Latte (Medium)	365	McDonald’s	1	220	0	0	0	0	5	115	46	0	46	9	2023-09-18 16:40:40.770275-03	\N
-787	Nonfat Hazelnut Latte (Small)	364	McDonald’s	1	180	0	0	0	0	5	95	37	0	37	7	2023-09-18 16:40:40.770275-03	\N
-788	Nonfat Latte (Large)	354	McDonald’s	1	120	0	0	0	0	5	160	18	0	18	12	2023-09-18 16:40:40.770275-03	\N
-789	Nonfat Latte (Medium)	353	McDonald’s	1	110	0	0	0	0	5	140	15	0	15	10	2023-09-18 16:40:40.770275-03	\N
-790	Nonfat Latte (Small)	352	McDonald’s	1	90	0	0	0	0	5	115	13	0	13	9	2023-09-18 16:40:40.770275-03	\N
-791	Nonfat Latte with Sugar Free Vanilla Syrup (Large)	379	McDonald’s	1	110	0	0	0	0	5	190	27	0	15	11	2023-09-18 16:40:40.770275-03	\N
-792	Nonfat Latte with Sugar Free Vanilla Syrup (Medium)	378	McDonald’s	1	90	0	0	0	0	5	160	22	0	13	9	2023-09-18 16:40:40.770275-03	\N
-793	Nonfat Latte with Sugar Free Vanilla Syrup (Small)	377	McDonald’s	1	80	0	0	0	0	5	130	18	0	11	7	2023-09-18 16:40:40.770275-03	\N
-794	Nonfat Vanilla Cappuccino (Large)	369	McDonald’s	1	230	0	0	0	0	5	100	51	0	51	7	2023-09-18 16:40:40.770275-03	\N
-795	Nonfat Vanilla Cappuccino (Medium)	368	McDonald’s	1	190	0	0	0	0	5	90	42	0	42	6	2023-09-18 16:40:40.770275-03	\N
-796	Nonfat Vanilla Cappuccino (Small)	367	McDonald’s	1	150	0	0	0	0	5	70	34	0	34	5	2023-09-18 16:40:40.770275-03	\N
-797	Nonfat Vanilla Latte (Large)	372	McDonald’s	1	260	0	0	0	0	5	135	55	0	55	10	2023-09-18 16:40:40.770275-03	\N
-798	Nonfat Vanilla Latte (Medium)	371	McDonald’s	1	220	0	0	0	0	5	115	46	0	46	9	2023-09-18 16:40:40.770275-03	\N
-799	Nonfat Vanilla Latte (Small)	370	McDonald’s	1	180	0	0	0	0	5	95	37	0	37	7	2023-09-18 16:40:40.770275-03	\N
-800	NY Ultimate Platter (Regional menu item)	571	Burger King	6	900	420	46	12	0	380	1760	95	5	31	25	2023-09-18 16:40:40.770275-03	\N
-801	Oatmeal Raisin Cookie	265	McDonald’s	1	150	50	6	2.5	0	10	135	22	1	13	2	2023-09-18 16:40:40.770275-03	\N
-802	Onion Rings – large	532	Burger King	6	500	230	25	4.5	0	0	1310	64	5	7	5	2023-09-18 16:40:40.770275-03	\N
-803	Onion Rings – medium	531	Burger King	6	410	190	21	3.5	0	0	1080	53	4	5	4	2023-09-18 16:40:40.770275-03	\N
-804	Onion Rings – small	530	Burger King	6	320	150	16	3	0	0	840	41	3	4	3	2023-09-18 16:40:40.770275-03	\N
-805	Onion Rings – value	529	Burger King	6	150	70	8	1.5	0	0	400	19	1	2	1	2023-09-18 16:40:40.770275-03	\N
-806	Orange Juice	160	Taco Bell	4	140	0	0	0	0	0	20	33	\N	28	2	2023-09-18 16:40:40.770275-03	\N
-807	OREO® Cookie Cheesecake	549	Burger King	6	350	170	18	8	0	35	310	41	1	25	6	2023-09-18 16:40:40.770275-03	\N
-808	Oreo Cookies and Crème Pie	209	KFC	5	270	13	8	0	\N	210	35	1	24	3	299	2023-09-18 16:40:40.770275-03	\N
-809	Oreo® Shake	592	Burger King	6	720	180	20	12	0.5	65	540	118	1	98	16	2023-09-18 16:40:40.770275-03	\N
-810	Original Chicken Sandwich	505	Burger King	6	660	360	40	7	0	75	1170	48	2	5	28	2023-09-18 16:40:40.770275-03	\N
-811	Pancake and Sausage platter	572	Burger King	6	610	280	31	9	0	80	1010	72	1	30	12	2023-09-18 16:40:40.770275-03	\N
-812	Pan Pizza Slices Backyard BBQ Chicken Large	140	Pizza Hut	3	380	16	6	0	35	650	43	2	7	16	\N	2023-09-18 16:40:40.770275-03	\N
-813	Pan Pizza Slices Backyard BBQ Chicken Medium	216	Pizza Hut	3	270	10	4	0	25	450	33	2	6	11	\N	2023-09-18 16:40:40.770275-03	\N
-814	Pan Pizza Slices Backyard BBQ Chicken Personal Pan	136	Pizza Hut	3	180	6	2	0	15	370	25	1	8	8	\N	2023-09-18 16:40:40.770275-03	\N
-815	Pan Pizza Slices Beyond Meat® Pepperoni Large	142	Pizza Hut	3	350	16	6	0	25	680	38	3	2	14	\N	2023-09-18 16:40:40.770275-03	\N
-816	Pan Pizza Slices Beyond Meat® Pepperoni Medium	141	Pizza Hut	3	240	10	4.5	0	15	470	29	2	1	10	\N	2023-09-18 16:40:40.770275-03	\N
-817	Pan Pizza Slices Buffalo Chicken Large	145	Pizza Hut	3	350	14	5	0	30	850	40	2	2	15	\N	2023-09-18 16:40:40.770275-03	\N
-818	Pan Pizza Slices Buffalo Chicken Medium	144	Pizza Hut	3	240	9	3.5	0	20	680	31	2	2	11	\N	2023-09-18 16:40:40.770275-03	\N
-819	Pan Pizza Slices Buffalo Chicken Personal Pan	143	Pizza Hut	3	160	5	2	0	15	570	22	1	2	7	\N	2023-09-18 16:40:40.770275-03	\N
-820	Pan Pizza Slices Cheese Large	148	Pizza Hut	3	360	17	7	0	35	660	37	2	2	16	\N	2023-09-18 16:40:40.770275-03	\N
-821	Pan Pizza Slices Cheese Medium	147	Pizza Hut	3	250	10	4.5	0	25	450	28	2	1	11	\N	2023-09-18 16:40:40.770275-03	\N
-822	Pan Pizza Slices Cheese Personal Pan	146	Pizza Hut	3	150	6	2.5	0	15	310	17	1	2	7	\N	2023-09-18 16:40:40.770275-03	\N
-823	Pan Pizza Slices Chicken Bacon Parmesan Large	151	Pizza Hut	3	390	20	7	0	40	680	35	2	2	18	\N	2023-09-18 16:40:40.770275-03	\N
-824	Pan Pizza Slices Chicken Bacon Parmesan Medium	150	Pizza Hut	3	270	13	4.5	0	30	470	27	2	1	12	\N	2023-09-18 16:40:40.770275-03	\N
-825	Pan Pizza Slices Chicken Bacon Parmesan Personal Pan	149	Pizza Hut	3	180	8	3	0	20	350	17	1	2	9	\N	2023-09-18 16:40:40.770275-03	\N
-826	Pan Pizza Slices Hawaiian Chicken Large	154	Pizza Hut	3	350	15	5	0	30	690	38	2	3	17	\N	2023-09-18 16:40:40.770275-03	\N
-827	Pan Pizza Slices Hawaiian Chicken Medium	153	Pizza Hut	3	240	9	3.5	0	20	480	29	2	2	12	\N	2023-09-18 16:40:40.770275-03	\N
-828	Pan Pizza Slices Hawaiian Chicken Personal Pan	152	Pizza Hut	3	150	5	2	0	15	330	18	1	3	8	\N	2023-09-18 16:40:40.770275-03	\N
-829	Pan Pizza Slices Meat Lover’s® Large	157	Pizza Hut	3	470	27	10	0	50	940	37	2	2	19	\N	2023-09-18 16:40:40.770275-03	\N
-830	Pan Pizza Slices Meat Lover’s® Medium	156	Pizza Hut	3	320	17	6	0	35	640	28	2	1	13	\N	2023-09-18 16:40:40.770275-03	\N
-831	Pan Pizza Slices Meat Lover’s® Personal Pan	155	Pizza Hut	3	210	12	4.5	0	25	460	18	1	2	9	\N	2023-09-18 16:40:40.770275-03	\N
-832	Pan Pizza Slices Pepperoni Large	220	Pizza Hut	3	370	18	6	0	35	680	36	2	2	15	\N	2023-09-18 16:40:40.770275-03	\N
-833	Pan Pizza Slices Pepperoni Lover’s® Large	1116	Pizza Hut	3	440	24	9	0.5	50	850	37	3	2	19	\N	2023-09-18 16:40:40.770275-03	\N
-834	Pan Pizza Slices Pepperoni Lover’s® Medium	1115	Pizza Hut	3	300	15	6	0	35	580	28	2	1	13	\N	2023-09-18 16:40:40.770275-03	\N
-835	Pan Pizza Slices Pepperoni Lover’s® Personal Pan	1114	Pizza Hut	3	180	9	3.5	0	20	370	17	1	2	8	\N	2023-09-18 16:40:40.770275-03	\N
-836	Pan Pizza Slices Pepperoni Medium	219	Pizza Hut	3	250	11	4.5	0	25	470	28	2	1	10	\N	2023-09-18 16:40:40.770275-03	\N
-837	Pan Pizza Slices Pepperoni Personal Pan	218	Pizza Hut	3	150	7	2.5	0	15	310	17	1	2	6	\N	2023-09-18 16:40:40.770275-03	\N
-838	Pan Pizza Slices Supreme Large	1119	Pizza Hut	3	390	20	7	0	40	740	37	2	2	16	\N	2023-09-18 16:40:40.770275-03	\N
-839	Pan Pizza Slices Supreme Medium	1118	Pizza Hut	3	270	13	5	0	25	500	29	2	2	11	\N	2023-09-18 16:40:40.770275-03	\N
-840	Pan Pizza Slices Supreme Personal Pan	1117	Pizza Hut	3	170	8	3	0	15	360	18	1	2	7	\N	2023-09-18 16:40:40.770275-03	\N
-841	Pan Pizza Slices Ultimate Cheese Lover’s® Large	1122	Pizza Hut	3	390	20	8	0	40	670	36	2	2	17	\N	2023-09-18 16:40:40.770275-03	\N
-842	Pan Pizza Slices Ultimate Cheese Lover’s® Medium	1121	Pizza Hut	3	270	13	5	0	25	470	27	2	1	12	\N	2023-09-18 16:40:40.770275-03	\N
-843	Pan Pizza Slices Ultimate Cheese Lover’s® Personal Pan	1120	Pizza Hut	3	170	8	3.5	0	15	330	17	1	2	8	\N	2023-09-18 16:40:40.770275-03	\N
-844	Pan Pizza Slices Veggie Lover’s® Large	1125	Pizza Hut	3	330	15	5	0	25	620	38	3	3	14	\N	2023-09-18 16:40:40.770275-03	\N
-845	Pan Pizza Slices Veggie Lover’s® Medium	1124	Pizza Hut	3	230	9	3.5	0	15	420	29	2	2	9	\N	2023-09-18 16:40:40.770275-03	\N
-846	Pan Pizza Slices Veggie Lover’s® Personal Pan	1123	Pizza Hut	3	140	5	2	0	10	290	18	1	2	6	\N	2023-09-18 16:40:40.770275-03	\N
-847	Parmesan Garlic Croutons	202	KFC	5	60	3	0	0	0	135	8	\N	0	2	58	2023-09-18 16:40:40.770275-03	\N
-848	PB&J Jamwich	546	Burger King	6	300	140	16	3	0	0	290	33	4	11	11	2023-09-18 16:40:40.770275-03	\N
-849	Peanuts (for Sundaes)	258	McDonald’s	1	45	30	3.5	0.5	0	0	0	2	1	0	2	2023-09-18 16:40:40.770275-03	\N
-850	Pear Berry Fruit Tea, Large	760	Wendy’s	2	320	0	0	0	0	60	82	0	76	0	396	2023-09-18 16:40:40.770275-03	\N
-851	Pear Berry Fruit Tea, Medium	761	Wendy’s	2	300	0	0	0	0	50	76	0	70	0	370	2023-09-18 16:40:40.770275-03	\N
-852	Pear Berry Fruit Tea, Small	762	Wendy’s	2	170	0	0	0	0	30	44	0	40	0	210	2023-09-18 16:40:40.770275-03	\N
-853	Pepsi® (12 fl oz)	941	KFC	5	150	0	0	0	0	30	41	0	41	0	191	2023-09-18 16:40:40.770275-03	\N
-854	Pepsi® (16 fl oz)	40	Taco Bell	4	200	\N	\N	\N	\N	45	55	\N	\N	55	\N	2023-09-18 16:40:40.770275-03	\N
-855	Pepsi® (16 fl oz)	942	KFC	5	200	0	0	0	0	45	55	0	55	0	255	2023-09-18 16:40:40.770275-03	\N
-856	Pepsi® (20 fl oz)	95	Taco Bell	4	250	\N	\N	\N	\N	55	69	\N	\N	69	\N	2023-09-18 16:40:40.770275-03	\N
-857	Pepsi® (20 fl oz)	95	KFC	5	250	0	0	0	0	55	69	0	69	0	319	2023-09-18 16:40:40.770275-03	\N
-858	Pepsi® (30 fl oz)	944	Taco Bell	4	380	\N	\N	\N	\N	80	104	\N	\N	103	\N	2023-09-18 16:40:40.770275-03	\N
-859	Pepsi® (30 fl oz)	944	KFC	5	380	0	0	0	0	80	104	0	103	0	483	2023-09-18 16:40:40.770275-03	\N
-860	Pepsi® Wild Cherry (16 fl oz)	1107	Taco Bell	4	210	\N	\N	\N	\N	40	56	\N	\N	56	\N	2023-09-18 16:40:40.770275-03	\N
-861	Pepsi® Wild Cherry (20 fl oz)	96	Taco Bell	4	260	\N	\N	\N	\N	50	70	\N	\N	70	\N	2023-09-18 16:40:40.770275-03	\N
-862	Pepsi® Wild Cherry (30 fl oz)	128	Taco Bell	4	390	\N	\N	\N	\N	80	105	\N	\N	105	\N	2023-09-18 16:40:40.770275-03	\N
-863	Pepsi Zero Sugar® (12 fl oz)	937	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-864	Pepsi Zero Sugar® (16 fl oz)	938	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-865	Pepsi® Zero Sugar (16 fl oz)	1108	Taco Bell	4	0	\N	\N	\N	\N	85	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-866	Pepsi Zero Sugar® (20 fl oz)	939	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-867	Pepsi® Zero Sugar (20 fl oz)	97	Taco Bell	4	0	\N	\N	\N	\N	105	0	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-868	Pepsi Zero Sugar® (30 fl oz)	940	KFC	5	0	0	0	0	0	95	1	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-869	Pepsi® Zero Sugar (30 fl oz)	129	Taco Bell	4	0	\N	\N	\N	\N	160	\N	\N	\N	0	\N	2023-09-18 16:40:40.770275-03	\N
-870	Pie made with TWIX®	548	Burger King	6	370	180	20	13	0	10	330	45	1	30	4	2023-09-18 16:40:40.770275-03	\N
-871	Plain Baked Potato	711	Wendy’s	2	270	0	0	0	0	25	61	7	3	7	266	2023-09-18 16:40:40.770275-03	\N
-872	POPCORN NUGGETS Kids	848	KFC	5	290	19	2.5	0	30	870	19	1	0	13	279.5	2023-09-18 16:40:40.770275-03	\N
-873	POPCORN NUGGETS Large	849	KFC	5	620	39	5	0	65	1820	39	2	0	27	598	2023-09-18 16:40:40.770275-03	\N
-874	Potato Salad	167	KFC	5	340	28	4.5	0	25	290	19	2	3	2	345.5	2023-09-18 16:40:40.770275-03	\N
-875	Potato Salad (Family)	178	KFC	5	1200	98	16	0	80	1010	65	8	12	8	1220	2023-09-18 16:40:40.770275-03	\N
-876	POWERade® Mountain Blast (Child)	314	McDonald’s	1	70	0	0	0	0	0	65	20	0	16	0	2023-09-18 16:40:40.770275-03	\N
-877	POWERade® Mountain Blast (Large)	318	McDonald’s	1	220	0	0	0	0	0	190	58	0	46	0	2023-09-18 16:40:40.770275-03	\N
-878	POWERade® Mountain Blast (Medium)	316	McDonald’s	1	150	0	0	0	0	0	130	39	0	31	0	2023-09-18 16:40:40.770275-03	\N
-879	POWERade® Mountain Blast (Small)	315	McDonald’s	1	100	0	0	0	0	0	85	27	0	21	0	2023-09-18 16:40:40.770275-03	\N
-880	Power Menu Bowl – Chicken	960	Taco Bell	4	470	170	19	6	0	70	1200	50	7	2	26	2023-09-18 16:40:40.770275-03	\N
-881	Power Menu Bowl – Specialties	1029	Taco Bell	4	470	170	19	6	0	70	1200	50	7	2	26	2023-09-18 16:40:40.770275-03	\N
-882	Power Menu Bowl – Steak	1078	Taco Bell	4	480	180	20	7	0	60	1150	51	7	2	25	2023-09-18 16:40:40.770275-03	\N
-883	Power Menu Bowl – Veggie	1077	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-18 16:40:40.770275-03	\N
-884	Power Menu Bowl – Veggie (V)	1079	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-18 16:40:40.770275-03	\N
-885	Premium Bacon Ranch Salad with Crispy Chicken	94	McDonald’s	1	370	180	20	6	0	75	970	20	3	6	29	2023-09-18 16:40:40.770275-03	\N
-886	Premium Bacon Ranch Salad with Grilled Chicken	49	McDonald’s	1	260	90	9	4	0	90	1010	12	3	5	33	2023-09-18 16:40:40.770275-03	\N
-887	Premium Bacon Ranch Salad (without chicken)	110	McDonald’s	1	140	70	7	3.5	0	25	300	10	3	4	9	2023-09-18 16:40:40.770275-03	\N
-888	Premium Caesar Salad with Crispy Chicken	112	McDonald’s	1	330	150	17	4.5	0	60	840	20	3	6	26	2023-09-18 16:40:40.770275-03	\N
-889	Premium Caesar Salad with Grilled Chicken	111	McDonald’s	1	220	60	6	3	0	75	890	12	3	5	30	2023-09-18 16:40:40.770275-03	\N
-890	Premium Caesar Salad (without chicken)	113	McDonald’s	1	90	35	4	2.5	0	10	180	9	3	4	7	2023-09-18 16:40:40.770275-03	\N
-891	Premium Crispy Chicken Classic Sandwich	236	McDonald’s	1	510	200	22	3.5	0	45	990	56	3	10	24	2023-09-18 16:40:40.770275-03	\N
-892	Premium Crispy Chicken Club Sandwich	64	McDonald’s	1	620	260	29	7	0	70	1200	57	3	11	31	2023-09-18 16:40:40.770275-03	\N
-893	Premium Crispy Chicken Ranch BLT Sandwich	24	McDonald’s	1	540	210	23	4.5	0	55	1160	56	3	11	27	2023-09-18 16:40:40.770275-03	\N
-894	Premium Grilled Chicken Classic Sandwich	21	McDonald’s	1	360	80	9	2	0	65	820	41	4	8	27	2023-09-18 16:40:40.770275-03	\N
-895	Premium Grilled Chicken Club Sandwich	63	McDonald’s	1	460	150	17	6	0	90	1040	43	4	9	35	2023-09-18 16:40:40.770275-03	\N
-896	Premium Grilled Chicken Ranch BLT Sandwich	65	McDonald’s	1	380	90	10	3	0	75	1000	41	4	9	31	2023-09-18 16:40:40.770275-03	\N
-897	Premium Hot Coffee	1053	Taco Bell	4	10	0	0	0	0	0	0	0	0	0	2	2023-09-18 16:40:40.770275-03	\N
-898	Premium Southwest Salad with Crispy Chicken	47	McDonald’s	1	430	180	20	4	0	55	920	38	6	12	26	2023-09-18 16:40:40.770275-03	\N
-899	Premium Southwest Salad with Grilled Chicken	46	McDonald’s	1	320	80	9	3	0	70	960	30	6	11	30	2023-09-18 16:40:40.770275-03	\N
-900	Premium Southwest Salad (without chicken)	48	McDonald’s	1	140	40	4.5	2	0	10	150	20	6	6	6	2023-09-18 16:40:40.770275-03	\N
-901	 Quarter Pounder® with Cheese	10	McDonald’s	1	510	230	26	12	1.5	90	1190	40	3	9	29	2023-09-18 16:40:40.770275-03	\N
-902	Quesadilla – Cheese (V)	1015	Taco Bell	4	470	230	25	12	0.5	50	990	37	4	2	19	2023-09-18 16:40:40.770275-03	\N
-903	Quesadilla – Chicken	1016	Taco Bell	4	510	240	26	12	0.5	75	1250	38	4	2	27	2023-09-18 16:40:40.770275-03	\N
-904	Quesadilla – Specialties	1030	Taco Bell	4	510	240	26	12	0.5	75	1250	38	4	2	27	2023-09-18 16:40:40.770275-03	\N
-905	Quesadilla – Steak	1017	Taco Bell	4	520	240	27	12	0.5	70	1230	38	4	2	27	2023-09-18 16:40:40.770275-03	\N
-906	Quesarito – Beef	1004	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-18 16:40:40.770275-03	\N
-907	Quesarito – Chicken	1005	Taco Bell	4	620	270	29	11	0	65	1390	66	4	4	25	2023-09-18 16:40:40.770275-03	\N
-908	Quesarito – Online Exclusive	983	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-18 16:40:40.770275-03	\N
-909	Quesarito – Specialties	1031	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-18 16:40:40.770275-03	\N
-910	Quesarito – Steak	1006	Taco Bell	4	630	270	30	11	0	60	1370	66	4	4	24	2023-09-18 16:40:40.770275-03	\N
-911	Ranch Dipping Sauce (1 oz)	584	Burger King	6	140	140	15	2.5	0	10	85	1	0	1	1	2023-09-18 16:40:40.770275-03	\N
-912	Ranch – Dipping Sauce Cup	858	KFC	5	130	14	2.5	0	10	240	2	0	1	0	133.5	2023-09-18 16:40:40.770275-03	\N
-913	Ranch Snack Wrap® (Crispy)	26	McDonald’s	1	340	150	17	4.5	0	30	810	33	1	2	14	2023-09-18 16:40:40.770275-03	\N
-914	Ranch Snack Wrap® (Grilled)	27	McDonald’s	1	270	90	10	4	0	45	830	26	1	2	18	2023-09-18 16:40:40.770275-03	\N
-915	Reese’s Peanut Butter Pie	210	KFC	5	300	17	9	0	\N	270	33	1	22	5	326	2023-09-18 16:40:40.770275-03	\N
-916	Regular Iced Coffee	1054	Taco Bell	4	10	0	0	0	0	0	0	0	0	0	2	2023-09-18 16:40:40.770275-03	\N
-917	Salad Dressings	50	McDonald’s	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-918	Salt Packet	92	McDonald’s	1	0	0	0	0	0	0	270	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-919	Sausage and Egg Burrito	807	Wendy’s	2	360	20	8	0	210	920	29	1	2	17	353	2023-09-18 16:40:40.770275-03	\N
-920	Sausage and Gravy Biscuit	808	Wendy’s	2	490	29	14	0	20	1400	49	2	6	8	502	2023-09-18 16:40:40.770275-03	\N
-921	Sausage Biscuit	567	Wendy’s	2	480	33	15	0	50	1010	35	1	5	12	488	2023-09-18 16:40:40.770275-03	\N
-922	Sausage Biscuit	567	Burger King	6	420	250	28	6	0	35	1050	28	1	2	12	2023-09-18 16:40:40.770275-03	\N
-923	Sausage Biscuit (Large Size Biscuit)	221	McDonald’s	1	480	280	31	13	0	30	1190	39	3	3	11	2023-09-18 16:40:40.770275-03	\N
-924	Sausage Biscuit (Regular Size Biscuit)	215	McDonald’s	1	430	240	27	12	0	30	1080	34	2	2	11	2023-09-18 16:40:40.770275-03	\N
-925	Sausage Biscuit with Egg (Large Size Biscuit)	77	McDonald’s	1	570	330	37	15	0	250	1280	42	3	3	18	2023-09-18 16:40:40.770275-03	\N
-926	Sausage Biscuit with Egg (Regular Size Biscuit)	76	McDonald’s	1	510	290	33	14	0	250	1170	36	2	2	18	2023-09-18 16:40:40.770275-03	\N
-927	Sausage Breakfast Bowl	810	Wendy’s	2	640	42	14	0	270	1540	46	4	3	21	636	2023-09-18 16:40:40.770275-03	\N
-928	Sausage Burrito	232	McDonald’s	1	300	140	16	7	0	115	830	26	1	2	12	2023-09-18 16:40:40.770275-03	\N
-929	Sausage, Egg, & Cheese Biscuit	565	Burger King	6	530	340	38	17	0	195	1440	29	1	3	19	2023-09-18 16:40:40.770275-03	\N
-930	Sausage, Egg & Cheese McGriddles®	226	McDonald’s	1	560	290	32	12	0	265	1360	48	2	15	20	2023-09-18 16:40:40.770275-03	\N
-931	Sausage McGriddles®	227	McDonald’s	1	420	200	22	8	0	35	1030	44	2	15	11	2023-09-18 16:40:40.770275-03	\N
-932	Sausage McMuffin®	71	McDonald’s	1	370	200	22	8	0	45	850	29	2	2	14	2023-09-18 16:40:40.770275-03	\N
-933	Sausage McMuffin® with Egg	72	McDonald’s	1	450	250	27	10	0	285	920	30	2	2	21	2023-09-18 16:40:40.770275-03	\N
-934	S’Awesome Sauce	683	Wendy’s	2	120	12	2	0	0	170	4	1	3	1	124	2023-09-18 16:40:40.770275-03	\N
-935	Seasoned Home-Style Potatoes, Large	811	Wendy’s	2	360	13	2.5	0	0	1080	57	6	1	5	359	2023-09-18 16:40:40.770275-03	\N
-936	Seasoned Home-Style Potatoes, Medium	812	Wendy’s	2	250	9	1.5	0	0	750	39	4	1	4	249	2023-09-18 16:40:40.770275-03	\N
-937	Seasoned Home-Style Potatoes, Small	813	Wendy’s	2	230	8	1.5	0	0	680	35	4	0	3	229	2023-09-18 16:40:40.770275-03	\N
-938	Secret Recipe Fries	168	KFC	5	320	15	2	0	0	1100	41	3	0	5	317	2023-09-18 16:40:40.770275-03	\N
-939	Secret Recipe Fries (Family)	179	KFC	5	840	40	5	0	0	2890	108	9	0	13	832	2023-09-18 16:40:40.770275-03	\N
-940	Side Items	87	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-941	Side Salad	114	McDonald’s	1	20	0	0	0	0	0	10	4	1	2	1	2023-09-18 16:40:40.770275-03	\N
-942	Sierra Mist® (16 fl oz)	1109	Taco Bell	4	200	\N	\N	\N	\N	45	54	\N	\N	54	\N	2023-09-18 16:40:40.770275-03	\N
-943	Sierra Mist® (20 fl oz)	98	Taco Bell	4	260	\N	\N	\N	\N	55	68	\N	\N	68	\N	2023-09-18 16:40:40.770275-03	\N
-944	Sierra Mist® (30 fl oz)	130	Taco Bell	4	380	\N	\N	\N	\N	80	101	\N	\N	101	\N	2023-09-18 16:40:40.770275-03	\N
-945	Single Quarter Pound King Sandwich	491	Burger King	6	580	260	29	13	1.5	105	1310	49	2	10	32	2023-09-18 16:40:40.770275-03	\N
-946	Single Stacker King	493	Burger King	6	700	380	42	16	2	125	1360	48	1	10	35	2023-09-18 16:40:40.770275-03	\N
-947	Skinny Vanilla Iced Coffee, Medium	763	Wendy’s	2	100	8	5	0	25	45	14	0	0	3	102	2023-09-18 16:40:40.770275-03	\N
-948	Skinny Vanilla Iced Coffee, Small	764	Wendy’s	2	70	5	3.5	0	15	30	6	0	0	2	72	2023-09-18 16:40:40.770275-03	\N
-949	Small French Fries	237	McDonald’s	1	230	100	11	1.5	0	0	160	29	3	0	3	2023-09-18 16:40:40.770275-03	\N
-950	Small Sprite, Small	765	Wendy’s	2	200	0	0	0	0	90	53	0	53	0	253	2023-09-18 16:40:40.770275-03	\N
-951	Smoothie: Strawberry Banana 16 fl oz	591	Burger King	6	310	10	1	0	0	0	55	71	3	50	4	2023-09-18 16:40:40.770275-03	\N
-952	Snack Size Fruit & Walnut Salad	116	McDonald’s	1	210	70	8	1.5	0	5	60	31	2	25	4	2023-09-18 16:40:40.770275-03	\N
-953	Snack Size McFlurry® with M&M’S® Candies	275	McDonald’s	1	430	140	16	10	0.5	35	130	64	2	59	9	2023-09-18 16:40:40.770275-03	\N
-954	Snack Size McFlurry® with OREO® Cookies	276	McDonald’s	1	340	100	12	6	0	30	200	53	2	43	8	2023-09-18 16:40:40.770275-03	\N
-955	Sobe Lifewater Yumberry Pomegranate (12 fl oz)	945	KFC	5	0	0	0	0	0	45	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-956	Sobe Lifewater Yumberry Pomegranate (16 fl oz)	946	KFC	5	0	0	0	0	0	65	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-957	Sobe Lifewater Yumberry Pomegranate (20 fl oz)	947	KFC	5	0	0	0	0	0	80	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-958	Sobe Lifewater Yumberry Pomegranate (30 fl oz)	948	KFC	5	5	0	0	0	0	120	1	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-959	SOFT DRINKS BY CUP SIZE (*no ice)	61	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-960	Soft Serve Cone	550	Burger King	6	190	40	4.5	3	0	20	150	32	0	24	5	2023-09-18 16:40:40.770275-03	\N
-961	Soft Serve Cup	551	Burger King	6	170	40	4.5	3	0	20	150	28	0	24	5	2023-09-18 16:40:40.770275-03	\N
-962	Soft Taco – Beef	996	Taco Bell	4	210	90	10	5	0	25	520	20	3	2	10	2023-09-18 16:40:40.770275-03	\N
-963	Soft Taco – Chicken	997	Taco Bell	4	160	50	5	2.5	0	30	500	16	1	1	12	2023-09-18 16:40:40.770275-03	\N
-964	Soft Taco – Specialties	1032	Taco Bell	4	180	80	9	4	0	25	500	17	3	1	9	2023-09-18 16:40:40.770275-03	\N
-965	Soft Taco Supreme®	995	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-966	Soft Taco Supreme – Specialties	1033	Taco Bell	4	210	90	10	5	0	25	520	20	3	2	10	2023-09-18 16:40:40.770275-03	\N
-967	Son of Baconator	668	Wendy’s	2	630	39	15	1.5	125	1280	37	2	7	34	618	2023-09-18 16:40:40.770275-03	\N
-968	Sour Cream and Chive Baked Potato	712	Wendy’s	2	310	\N	2.5	0	10	35	63	7	4	8	309	2023-09-18 16:40:40.770275-03	\N
-969	Southern Style Chicken Biscuit (Large Size Biscuit)	223	McDonald’s	1	470	220	24	9	0	30	1290	46	3	4	17	2023-09-18 16:40:40.770275-03	\N
-970	Southern Style Chicken Biscuit (Regular Size Biscuit)	222	McDonald’s	1	410	180	20	8	0	30	1180	41	2	3	17	2023-09-18 16:40:40.770275-03	\N
-971	Southern Style Crispy Chicken Sandwich	25	McDonald’s	1	400	150	17	3	0	45	1030	39	1	6	24	2023-09-18 16:40:40.770275-03	\N
-972	Southwest Avocado Chicken Salad, Full Size	693	Wendy’s	2	600	41	11	0	135	1220	18	7	7	42	576	2023-09-18 16:40:40.770275-03	\N
-973	Southwest Avocado Chicken Salad, Half Size	694	Wendy’s	2	300	20	6	0	70	620	10	4	4	21	289	2023-09-18 16:40:40.770275-03	\N
-974	Southwestern Chipotle Barbeque Sauce	45	McDonald’s	1	60	0	0	0	0	0	210	15	1	11	0	2023-09-18 16:40:40.770275-03	\N
-975	Spicy Asiago Ranch Club	684	Wendy’s	2	670	32	9	0	100	1530	55	4	6	38	647	2023-09-18 16:40:40.770275-03	\N
-976	Spicy Buffalo Sauce	42	McDonald’s	1	60	50	6	1	0	0	800	1	1	0	0	2023-09-18 16:40:40.770275-03	\N
-977	Spicy Caesar Chicken Salad, Full Size	696	Wendy’s	2	720	42	12	1	150	1680	44	8	6	42	696	2023-09-18 16:40:40.770275-03	\N
-978	Spicy Caesar Chicken Salad, Half Size	697	Wendy’s	2	410	23	6	0.5	75	930	30	5	4	23	397	2023-09-18 16:40:40.770275-03	\N
-979	Spicy Chicken Nuggets- 10 pc	516	Burger King	6	530	330	37	7	0	55	1420	28	4	1	20	2023-09-18 16:40:40.770275-03	\N
-980	Spicy Chicken Nuggets- 20 pc	517	Burger King	6	1050	670	74	15	0	110	2840	56	9	1	40	2023-09-18 16:40:40.770275-03	\N
-981	Spicy Chicken Nuggets- 4pc	514	Burger King	6	210	130	15	3	0	20	570	11	2	0	8	2023-09-18 16:40:40.770275-03	\N
-982	Spicy Chicken Nuggets- 6pc	515	Burger King	6	320	200	22	4.5	0	35	850	17	3	0	12	2023-09-18 16:40:40.770275-03	\N
-983	Spicy Chicken Sandwich	192	Wendy’s	2	510	20	3.5	0	65	1030	54	4	6	29	491	2023-09-18 16:40:40.770275-03	\N
-984	Spicy Chicken Sandwich	192	KFC	5	620	33	4	0	85	2140	49	1	6	34	596	2023-09-18 16:40:40.770275-03	\N
-985	Spicy Chicken Wrap	686	Wendy’s	2	370	20	5	0	50	850	30	2	2	18	359	2023-09-18 16:40:40.770275-03	\N
-986	SPICY CRISPY CHICKEN Breast	838	KFC	5	350	20	3.5	0	100	1100	11	1	0	30	323.5	2023-09-18 16:40:40.770275-03	\N
-987	SPICY CRISPY CHICKEN Drumstick	839	KFC	5	130	8	1.5	0	40	420	5	1	0	9	122.5	2023-09-18 16:40:40.770275-03	\N
-988	Spicy Crispy Chicken Jr.	509	Burger King	6	390	190	21	3.5	0	30	740	37	2	6	12	2023-09-18 16:40:40.770275-03	\N
-989	Spicy Crispy Chicken Sandwich	504	Burger King	6	700	370	42	7	0	65	1140	57	3	8	25	2023-09-18 16:40:40.770275-03	\N
-990	SPICY CRISPY CHICKEN Thigh	840	KFC	5	270	20	3.5	0	65	720	10	1	0	13	260.5	2023-09-18 16:40:40.770275-03	\N
-991	SPICY CRISPY CHICKEN Whole Wing	841	KFC	5	120	8	1.5	0	35	350	5	0	0	7	114.5	2023-09-18 16:40:40.770275-03	\N
-992	SPLENDA® No\nCalorie Sweetener	329	McDonald’s	1	0	0	0	0	0	0	0	1	0	1	0	2023-09-18 16:40:40.770275-03	\N
-993	Sprite®‡	88	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-994	Sprite® (Child)	306	McDonald’s	1	110	0	0	0	0	0	30	28	0	28	0	2023-09-18 16:40:40.770275-03	\N
-995	Sprite, Large	766	Wendy’s	2	390	0	0	0	0	180	105	0	105	0	495	2023-09-18 16:40:40.770275-03	\N
-996	Sprite® (Large)	309	McDonald’s	1	310	0	0	0	0	0	80	83	0	83	0	2023-09-18 16:40:40.770275-03	\N
-997	Sprite, Medium	767	Wendy’s	2	310	0	0	0	0	140	84	0	84	0	394	2023-09-18 16:40:40.770275-03	\N
-998	Sprite® (Medium)	308	McDonald’s	1	210	0	0	0	0	0	55	56	0	56	0	2023-09-18 16:40:40.770275-03	\N
-999	Sprite® (Small)	307	McDonald’s	1	150	0	0	0	0	0	40	39	0	39	0	2023-09-18 16:40:40.770275-03	\N
-1000	Steak, Egg & Cheese Bagel	224	McDonald’s	1	660	300	33	12	1	300	1580	56	3	7	33	2023-09-18 16:40:40.770275-03	\N
-1001	Strawberry Banana Smoothie (Large)	475	McDonald’s	1	330	10	1	0.5	0	5	55	77	4	70	3	2023-09-18 16:40:40.770275-03	\N
-1002	Strawberry Banana Smoothie (Medium)	476	McDonald’s	1	260	5	1	0	0	5	40	60	3	54	2	2023-09-18 16:40:40.770275-03	\N
-1003	Strawberry Banana Smoothie (Small)	477	McDonald’s	1	210	5	0.5	0	0	5	35	49	2	44	2	2023-09-18 16:40:40.770275-03	\N
-1004	Strawberry Jam Packet	859	KFC	5	35	0	0	0	0	0	9	0	6	0	41	2023-09-18 16:40:40.770275-03	\N
-1005	Strawberry Lemonade (1/2 Gallon)	949	KFC	5	950	0	0	0	0	790	270	0	264	0	1214	2023-09-18 16:40:40.770275-03	\N
-1006	Strawberry Lemonade (20 fl oz)	950	KFC	5	170	0	0	0	0	130	45	0	44	0	214	2023-09-18 16:40:40.770275-03	\N
-1007	Strawberry Lemonade, Large	768	Wendy’s	2	480	0	0	0	0	55	121	0	114	0	594	2023-09-18 16:40:40.770275-03	\N
-1008	Strawberry Lemonade, Medium	769	Wendy’s	2	380	0	0	0	0	45	98	0	92	0	472	2023-09-18 16:40:40.770275-03	\N
-1009	Strawberry Lemonade, Small	770	Wendy’s	2	230	0	0	0	0	30	58	0	54	0	284	2023-09-18 16:40:40.770275-03	\N
-1010	Strawberry McCafé® Shake (12 fl oz cup)	277	McDonald’s	1	570	150	17	10	1	50	170	92	0	79	11	2023-09-18 16:40:40.770275-03	\N
-1011	Strawberry McCafé® Shake (16 fl oz cup)	278	McDonald’s	1	710	180	20	12	1	65	210	116	0	100	14	2023-09-18 16:40:40.770275-03	\N
-1012	Strawberry McCafé® Shake (22 fl oz cup)	279	McDonald’s	1	860	220	24	15	1.5	75	260	144	0	124	18	2023-09-18 16:40:40.770275-03	\N
-1013	Strawberry Milk Shake	596	Burger King	6	640	140	15	10	0	60	440	113	0	99	14	2023-09-18 16:40:40.770275-03	\N
-1014	Strawberry or Grape Jam (packet)	581	Burger King	6	30	0	0	0	0	0	0	7	0	6	0	2023-09-18 16:40:40.770275-03	\N
-1015	Strawberry Preserves	242	McDonald’s	1	35	0	0	0	0	0	0	9	0	9	0	2023-09-18 16:40:40.770275-03	\N
-1016	Strawberry Sundae	254	McDonald’s	1	280	60	6	4	0	25	95	49	1	45	6	2023-09-18 16:40:40.770275-03	\N
-1017	Strawberry Sweet Tea, Large	771	Wendy’s	2	270	0	0	0	0	15	69	0	67	0	337	2023-09-18 16:40:40.770275-03	\N
-1018	Strawberry Sweet Tea, Medium	772	Wendy’s	2	240	0	0	0	0	15	60	0	59	0	299	2023-09-18 16:40:40.770275-03	\N
-1019	Strawberry Sweet Tea, Small	773	Wendy’s	2	140	0	0	0	0	10	36	0	35	0	175	2023-09-18 16:40:40.770275-03	\N
-1020	Strawberry Tea, Large	774	Wendy’s	2	90	0	0	0	0	20	22	0	20	0	110	2023-09-18 16:40:40.770275-03	\N
-1021	Strawberry Tea, Medium	775	Wendy’s	2	60	0	0	0	0	15	16	0	14	0	74	2023-09-18 16:40:40.770275-03	\N
-1022	Strawberry Tea, Small	776	Wendy’s	2	45	0	0	0	0	10	11	0	10	0	55	2023-09-18 16:40:40.770275-03	\N
-1023	Strawberry Triple Thick® Shake (12 fl oz cup)	280	McDonald’s	1	420	90	10	6	0.5	40	130	73	0	63	10	2023-09-18 16:40:40.770275-03	\N
-1024	Strawberry Triple Thick® Shake (16 fl oz cup)	281	McDonald’s	1	560	120	13	8	1	50	170	97	0	84	13	2023-09-18 16:40:40.770275-03	\N
-1025	Strawberry Triple Thick® Shake (21 fl oz cup)	282	McDonald’s	1	740	160	18	11	1	70	230	128	0	111	17	2023-09-18 16:40:40.770275-03	\N
-1026	Strawberry Triple Thick® Shake (32 fl oz cup)	283	McDonald’s	1	1110	240	26	16	2	100	350	194	0	168	25	2023-09-18 16:40:40.770275-03	\N
-1027	Sugar Cookie	266	McDonald’s	1	160	60	7	3	0	5	120	21	0	11	2	2023-09-18 16:40:40.770275-03	\N
-1028	Sugar Cookie	266	Wendy’s	2	330	16	8	0	25	300	43	1	24	3	359	2023-09-18 16:40:40.770275-03	\N
-1029	Sugar Packet	326	McDonald’s	1	15	0	0	0	0	0	0	4	0	4	0	2023-09-18 16:40:40.770275-03	\N
-1030	Summer Berry Burst Fruit Cup	713	Wendy’s	2	20	0	0	0	0	0	5	1	3	0	23	2023-09-18 16:40:40.770275-03	\N
-1031	Sweetened Iced Tea, Large	777	Wendy’s	2	300	0	0	0	0	25	77	0	75	0	375	2023-09-18 16:40:40.770275-03	\N
-1032	Sweetened Iced Tea, Medium	778	Wendy’s	2	220	0	0	0	0	20	58	0	56	0	276	2023-09-18 16:40:40.770275-03	\N
-1033	Sweetened Iced Tea, Small	779	Wendy’s	2	160	0	0	0	0	10	41	0	40	0	200	2023-09-18 16:40:40.770275-03	\N
-1034	Sweet Kernel Corn	169	KFC	5	70	\N	0	0	0	0	16	2	2	2	70	2023-09-18 16:40:40.770275-03	\N
-1035	Sweet Kernel Corn (Family)	180	KFC	5	280	\N	0	0	0	10	67	7	8	10	278	2023-09-18 16:40:40.770275-03	\N
-1036	Sweet ‘N Sour Sauce	59	McDonald’s	1	50	0	0	0	0	0	150	12	0	10	0	2023-09-18 16:40:40.770275-03	\N
-1037	Sweet Tea	634	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-1038	Sweet Tea (Child)	345	McDonald’s	1	110	0	0	0	0	0	5	27	0	27	0	2023-09-18 16:40:40.770275-03	\N
-1039	Sweet Tea (Large)	346	McDonald’s	1	280	0	0	0	0	0	15	69	0	69	1	2023-09-18 16:40:40.770275-03	\N
-1040	Sweet Tea (Medium)	347	McDonald’s	1	180	0	0	0	0	0	10	45	0	45	1	2023-09-18 16:40:40.770275-03	\N
-1041	Sweet Tea (Small)	348	McDonald’s	1	150	0	0	0	0	0	10	36	0	36	1	2023-09-18 16:40:40.770275-03	\N
-1042	Taco Salad, Full Size	698	Wendy’s	2	660	32	13	1	85	1820	63	10	18	32	659	2023-09-18 16:40:40.770275-03	\N
-1043	Taco Salad, Half Size	699	Wendy’s	2	470	23	8	0.5	45	1320	49	7	12	19	471	2023-09-18 16:40:40.770275-03	\N
-1044	Tangy Honey Mustard Sauce	44	McDonald’s	1	60	20	2	0	0	5	140	10	0	8	0	2023-09-18 16:40:40.770275-03	\N
-1045	Thigh	826	KFC	5	390	32	6	0	65	900	12	2	1	13	384	2023-09-18 16:40:40.770275-03	\N
-1046	Triple Whopper® Sandwich	486	Burger King	6	1130	680	75	28	4	255	1120	49	2	11	67	2023-09-18 16:40:40.770275-03	\N
-1047	Triple Whopper® Sandwich with Cheese	487	Burger King	6	1220	740	82	32	4.5	280	1470	50	2	11	71	2023-09-18 16:40:40.770275-03	\N
-1048	Tropicana® Fruit Punch (12 fl oz)	951	KFC	5	170	0	0	0	0	35	45	0	45	0	215	2023-09-18 16:40:40.770275-03	\N
-1049	Tropicana® Fruit Punch (16 fl oz)	952	KFC	5	230	0	0	0	0	45	60	0	60	0	290	2023-09-18 16:40:40.770275-03	\N
-1050	Tropicana® Fruit Punch (20 fl oz)	953	KFC	5	280	0	0	0	0	60	75	0	75	0	355	2023-09-18 16:40:40.770275-03	\N
-1051	Tropicana® Fruit Punch (30 fl oz)	954	KFC	5	420	0	0	0	0	90	113	0	112	0	532	2023-09-18 16:40:40.770275-03	\N
-1052	Tropicana® Light Lemonade (12 fl oz)	955	KFC	5	5	0	0	0	0	140	0	0	0	0	5	2023-09-18 16:40:40.770275-03	\N
-1053	Tropicana® Light Lemonade (16 fl oz)	956	KFC	5	10	0	0	0	0	190	0	0	0	0	10	2023-09-18 16:40:40.770275-03	\N
-1054	Tropicana® Light Lemonade (20 fl oz)	957	KFC	5	10	0	0	0	0	240	0	0	0	0	10	2023-09-18 16:40:40.770275-03	\N
-1055	Tropicana® Light Lemonade (30 fl oz)	958	KFC	5	15	0	0	0	0	350	1	0	0	0	15	2023-09-18 16:40:40.770275-03	\N
-1056	Tropicana® Pink Lemonade (12 fl oz)	959	KFC	5	150	0	0	0	0	160	40	0	40	0	190	2023-09-18 16:40:40.770275-03	\N
-1057	Tropicana® Pink Lemonade (16 fl oz)	1110	Taco Bell	4	210	\N	\N	\N	\N	210	53	\N	\N	53	\N	2023-09-18 16:40:40.770275-03	\N
-1058	Tropicana® Pink Lemonade (16 fl oz)	961	KFC	5	210	0	0	0	0	210	53	0	53	0	263	2023-09-18 16:40:40.770275-03	\N
-1059	Tropicana® Pink Lemonade (20 fl oz)	99	Taco Bell	4	260	\N	\N	\N	\N	260	67	\N	\N	67	\N	2023-09-18 16:40:40.770275-03	\N
-1060	Tropicana® Pink Lemonade (20 fl oz)	99	KFC	5	260	0	0	0	0	260	67	0	67	0	327	2023-09-18 16:40:40.770275-03	\N
-1061	Tropicana® Pink Lemonade (30 fl oz)	131	Taco Bell	4	390	\N	\N	\N	\N	390	100	\N	\N	100	\N	2023-09-18 16:40:40.770275-03	\N
-1062	Tropicana® Pink Lemonade (30 fl oz)	963	KFC	5	390	0	0	0	0	390	100	0	100	0	490	2023-09-18 16:40:40.770275-03	\N
-1063	Tropicana® Twister® Orange (12 fl oz)	964	KFC	5	170	0	0	0	0	35	46	0	46	0	216	2023-09-18 16:40:40.770275-03	\N
-1064	Tropicana® Twister® Orange (16 fl oz)	965	KFC	5	230	0	0	0	0	50	61	0	61	0	291	2023-09-18 16:40:40.770275-03	\N
-1065	Tropicana® Twister® Orange (20 fl oz)	966	KFC	5	290	0	0	0	0	60	76	0	76	0	366	2023-09-18 16:40:40.770275-03	\N
-1066	Tropicana® Twister® Orange (30 fl oz)	967	KFC	5	430	0	0	0	0	90	115	0	114	0	544	2023-09-18 16:40:40.770275-03	\N
-1067	Two Sausage and Egg Burritos	814	Wendy’s	2	720	41	16	0	420	1830	59	2	5	34	707	2023-09-18 16:40:40.770275-03	\N
-1068	Two Sausage Biscuits	815	Wendy’s	2	960	65	31	0	95	2020	70	3	10	23	978	2023-09-18 16:40:40.770275-03	\N
-1069	Unsweetened Tea	638	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-1070	Vanilla Cappuccino (Large)	430	McDonald’s	1	290	70	8	4.5	0	25	105	51	0	51	7	2023-09-18 16:40:40.770275-03	\N
-1071	Vanilla Cappuccino (Medium)	429	McDonald’s	1	240	50	6	3.5	0	20	85	42	0	42	6	2023-09-18 16:40:40.770275-03	\N
-1072	Vanilla Cappuccino (Small)	428	McDonald’s	1	200	45	5	3	0	15	70	34	0	34	5	2023-09-18 16:40:40.770275-03	\N
-1073	Vanilla Frosty, Junior	786	Wendy’s	2	190	5	3.5	0	25	90	32	0	27	5	216	2023-09-18 16:40:40.770275-03	\N
-1074	Vanilla Frosty, Large	787	Wendy’s	2	570	15	10	0.5	70	260	94	0	78	15	643	2023-09-18 16:40:40.770275-03	\N
-1075	Vanilla Frosty, Medium	788	Wendy’s	2	450	12	8	0.5	55	210	75	0	63	12	509	2023-09-18 16:40:40.770275-03	\N
-1076	Vanilla Frosty, Small	789	Wendy’s	2	340	9	6	0	45	160	56	0	47	9	384	2023-09-18 16:40:40.770275-03	\N
-1077	Vanilla Iced Coffee, Medium	780	Wendy’s	2	250	8	5	0	25	40	42	0	39	3	291	2023-09-18 16:40:40.770275-03	\N
-1078	Vanilla Iced Coffee, Small	781	Wendy’s	2	170	6	3.5	0	20	30	28	0	26	2	198	2023-09-18 16:40:40.770275-03	\N
-1079	Vanilla Latte (Large)	433	McDonald’s	1	330	80	9	5	0	30	130	53	0	53	9	2023-09-18 16:40:40.770275-03	\N
-1080	Vanilla Latte (Medium)	432	McDonald’s	1	280	70	8	4.5	0	25	110	44	0	44	8	2023-09-18 16:40:40.770275-03	\N
-1081	Vanilla Latte (Small)	431	McDonald’s	1	230	60	7	4	0	20	90	36	0	36	7	2023-09-18 16:40:40.770275-03	\N
-1082	Vanilla McCafé® Shake (12 fl oz cup)	284	McDonald’s	1	540	150	16	10	1	45	170	88	0	64	10	2023-09-18 16:40:40.770275-03	\N
-1083	Vanilla McCafé® Shake (16 fl oz cup)	285	McDonald’s	1	680	180	20	12	1	60	220	111	0	82	14	2023-09-18 16:40:40.770275-03	\N
-1084	Vanilla McCafé® Shake (22 fl oz cup)	286	McDonald’s	1	830	210	24	14	1.5	75	270	138	0	103	17	2023-09-18 16:40:40.770275-03	\N
-1085	Vanilla Milk Shake	594	Burger King	6	580	140	15	10	0	60	420	98	0	85	14	2023-09-18 16:40:40.770275-03	\N
-1086	Vanilla Reduced Fat Ice Cream Cone	252	McDonald’s	1	150	35	3.5	2	0	15	60	24	0	18	4	2023-09-18 16:40:40.770275-03	\N
-1087	Vanilla Triple Thick® Shake (12 fl oz cup)	288	McDonald’s	1	420	90	10	6	0.5	40	140	72	0	54	9	2023-09-18 16:40:40.770275-03	\N
-1088	Vanilla Triple Thick® Shake (16 fl oz cup)	289	McDonald’s	1	550	120	13	8	1	50	190	96	0	72	13	2023-09-18 16:40:40.770275-03	\N
-1089	Vanilla Triple Thick® Shake (21 fl oz cup)	290	McDonald’s	1	740	160	18	11	1	70	250	128	0	96	17	2023-09-18 16:40:40.770275-03	\N
-1090	Vanilla Triple Thick Shake® (32 fl oz cup)	287	McDonald’s	1	1110	240	26	16	2	100	370	193	0	145	25	2023-09-18 16:40:40.770275-03	\N
-1091	Veggie Power Menu Bowl – Specialties	1034	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-18 16:40:40.770275-03	\N
-1092	Water	3	Taco Bell	4	0	0	0	0	0	0	0	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-1093	Wendy’s Kids’ Meal	793	Wendy’s	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-18 16:40:40.770275-03	\N
-1094	Whipped Margarine (1 pat)	239	McDonald’s	1	40	40	4.5	1.5	0	0	55	0	0	0	0	2023-09-18 16:40:40.770275-03	\N
-1095	Whole Wing	827	KFC	5	180	15	2.5	0	35	450	5	1	0	8	174.5	2023-09-18 16:40:40.770275-03	\N
-1096	Whopper JR.® Sandwich	488	Burger King	6	310	160	18	5	0.5	40	390	27	1	7	13	2023-09-18 16:40:40.770275-03	\N
-1097	Whopper® Sandwich	481	Burger King	6	660	360	40	12	1.5	90	980	49	2	11	28	2023-09-18 16:40:40.770275-03	\N
-1098	Whopper® Sandwich with Cheese	482	Burger King	6	740	420	46	16	2	115	1340	50	2	11	32	2023-09-18 16:40:40.770275-03	\N
-1099	Wild Berry Smoothie (Large)	478	McDonald’s	1	320	10	1	0.5	0	5	45	75	4	69	3	2023-09-18 16:40:40.770275-03	\N
-1100	Wild Berry Smoothie (Medium)	479	McDonald’s	1	260	5	1	0	0	5	35	60	4	55	3	2023-09-18 16:40:40.770275-03	\N
-1101	Wild Berry Smoothie (Small)	480	McDonald’s	1	210	5	0.5	0	0	5	30	48	3	44	2	2023-09-18 16:40:40.770275-03	\N
-1102	Wild Cherry Pepsi® (12 fl oz)	968	KFC	5	160	0	0	0	0	30	42	0	42	0	202	2023-09-18 16:40:40.770275-03	\N
-1103	Wild Cherry Pepsi® (16 fl oz)	969	KFC	5	210	0	0	0	0	40	56	0	56	0	266	2023-09-18 16:40:40.770275-03	\N
-1104	Wild Cherry Pepsi® (20 fl oz)	970	KFC	5	260	0	0	0	0	50	70	0	70	0	330	2023-09-18 16:40:40.770275-03	\N
-1105	Wild Cherry Pepsi® (30 fl oz)	971	KFC	5	390	0	0	0	0	80	105	0	105	0	495	2023-09-18 16:40:40.770275-03	\N
-1106	Wild Strawberry Freeze™ (16 oz)	1055	Taco Bell	4	150	0	0	0	0	0	40	41	0	41	0	2023-09-18 16:40:40.770275-03	\N
-1107	Wild Strawberry Freeze™ (20 oz)	1056	Taco Bell	4	190	0	0	0	0	0	55	51	0	51	0	2023-09-18 16:40:40.770275-03	\N
-1108	Zesty Onion Ring Dipping Sauce (1 oz)	587	Burger King	6	150	140	15	2.5	0	20	240	3	0	0	0	2023-09-18 16:40:40.770275-03	\N
+3875	Hotcakes	1	McDonald’s	1	350	80	9	2	0	20	590	60	3	14	8	2023-09-22 20:59:19.022995-03	\N
+3876	16 fl oz	2	Burger King	6	220	0	0	0	0	0	55	61	0	61	0	2023-09-22 20:59:19.022995-03	\N
+3877	Water	3	Taco Bell	4	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3878	 	4	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3879	7-Up (30 fl oz)	5	Taco Bell	4	350	\N	\N	\N	\N	125	87	\N	\N	87	\N	2023-09-22 20:59:19.022995-03	\N
+3880	Hamburger	6	Burger King	6	240	90	10	3.5	0.5	35	380	26	1	6	13	2023-09-22 20:59:19.022995-03	\N
+3881	Cheeseburger	7	Burger King	6	280	120	13	6	0.5	45	560	27	1	7	15	2023-09-22 20:59:19.022995-03	\N
+3882	Double Cheeseburger	8	Burger King	6	390	190	21	9	1.5	85	590	27	1	7	23	2023-09-22 20:59:19.022995-03	\N
+3883	McDouble	9	McDonald’s	1	390	170	19	8	1	65	920	33	2	7	22	2023-09-22 20:59:19.022995-03	\N
+3884	 Quarter Pounder® with Cheese	10	McDonald’s	1	510	230	26	12	1.5	90	1190	40	3	9	29	2023-09-22 20:59:19.022995-03	\N
+3885	Double Quarter Pounder® with Cheese	11	McDonald’s	1	740	380	42	19	2.5	155	1380	40	3	9	48	2023-09-22 20:59:19.022995-03	\N
+3886	Big Mac®	12	McDonald’s	1	540	260	29	10	1.5	75	1040	45	3	9	25	2023-09-22 20:59:19.022995-03	\N
+3887	Big N’ Tasty®	13	McDonald’s	1	460	220	24	8	1.5	70	720	37	3	8	24	2023-09-22 20:59:19.022995-03	\N
+3888	Big N’ Tasty® with Cheese	14	McDonald’s	1	510	250	28	11	1.5	85	960	38	3	8	27	2023-09-22 20:59:19.022995-03	\N
+3889	Angus Bacon & Cheese	15	McDonald’s	1	790	350	39	17	2	145	2070	63	4	13	45	2023-09-22 20:59:19.022995-03	\N
+3890	Angus Deluxe	16	McDonald’s	1	750	350	39	16	2	135	1700	61	4	10	40	2023-09-22 20:59:19.022995-03	\N
+3891	Angus Mushroom & Swiss	17	McDonald’s	1	770	360	40	17	2	135	1170	59	4	8	44	2023-09-22 20:59:19.022995-03	\N
+3892	Filet-O-Fish®	18	McDonald’s	1	380	170	18	3.5	0	40	640	38	2	5	15	2023-09-22 20:59:19.022995-03	\N
+3893	McChicken ®	19	McDonald’s	1	360	150	16	3	0	35	830	40	2	5	14	2023-09-22 20:59:19.022995-03	\N
+3894	McRib ®	20	McDonald’s	1	500	240	26	10	0	70	980	44	3	11	22	2023-09-22 20:59:19.022995-03	\N
+3895	Premium Grilled Chicken Classic Sandwich	21	McDonald’s	1	360	80	9	2	0	65	820	41	4	8	27	2023-09-22 20:59:19.022995-03	\N
+3896	Milk 1%	22	KFC	5	90	2	1.5	0	10	105	10	0	10	7	94.5	2023-09-22 20:59:19.022995-03	\N
+3897	16 fl oz	23	Burger King	6	10	0	0	0	0	0	60	3	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3898	Premium Crispy Chicken Ranch BLT Sandwich	24	McDonald’s	1	540	210	23	4.5	0	55	1160	56	3	11	27	2023-09-22 20:59:19.022995-03	\N
+3899	Southern Style Crispy Chicken Sandwich	25	McDonald’s	1	400	150	17	3	0	45	1030	39	1	6	24	2023-09-22 20:59:19.022995-03	\N
+3900	Ranch Snack Wrap® (Crispy)	26	McDonald’s	1	340	150	17	4.5	0	30	810	33	1	2	14	2023-09-22 20:59:19.022995-03	\N
+3901	Ranch Snack Wrap® (Grilled)	27	McDonald’s	1	270	90	10	4	0	45	830	26	1	2	18	2023-09-22 20:59:19.022995-03	\N
+3902	Honey Mustard Snack Wrap® (Crispy)	28	McDonald’s	1	330	140	16	4.5	0	30	780	34	1	4	14	2023-09-22 20:59:19.022995-03	\N
+3903	Honey Mustard Snack Wrap® (Grilled)	29	McDonald’s	1	260	80	9	3.5	0	45	800	27	1	4	18	2023-09-22 20:59:19.022995-03	\N
+3904	Chipotle BBQ Snack Wrap® (Crispy)	30	McDonald’s	1	330	140	15	4.5	0	30	810	35	1	4	14	2023-09-22 20:59:19.022995-03	\N
+3905	Chipotle BBQ Snack Wrap® (Grilled)	31	McDonald’s	1	260	80	9	3.5	0	45	830	28	1	5	18	2023-09-22 20:59:19.022995-03	\N
+3906	Angus Bacon & Cheese Snack Wrap	32	McDonald’s	1	390	190	21	9	1	75	1080	28	1	4	21	2023-09-22 20:59:19.022995-03	\N
+3907	Angus Chipotle BBQ Bacon	33	McDonald’s	1	800	350	39	18	2	145	2020	66	4	16	45	2023-09-22 20:59:19.022995-03	\N
+3908	Angus Chipotle BBQ Bacon Snack Wrap	34	McDonald’s	1	400	190	22	10	1	75	1060	30	1	6	21	2023-09-22 20:59:19.022995-03	\N
+3909	Angus Deluxe Snack Wrap	35	McDonald’s	1	410	220	25	10	1.5	75	990	27	2	3	20	2023-09-22 20:59:19.022995-03	\N
+3910	Angus Mushroom & Swiss Snack Wrap	36	McDonald’s	1	430	230	26	10	1.5	75	730	27	2	2	22	2023-09-22 20:59:19.022995-03	\N
+3911	Mac Snack Wrap	37	McDonald’s	1	330	170	19	7	1	45	690	26	1	3	15	2023-09-22 20:59:19.022995-03	\N
+3912	Drumstick	38	KFC	5	190	14	2.5	0	40	510	6	1	0	9	183.5	2023-09-22 20:59:19.022995-03	\N
+3913	Diet Dr Pepper® (20 fl oz)	39	KFC	5	0	0	0	0	0	120	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3914	Pepsi® (16 fl oz)	40	Taco Bell	4	200	\N	\N	\N	\N	45	55	\N	\N	55	\N	2023-09-22 20:59:19.022995-03	\N
+3915	Chicken Selects® Premium Breast Strips (5 pc)	41	McDonald’s	1	660	360	40	6	0	85	1680	39	0	0	38	2023-09-22 20:59:19.022995-03	\N
+3916	Spicy Buffalo Sauce	42	McDonald’s	1	60	50	6	1	0	0	800	1	1	0	0	2023-09-22 20:59:19.022995-03	\N
+3917	Creamy Ranch Sauce	43	McDonald’s	1	170	160	18	3	0	10	270	2	0	1	0	2023-09-22 20:59:19.022995-03	\N
+3918	Tangy Honey Mustard Sauce	44	McDonald’s	1	60	20	2	0	0	5	140	10	0	8	0	2023-09-22 20:59:19.022995-03	\N
+3919	Southwestern Chipotle Barbeque Sauce	45	McDonald’s	1	60	0	0	0	0	0	210	15	1	11	0	2023-09-22 20:59:19.022995-03	\N
+3920	Premium Southwest Salad with Grilled Chicken	46	McDonald’s	1	320	80	9	3	0	70	960	30	6	11	30	2023-09-22 20:59:19.022995-03	\N
+3921	Premium Southwest Salad with Crispy Chicken	47	McDonald’s	1	430	180	20	4	0	55	920	38	6	12	26	2023-09-22 20:59:19.022995-03	\N
+3922	Premium Southwest Salad (without chicken)	48	McDonald’s	1	140	40	4.5	2	0	10	150	20	6	6	6	2023-09-22 20:59:19.022995-03	\N
+3975	Brisk® Mango Iced Tea (30 fl oz)	101	Taco Bell	4	180	\N	\N	\N	\N	90	48	\N	\N	48	\N	2023-09-22 20:59:19.022995-03	\N
+3923	Premium Bacon Ranch Salad with Grilled Chicken	49	McDonald’s	1	260	90	9	4	0	90	1010	12	3	5	33	2023-09-22 20:59:19.022995-03	\N
+3924	Salad Dressings	50	McDonald’s	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3925	Breast	51	KFC	5	260	12	3	0	130	790	1	0	0	38	225	2023-09-22 20:59:19.022995-03	\N
+3926	Chicken Breast	52	KFC	5	770	60	10	0	105	1530	21	1	1	35	746	2023-09-22 20:59:19.022995-03	\N
+3927	Black Beans & Rice (V)	53	Taco Bell	4	170	30	3.5	0	0	0	320	31	4	0	4	2023-09-22 20:59:19.022995-03	\N
+3928	Chicken McNuggets® (6 piece)	54	McDonald’s	1	280	160	18	3	0	40	540	18	1	0	13	2023-09-22 20:59:19.022995-03	\N
+3929	Chicken McNuggets® (10 piece)	55	McDonald’s	1	470	270	30	5	0	65	900	30	2	0	22	2023-09-22 20:59:19.022995-03	\N
+3930	Barbeque Sauce	56	McDonald’s	1	50	0	0	0	0	0	260	12	0	10	0	2023-09-22 20:59:19.022995-03	\N
+3931	Honey	57	McDonald’s	1	50	0	0	0	0	0	0	12	0	11	0	2023-09-22 20:59:19.022995-03	\N
+3932	Hot Mustard Sauce	58	McDonald’s	1	60	20	2.5	0	0	5	250	9	2	6	1	2023-09-22 20:59:19.022995-03	\N
+3933	Sweet ‘N Sour Sauce	59	McDonald’s	1	50	0	0	0	0	0	150	12	0	10	0	2023-09-22 20:59:19.022995-03	\N
+3934	Chicken Selects® Premium Breast Strips (3 pc)	60	McDonald’s	1	400	210	24	3.5	0	50	1010	23	0	0	23	2023-09-22 20:59:19.022995-03	\N
+3935	SOFT DRINKS BY CUP SIZE (*no ice)	61	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3936	Iced Coffees	62	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3937	Premium Grilled Chicken Club Sandwich	63	McDonald’s	1	460	150	17	6	0	90	1040	43	4	9	35	2023-09-22 20:59:19.022995-03	\N
+3938	Premium Crispy Chicken Club Sandwich	64	McDonald’s	1	620	260	29	7	0	70	1200	57	3	11	31	2023-09-22 20:59:19.022995-03	\N
+3939	Premium Grilled Chicken Ranch BLT Sandwich	65	McDonald’s	1	380	90	10	3	0	75	1000	41	4	9	31	2023-09-22 20:59:19.022995-03	\N
+3940	Newman’s Own® Creamy Southwest Dressing	66	McDonald’s	1	100	50	6	1	0	20	340	11	0	3	1	2023-09-22 20:59:19.022995-03	\N
+3941	Newman’s Own® Creamy Caesar Dressing	67	McDonald’s	1	190	170	18	3.5	0	20	500	4	0	2	2	2023-09-22 20:59:19.022995-03	\N
+3942	Newman’s Own® Low Fat Balsamic Vinaigrette	68	McDonald’s	1	40	25	3	0	0	0	730	4	0	3	0	2023-09-22 20:59:19.022995-03	\N
+3943	Newman’s Own® Low Fat Family Recipe Italian Dressing	69	McDonald’s	1	60	20	2.5	0	0	0	730	8	0	1	1	2023-09-22 20:59:19.022995-03	\N
+3944	Newman’s Own® Ranch Dressing	70	McDonald’s	1	170	130	15	2.5	0	20	530	9	0	4	1	2023-09-22 20:59:19.022995-03	\N
+3945	Sausage McMuffin®	71	McDonald’s	1	370	200	22	8	0	45	850	29	2	2	14	2023-09-22 20:59:19.022995-03	\N
+3946	Sausage McMuffin® with Egg	72	McDonald’s	1	450	250	27	10	0	285	920	30	2	2	21	2023-09-22 20:59:19.022995-03	\N
+3947	English Muffin	73	McDonald’s	1	160	30	3	0.5	0	0	280	27	2	2	5	2023-09-22 20:59:19.022995-03	\N
+3948	Bacon, Egg & Cheese Biscuit (Regular Size Biscuit)	74	McDonald’s	1	420	210	23	12	0	235	1160	37	2	3	15	2023-09-22 20:59:19.022995-03	\N
+3949	Bacon, Egg & Cheese Biscuit (Large Size Biscuit)	75	McDonald’s	1	480	240	27	12	0	235	1270	43	3	4	15	2023-09-22 20:59:19.022995-03	\N
+3950	Sausage Biscuit with Egg (Regular Size Biscuit)	76	McDonald’s	1	510	290	33	14	0	250	1170	36	2	2	18	2023-09-22 20:59:19.022995-03	\N
+3951	Sausage Biscuit with Egg (Large Size Biscuit)	77	McDonald’s	1	570	330	37	15	0	250	1280	42	3	3	18	2023-09-22 20:59:19.022995-03	\N
+3952	Diet Mtn Dew® (20 fl oz)	78	Taco Bell	4	10	\N	\N	\N	\N	90	1	\N	\N	1	\N	2023-09-22 20:59:19.022995-03	\N
+3953	Diet Pepsi® (20 fl oz)	79	Taco Bell	4	0	\N	\N	\N	\N	95	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+3954	Dr Pepper® (20 fl oz)	80	KFC	5	240	0	0	0	0	75	65	0	64	0	304	2023-09-22 20:59:19.022995-03	\N
+3955	G2 – Fruit Punch (20 fl oz)	81	Taco Bell	4	35	\N	\N	\N	\N	180	9	\N	\N	8	\N	2023-09-22 20:59:19.022995-03	\N
+3956	Mtn Dew® (20 fl oz)	82	Taco Bell	4	270	\N	\N	\N	\N	85	73	\N	\N	73	\N	2023-09-22 20:59:19.022995-03	\N
+3957	Mtn Dew® Baja Blast™ (20 fl oz)	83	Taco Bell	4	280	\N	\N	\N	\N	80	74	\N	\N	73	\N	2023-09-22 20:59:19.022995-03	\N
+3958	Mtn Dew® Baja Blast Zero Sugar (20 fl oz)	84	Taco Bell	4	10	\N	\N	\N	\N	85	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+3959	Mtn Dew® Kickstart™ Orange Citrus (20 fl oz)	85	Taco Bell	4	90	\N	\N	\N	\N	90	23	\N	\N	22	\N	2023-09-22 20:59:19.022995-03	\N
+3960	Mug® Root Beer (20 fl oz)	86	Taco Bell	4	240	\N	\N	\N	\N	75	65	\N	\N	65	\N	2023-09-22 20:59:19.022995-03	\N
+3961	Side Items	87	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3962	Sprite®‡	88	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3963	Medium French Fries	89	McDonald’s	1	380	170	19	2.5	0	0	270	48	5	0	4	2023-09-22 20:59:19.022995-03	\N
+3964	Large French Fries	90	McDonald’s	1	500	220	25	3.5	0	0	350	63	6	0	6	2023-09-22 20:59:19.022995-03	\N
+3965	Ketchup Packet	91	McDonald’s	1	15	0	0	0	0	0	110	3	0	2	0	2023-09-22 20:59:19.022995-03	\N
+3966	Salt Packet	92	McDonald’s	1	0	0	0	0	0	0	270	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3967	Chicken McNuggets® (4 piece)	93	McDonald’s	1	190	110	12	2	0	25	360	12	1	0	9	2023-09-22 20:59:19.022995-03	\N
+3968	Premium Bacon Ranch Salad with Crispy Chicken	94	McDonald’s	1	370	180	20	6	0	75	970	20	3	6	29	2023-09-22 20:59:19.022995-03	\N
+3969	Pepsi® (20 fl oz)	95	KFC	5	250	0	0	0	0	55	69	0	69	0	319	2023-09-22 20:59:19.022995-03	\N
+3970	Pepsi® Wild Cherry (20 fl oz)	96	Taco Bell	4	260	\N	\N	\N	\N	50	70	\N	\N	70	\N	2023-09-22 20:59:19.022995-03	\N
+3971	Pepsi® Zero Sugar (20 fl oz)	97	Taco Bell	4	0	\N	\N	\N	\N	105	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+3972	Sierra Mist® (20 fl oz)	98	Taco Bell	4	260	\N	\N	\N	\N	55	68	\N	\N	68	\N	2023-09-22 20:59:19.022995-03	\N
+3973	Tropicana® Pink Lemonade (20 fl oz)	99	KFC	5	260	0	0	0	0	260	67	0	67	0	327	2023-09-22 20:59:19.022995-03	\N
+3974	FOUNTAIN BEVERAGES (30 OZ)	100	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3976	Brisk® Unsweetened No Lemon Iced Tea (30 fl oz)	102	Taco Bell	4	0	\N	\N	\N	\N	115	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+3977	Diet Dr Pepper® (30 fl oz)	103	KFC	5	0	0	0	0	0	180	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3978	Diet Mtn Dew® (30 fl oz)	104	Taco Bell	4	10	\N	\N	\N	\N	140	1	\N	\N	1	\N	2023-09-22 20:59:19.022995-03	\N
+3979	McCafe Coffees – Whole Milk	105	McDonald’s	1	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3980	Flame Broiled Burgers	106	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3981	Beverage	107	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+3982	KFC® Gizzards	108	KFC	5	300	16	2	0	210	770	18	\N	0	20	282	2023-09-22 20:59:19.022995-03	\N
+3983	38 fl oz	109	Burger King	6	530	0	0	0	0	0	135	148	0	146	0	2023-09-22 20:59:19.022995-03	\N
+3984	Premium Bacon Ranch Salad (without chicken)	110	McDonald’s	1	140	70	7	3.5	0	25	300	10	3	4	9	2023-09-22 20:59:19.022995-03	\N
+3985	Premium Caesar Salad with Grilled Chicken	111	McDonald’s	1	220	60	6	3	0	75	890	12	3	5	30	2023-09-22 20:59:19.022995-03	\N
+3986	Premium Caesar Salad with Crispy Chicken	112	McDonald’s	1	330	150	17	4.5	0	60	840	20	3	6	26	2023-09-22 20:59:19.022995-03	\N
+3987	Premium Caesar Salad (without chicken)	113	McDonald’s	1	90	35	4	2.5	0	10	180	9	3	4	7	2023-09-22 20:59:19.022995-03	\N
+3988	Side Salad	114	McDonald’s	1	20	0	0	0	0	0	10	4	1	2	1	2023-09-22 20:59:19.022995-03	\N
+3989	Butter Garlic Croutons	115	McDonald’s	1	60	15	1.5	0	0	0	140	10	1	0	2	2023-09-22 20:59:19.022995-03	\N
+3990	Snack Size Fruit & Walnut Salad	116	McDonald’s	1	210	70	8	1.5	0	5	60	31	2	25	4	2023-09-22 20:59:19.022995-03	\N
+3991	Egg McMuffin®	117	McDonald’s	1	300	110	12	5	0	260	820	30	2	3	18	2023-09-22 20:59:19.022995-03	\N
+3992	Hotcake Syrup	118	McDonald’s	1	180	0	0	0	0	0	20	45	0	32	0	2023-09-22 20:59:19.022995-03	\N
+3993	Diet Pepsi® (30 fl oz)	119	KFC	5	0	0	0	0	0	140	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+3994	Dr Pepper® (30 fl oz)	120	KFC	5	360	0	0	0	0	110	98	0	96	0	456	2023-09-22 20:59:19.022995-03	\N
+3995	G2 – Fruit Punch (30 fl oz)	121	Taco Bell	4	50	\N	\N	\N	\N	270	13	\N	\N	12	\N	2023-09-22 20:59:19.022995-03	\N
+3996	Mtn Dew® (30 fl oz)	122	Taco Bell	4	410	\N	\N	\N	\N	125	110	\N	\N	109	\N	2023-09-22 20:59:19.022995-03	\N
+3997	Mtn Dew® Baja Blast™ (30 fl oz)	123	Taco Bell	4	420	\N	\N	\N	\N	120	110	\N	\N	110	\N	2023-09-22 20:59:19.022995-03	\N
+3998	Mtn Dew® Baja Blast Zero Sugar (30 fl oz)	124	Taco Bell	4	15	\N	\N	\N	\N	125	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+3999	Mtn Dew® Kickstart™ Orange Citrus (30 fl oz)	125	Taco Bell	4	130	\N	\N	\N	\N	140	34	\N	\N	33	\N	2023-09-22 20:59:19.022995-03	\N
+4000	Mug® Root Beer (30 fl oz)	126	Taco Bell	4	360	\N	\N	\N	\N	110	98	\N	\N	98	\N	2023-09-22 20:59:19.022995-03	\N
+4001	Pepsi® (30 fl oz)	127	Taco Bell	4	380	\N	\N	\N	\N	80	104	\N	\N	103	\N	2023-09-22 20:59:19.022995-03	\N
+4002	Pepsi® Wild Cherry (30 fl oz)	128	Taco Bell	4	390	\N	\N	\N	\N	80	105	\N	\N	105	\N	2023-09-22 20:59:19.022995-03	\N
+4003	Pepsi® Zero Sugar (30 fl oz)	129	Taco Bell	4	0	\N	\N	\N	\N	160	\N	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4004	Sierra Mist® (30 fl oz)	130	Taco Bell	4	380	\N	\N	\N	\N	80	101	\N	\N	101	\N	2023-09-22 20:59:19.022995-03	\N
+4005	Tropicana® Pink Lemonade (30 fl oz)	131	KFC	5	390	0	0	0	0	390	100	0	100	0	490	2023-09-22 20:59:19.022995-03	\N
+4006	Detroit Double Cheesy Pizza Slice	132	Pizza Hut	3	280	12	6	0	30	560	31	2	2	13	\N	2023-09-22 20:59:19.022995-03	\N
+4007	Detroit Double Pepperoni Pizza Slice	133	Pizza Hut	3	330	17	7	0	40	720	30	2	2	14	\N	2023-09-22 20:59:19.022995-03	\N
+4008	Detroit Meaty Pizza Slice	134	Pizza Hut	3	320	16	6	0	35	640	31	2	2	14	\N	2023-09-22 20:59:19.022995-03	\N
+4009	Detroit Supremo Pizza Slice	135	Pizza Hut	3	290	13	6	0	30	570	31	2	2	13	\N	2023-09-22 20:59:19.022995-03	\N
+4010	Pan Pizza Slices Backyard BBQ Chicken Personal Pan	136	Pizza Hut	3	180	6	2	0	15	370	25	1	8	8	\N	2023-09-22 20:59:19.022995-03	\N
+4011	Coca Cola classic®‡	137	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4012	BK® Café	138	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4013	7-Up (16 fl oz)	139	Taco Bell	4	190	\N	\N	\N	\N	70	46	\N	\N	46	\N	2023-09-22 20:59:19.022995-03	\N
+4014	Pan Pizza Slices Backyard BBQ Chicken Large	140	Pizza Hut	3	380	16	6	0	35	650	43	2	7	16	\N	2023-09-22 20:59:19.022995-03	\N
+4015	Pan Pizza Slices Beyond Meat® Pepperoni Medium	141	Pizza Hut	3	240	10	4.5	0	15	470	29	2	1	10	\N	2023-09-22 20:59:19.022995-03	\N
+4016	Pan Pizza Slices Beyond Meat® Pepperoni Large	142	Pizza Hut	3	350	16	6	0	25	680	38	3	2	14	\N	2023-09-22 20:59:19.022995-03	\N
+4017	Pan Pizza Slices Buffalo Chicken Personal Pan	143	Pizza Hut	3	160	5	2	0	15	570	22	1	2	7	\N	2023-09-22 20:59:19.022995-03	\N
+4018	Pan Pizza Slices Buffalo Chicken Medium	144	Pizza Hut	3	240	9	3.5	0	20	680	31	2	2	11	\N	2023-09-22 20:59:19.022995-03	\N
+4019	Pan Pizza Slices Buffalo Chicken Large	145	Pizza Hut	3	350	14	5	0	30	850	40	2	2	15	\N	2023-09-22 20:59:19.022995-03	\N
+4020	Pan Pizza Slices Cheese Personal Pan	146	Pizza Hut	3	150	6	2.5	0	15	310	17	1	2	7	\N	2023-09-22 20:59:19.022995-03	\N
+4021	Pan Pizza Slices Cheese Medium	147	Pizza Hut	3	250	10	4.5	0	25	450	28	2	1	11	\N	2023-09-22 20:59:19.022995-03	\N
+4022	Pan Pizza Slices Cheese Large	148	Pizza Hut	3	360	17	7	0	35	660	37	2	2	16	\N	2023-09-22 20:59:19.022995-03	\N
+4023	Pan Pizza Slices Chicken Bacon Parmesan Personal Pan	149	Pizza Hut	3	180	8	3	0	20	350	17	1	2	9	\N	2023-09-22 20:59:19.022995-03	\N
+4024	Pan Pizza Slices Chicken Bacon Parmesan Medium	150	Pizza Hut	3	270	13	4.5	0	30	470	27	2	1	12	\N	2023-09-22 20:59:19.022995-03	\N
+4025	Pan Pizza Slices Chicken Bacon Parmesan Large	151	Pizza Hut	3	390	20	7	0	40	680	35	2	2	18	\N	2023-09-22 20:59:19.022995-03	\N
+4026	Pan Pizza Slices Hawaiian Chicken Personal Pan	152	Pizza Hut	3	150	5	2	0	15	330	18	1	3	8	\N	2023-09-22 20:59:19.022995-03	\N
+4027	Pan Pizza Slices Hawaiian Chicken Medium	153	Pizza Hut	3	240	9	3.5	0	20	480	29	2	2	12	\N	2023-09-22 20:59:19.022995-03	\N
+4028	Pan Pizza Slices Hawaiian Chicken Large	154	Pizza Hut	3	350	15	5	0	30	690	38	2	3	17	\N	2023-09-22 20:59:19.022995-03	\N
+4029	Pan Pizza Slices Meat Lover’s® Personal Pan	155	Pizza Hut	3	210	12	4.5	0	25	460	18	1	2	9	\N	2023-09-22 20:59:19.022995-03	\N
+4030	Pan Pizza Slices Meat Lover’s® Medium	156	Pizza Hut	3	320	17	6	0	35	640	28	2	1	13	\N	2023-09-22 20:59:19.022995-03	\N
+4031	Pan Pizza Slices Meat Lover’s® Large	157	Pizza Hut	3	470	27	10	0	50	940	37	2	2	19	\N	2023-09-22 20:59:19.022995-03	\N
+4032	Frappes	158	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4033	Diet Coke®‡	159	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4034	Orange Juice	160	Taco Bell	4	140	0	0	0	0	0	20	33	\N	28	2	2023-09-22 20:59:19.022995-03	\N
+4035	Green Beans	161	KFC	5	25	0	0	0	0	300	5	3	1	1	25	2023-09-22 20:59:19.022995-03	\N
+4036	KFC® Cornbread Muffin	162	KFC	5	210	9	1.5	0	35	240	28	\N	11	3	219.5	2023-09-22 20:59:19.022995-03	\N
+4037	Macaroni & Cheese	163	KFC	5	140	6	1.5	0	\N	590	17	1	2	5	138.5	2023-09-22 20:59:19.022995-03	\N
+4038	Macaroni Salad	164	KFC	5	140	8	1	0	15	290	14	0	9	1	149	2023-09-22 20:59:19.022995-03	\N
+4039	Mashed Potatoes	165	KFC	5	110	\N	0.5	0	0	330	17	1	0	2	108.5	2023-09-22 20:59:19.022995-03	\N
+4040	Mashed Potatoes With Gravy	166	KFC	5	130	\N	1	0	0	520	20	1	0	3	128	2023-09-22 20:59:19.022995-03	\N
+4041	Potato Salad	167	KFC	5	340	28	4.5	0	25	290	19	2	3	2	345.5	2023-09-22 20:59:19.022995-03	\N
+4042	Secret Recipe Fries	168	KFC	5	320	15	2	0	0	1100	41	3	0	5	317	2023-09-22 20:59:19.022995-03	\N
+4043	Sweet Kernel Corn	169	KFC	5	70	\N	0	0	0	0	16	2	2	2	70	2023-09-22 20:59:19.022995-03	\N
+4044	BBQ Baked Beans (Family)	170	KFC	5	830	5	1	0	0	2810	148	31	63	47	847	2023-09-22 20:59:19.022995-03	\N
+4045	Coleslaw (Family)	171	KFC	5	640	46	7	0	15	670	54	14	37	4	680	2023-09-22 20:59:19.022995-03	\N
+4046	Corn on the Cob (Family)	172	KFC	5	280	2	0	0	0	15	67	8	11	9	282	2023-09-22 20:59:19.022995-03	\N
+4047	Green Beans (Family)	173	KFC	5	80	0	0	0	0	930	15	9	3	4	79	2023-09-22 20:59:19.022995-03	\N
+4048	Macaroni & Cheese (Family)	174	KFC	5	540	23	6	0	10	2220	66	5	8	18	536	2023-09-22 20:59:19.022995-03	\N
+4049	Macaroni Salad (Family)	175	KFC	5	480	28	3.5	0	55	990	50	0	30	3	510.5	2023-09-22 20:59:19.022995-03	\N
+4050	Mashed Potatoes (Family)	176	KFC	5	460	15	3	0	0	1410	72	6	0	9	454	2023-09-22 20:59:19.022995-03	\N
+4051	Mashed Potatoes With Gravy (Family)	177	KFC	5	590	21	5	0	0	2590	88	6	1	12	584	2023-09-22 20:59:19.022995-03	\N
+4052	Potato Salad (Family)	178	KFC	5	1200	98	16	0	80	1010	65	8	12	8	1220	2023-09-22 20:59:19.022995-03	\N
+4053	Secret Recipe Fries (Family)	179	KFC	5	840	40	5	0	0	2890	108	9	0	13	832	2023-09-22 20:59:19.022995-03	\N
+4054	Sweet Kernel Corn (Family)	180	KFC	5	280	\N	0	0	0	10	67	7	8	10	278	2023-09-22 20:59:19.022995-03	\N
+4055	Chicken Littles	181	KFC	5	300	15	2.5	0	30	620	27	1	3	14	291.5	2023-09-22 20:59:19.022995-03	\N
+4056	Chicken Littles – Buffalo	182	KFC	5	310	17	2.5	0	30	790	27	1	3	14	301.5	2023-09-22 20:59:19.022995-03	\N
+4057	Chicken Littles – Honey BBQ	183	KFC	5	320	15	2.5	0	30	680	31	1	7	14	315.5	2023-09-22 20:59:19.022995-03	\N
+4058	Chicken Littles – Nashville Hot	184	KFC	5	340	19	3	0	30	680	27	1	3	14	332	2023-09-22 20:59:19.022995-03	\N
+4059	Classic Chicken Sandwich	185	KFC	5	650	35	4.5	0	90	1260	49	1	6	34	626.5	2023-09-22 20:59:19.022995-03	\N
+4060	Crispy Colonel’s Sandwich	186	KFC	5	470	24	3.5	0	60	1170	39	\N	4	24	453.5	2023-09-22 20:59:19.022995-03	\N
+4061	Crispy Colonel’s Sandwich – Buffalo	187	KFC	5	500	27	4	0	60	1500	39	\N	4	24	484	2023-09-22 20:59:19.022995-03	\N
+4062	Crispy Colonel’s Sandwich – Honey BBQ	188	KFC	5	510	25	3.5	0	60	1290	48	\N	12	24	501.5	2023-09-22 20:59:19.022995-03	\N
+4063	Crispy Colonel’s Sandwich – Nashville Hot	189	KFC	5	540	32	4.5	0	60	1290	40	\N	5	24	525.5	2023-09-22 20:59:19.022995-03	\N
+4064	Crispy Twister®	190	KFC	5	630	34	7	0	70	1260	53	4	3	28	612	2023-09-22 20:59:19.022995-03	\N
+4065	Honey BBQ Sandwich	191	KFC	5	350	\N	0.5	0	55	1350	55	2	22	24	348.5	2023-09-22 20:59:19.022995-03	\N
+4066	Spicy Chicken Sandwich	192	Wendy’s	2	510	20	3.5	0	65	1030	54	4	6	29	491	2023-09-22 20:59:19.022995-03	\N
+4067	Chicken Pot Pie	193	KFC	5	720	41	25	0	80	1750	60	7	5	26	724	2023-09-22 20:59:19.022995-03	\N
+4068	KFC® Famous Bowl	194	KFC	5	740	35	6	0	45	2350	81	6	2	26	722	2023-09-22 20:59:19.022995-03	\N
+4069	KFC® Famous Bowl – Snack Size	195	KFC	5	270	14	3.5	0	20	850	27	2	1	11	263.5	2023-09-22 20:59:19.022995-03	\N
+4070	Caesar Side Salad	196	KFC	5	40	2	1	0	5	90	2	1	1	3	39	2023-09-22 20:59:19.022995-03	\N
+4071	House Side Salad	197	KFC	5	15	0	0	0	0	10	3	2	2	1	16	2023-09-22 20:59:19.022995-03	\N
+4072	Heinz Buttermilk Dressing	198	KFC	5	160	17	2	0	10	220	1	0	1	0	163	2023-09-22 20:59:19.022995-03	\N
+4073	Hidden Valley The Original Ranch Fat Free Dressing	199	KFC	5	35	0	0	0	0	410	8	0	2	1	36	2023-09-22 20:59:19.022995-03	\N
+4074	KFC® Creamy Parmesan Caesar Dressing	200	KFC	5	260	26	5	0	15	540	4	0	2	2	265	2023-09-22 20:59:19.022995-03	\N
+4075	Marzetti Light Italian Dressing	201	KFC	5	15	\N	0	0	0	510	2	0	1	0	16	2023-09-22 20:59:19.022995-03	\N
+4076	Parmesan Garlic Croutons	202	KFC	5	60	3	0	0	0	135	8	\N	0	2	58	2023-09-22 20:59:19.022995-03	\N
+4077	Apple Turnover	203	KFC	5	230	10	2.5	0	0	140	32	\N	12	2	242.5	2023-09-22 20:59:19.022995-03	\N
+4078	Café Valley Chocolate Chip Cake (1 Slice)	204	KFC	5	300	15	3	0	50	260	39	1	27	4	326	2023-09-22 20:59:19.022995-03	\N
+4079	Café Valley Lemon Cake (1 Slice)	205	KFC	5	220	10	2	0	30	170	30	0	20	2	240	2023-09-22 20:59:19.022995-03	\N
+4080	Café Valley Mini Chocolate Chip Cake	206	KFC	5	300	12	2.5	0	40	190	49	1	35	3	334.5	2023-09-22 20:59:19.022995-03	\N
+4081	Café Valley Mini Lemon Cake	207	KFC	5	300	13	2.5	0	50	230	43	0	31	3	330.5	2023-09-22 20:59:19.022995-03	\N
+4082	Chocolate Chip Cookie	208	McDonald’s	1	160	70	8	3.5	0	10	90	21	1	15	2	2023-09-22 20:59:19.022995-03	\N
+4083	Oreo Cookies and Crème Pie	209	KFC	5	270	13	8	0	\N	210	35	1	24	3	299	2023-09-22 20:59:19.022995-03	\N
+4084	Reese’s Peanut Butter Pie	210	KFC	5	300	17	9	0	\N	270	33	1	22	5	326	2023-09-22 20:59:19.022995-03	\N
+4085	BBQ – Dipping Sauce Cup	211	KFC	5	45	0	0	0	0	150	11	0	11	0	56	2023-09-22 20:59:19.022995-03	\N
+4086	Colonel’s Buttery Spread	212	KFC	5	35	4	1.5	0	0	35	0	0	0	0	36.5	2023-09-22 20:59:19.022995-03	\N
+4087	Grape Jelly Packet	213	KFC	5	35	0	0	0	0	10	9	0	7	0	42	2023-09-22 20:59:19.022995-03	\N
+4088	Hash Brown (V)	214	Taco Bell	4	160	100	12	1	0	0	270	13	2	0	1	2023-09-22 20:59:19.022995-03	\N
+4089	Sausage Biscuit (Regular Size Biscuit)	215	McDonald’s	1	430	240	27	12	0	30	1080	34	2	2	11	2023-09-22 20:59:19.022995-03	\N
+4090	Pan Pizza Slices Backyard BBQ Chicken Medium	216	Pizza Hut	3	270	10	4	0	25	450	33	2	6	11	\N	2023-09-22 20:59:19.022995-03	\N
+4091	20 fl oz	217	Burger King	6	280	0	0	0	0	0	70	78	0	77	0	2023-09-22 20:59:19.022995-03	\N
+4092	Pan Pizza Slices Pepperoni Personal Pan	218	Pizza Hut	3	150	7	2.5	0	15	310	17	1	2	6	\N	2023-09-22 20:59:19.022995-03	\N
+4093	Pan Pizza Slices Pepperoni Medium	219	Pizza Hut	3	250	11	4.5	0	25	470	28	2	1	10	\N	2023-09-22 20:59:19.022995-03	\N
+4094	Pan Pizza Slices Pepperoni Large	220	Pizza Hut	3	370	18	6	0	35	680	36	2	2	15	\N	2023-09-22 20:59:19.022995-03	\N
+4095	Sausage Biscuit (Large Size Biscuit)	221	McDonald’s	1	480	280	31	13	0	30	1190	39	3	3	11	2023-09-22 20:59:19.022995-03	\N
+4096	Southern Style Chicken Biscuit (Regular Size Biscuit)	222	McDonald’s	1	410	180	20	8	0	30	1180	41	2	3	17	2023-09-22 20:59:19.022995-03	\N
+4097	Southern Style Chicken Biscuit (Large Size Biscuit)	223	McDonald’s	1	470	220	24	9	0	30	1290	46	3	4	17	2023-09-22 20:59:19.022995-03	\N
+4098	Steak, Egg & Cheese Bagel	224	McDonald’s	1	660	300	33	12	1	300	1580	56	3	7	33	2023-09-22 20:59:19.022995-03	\N
+4099	Bacon, Egg & Cheese McGriddles®	225	McDonald’s	1	420	160	18	8	0	240	1110	48	2	15	15	2023-09-22 20:59:19.022995-03	\N
+4100	Sausage, Egg & Cheese McGriddles®	226	McDonald’s	1	560	290	32	12	0	265	1360	48	2	15	20	2023-09-22 20:59:19.022995-03	\N
+4101	Sausage McGriddles®	227	McDonald’s	1	420	200	22	8	0	35	1030	44	2	15	11	2023-09-22 20:59:19.022995-03	\N
+4102	Big Breakfast® (Regular Size Biscuit)	228	McDonald’s	1	740	430	48	17	0	555	1560	51	3	3	28	2023-09-22 20:59:19.022995-03	\N
+4103	Big Breakfast® (Large Size Biscuit)	229	McDonald’s	1	800	470	52	18	0	555	1680	56	4	3	28	2023-09-22 20:59:19.022995-03	\N
+4104	Big Breakfast with Hotcakes (Regular Size Biscuit)	230	McDonald’s	1	1090	510	56	19	0	575	2150	111	6	17	36	2023-09-22 20:59:19.022995-03	\N
+4105	Big Breakfast with Hotcakes (Large Size Biscuit)	231	McDonald’s	1	1150	540	60	20	0	575	2260	116	7	17	36	2023-09-22 20:59:19.022995-03	\N
+4106	Sausage Burrito	232	McDonald’s	1	300	140	16	7	0	115	830	26	1	2	12	2023-09-22 20:59:19.022995-03	\N
+4107	McSkillet™ Burrito with Sausage	233	McDonald’s	1	610	320	36	14	0.5	410	1390	44	3	4	27	2023-09-22 20:59:19.022995-03	\N
+4108	Chili, Small	234	Wendy’s	2	170	5	2	0	35	780	16	4	6	15	163	2023-09-22 20:59:19.022995-03	\N
+4109	KFC® Livers	235	KFC	5	230	13	2.5	0	285	750	12	0	0	17	215.5	2023-09-22 20:59:19.022995-03	\N
+4110	Premium Crispy Chicken Classic Sandwich	236	McDonald’s	1	510	200	22	3.5	0	45	990	56	3	10	24	2023-09-22 20:59:19.022995-03	\N
+4111	Small French Fries	237	McDonald’s	1	230	100	11	1.5	0	0	160	29	3	0	3	2023-09-22 20:59:19.022995-03	\N
+4112	Hotcakes and Sausage	238	McDonald’s	1	520	210	24	7	0	50	930	61	3	14	15	2023-09-22 20:59:19.022995-03	\N
+4113	Whipped Margarine (1 pat)	239	McDonald’s	1	40	40	4.5	1.5	0	0	55	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4114	Hash Brown	240	Taco Bell	4	160	100	12	1	0	0	270	13	2	0	1	2023-09-22 20:59:19.022995-03	\N
+4115	Grape Jam	241	McDonald’s	1	35	0	0	0	0	0	0	9	0	9	0	2023-09-22 20:59:19.022995-03	\N
+4116	Strawberry Preserves	242	McDonald’s	1	35	0	0	0	0	0	0	9	0	9	0	2023-09-22 20:59:19.022995-03	\N
+4117	Bacon, Egg & Cheese Bagel	243	McDonald’s	1	560	240	27	9	0.5	260	1300	56	3	7	24	2023-09-22 20:59:19.022995-03	\N
+4118	Fruit & Maple Oatmeal	244	McDonald’s	1	290	40	4.5	2	0	10	160	57	5	32	5	2023-09-22 20:59:19.022995-03	\N
+4119	Fruit & Maple Oatmeal without Brown Sugar	245	McDonald’s	1	260	40	4.5	2	0	10	115	48	5	18	5	2023-09-22 20:59:19.022995-03	\N
+4120	Hamburger Happy Meal	246	McDonald’s	1	475	\N	16	\N	0	40	690	62	2	20	22	2023-09-22 20:59:19.022995-03	\N
+4121	Hand Tossed Slices Pepperoni Small	247	Pizza Hut	3	130	5	2	0	10	260	16	1	\N	6	\N	2023-09-22 20:59:19.022995-03	\N
+4122	4 Piece Chicken McNuggets Happy Meal	248	McDonald’s	1	395	\N	17	3.5	0	35	510	41	1	14	19	2023-09-22 20:59:19.022995-03	\N
+4123	6 Piece Chicken McNuggets® Happy Meal	249	McDonald’s	1	475	\N	22	4.5	0	50	680	46	2	14	24	2023-09-22 20:59:19.022995-03	\N
+4124	Fruit ‘n Yogurt Parfait (7 oz)	250	McDonald’s	1	160	20	2	1	0	5	85	31	1	21	4	2023-09-22 20:59:19.022995-03	\N
+4125	Low Fat Caramel Dip	251	McDonald’s	1	70	5	0.5	0	0	5	35	15	0	9	0	2023-09-22 20:59:19.022995-03	\N
+4126	Vanilla Reduced Fat Ice Cream Cone	252	McDonald’s	1	150	35	3.5	2	0	15	60	24	0	18	4	2023-09-22 20:59:19.022995-03	\N
+4127	Kiddie Cone	253	McDonald’s	1	45	10	1	0.5	0	5	20	8	0	6	1	2023-09-22 20:59:19.022995-03	\N
+4128	Strawberry Sundae	254	McDonald’s	1	280	60	6	4	0	25	95	49	1	45	6	2023-09-22 20:59:19.022995-03	\N
+4129	Hot Caramel Sundae	255	McDonald’s	1	340	70	8	5	0	30	160	60	1	44	7	2023-09-22 20:59:19.022995-03	\N
+4130	Hot Fudge Sundae	256	McDonald’s	1	330	90	10	7	0	25	180	54	2	48	8	2023-09-22 20:59:19.022995-03	\N
+4131	29 fl oz	257	Burger King	6	290	0	0	0	0	0	85	105	0	105	0	2023-09-22 20:59:19.022995-03	\N
+4132	Peanuts (for Sundaes)	258	McDonald’s	1	45	30	3.5	0.5	0	0	0	2	1	0	2	2023-09-22 20:59:19.022995-03	\N
+4133	McFlurry® with M&M’S® Candies (12 fl oz cup)	259	McDonald’s	1	710	230	25	16	1	60	220	105	4	97	15	2023-09-22 20:59:19.022995-03	\N
+4134	McFlurry® with OREO® Cookies (12 fl oz cup)	260	McDonald’s	1	580	170	19	10	1	50	320	89	3	73	13	2023-09-22 20:59:19.022995-03	\N
+4135	Baked Hot Apple Pie	261	McDonald’s	1	250	110	13	7	0	0	170	32	4	13	2	2023-09-22 20:59:19.022995-03	\N
+4136	Cinnamon Melts	262	McDonald’s	1	460	170	19	9	0	15	370	66	3	32	6	2023-09-22 20:59:19.022995-03	\N
+4137	McDonaldland® Cookies	263	McDonald’s	1	260	70	8	2.5	0	0	300	43	1	13	4	2023-09-22 20:59:19.022995-03	\N
+4138	Chocolate Chip Cookie	264	McDonald’s	1	160	70	8	3.5	0	10	90	21	1	15	2	2023-09-22 20:59:19.022995-03	\N
+4139	Oatmeal Raisin Cookie	265	McDonald’s	1	150	50	6	2.5	0	10	135	22	1	13	2	2023-09-22 20:59:19.022995-03	\N
+4140	Sugar Cookie	266	McDonald’s	1	160	60	7	3	0	5	120	21	0	11	2	2023-09-22 20:59:19.022995-03	\N
+4141	Apple Dippers with Low Fat Caramel Dip	267	McDonald’s	1	100	5	0.5	0	0	5	35	23	0	15	0	2023-09-22 20:59:19.022995-03	\N
+4142	Chocolate McCafé® Shake (12 fl oz cup)	268	McDonald’s	1	580	150	17	10	1	50	240	94	1	77	11	2023-09-22 20:59:19.022995-03	\N
+4143	Chocolate McCafé® Shake (16 fl oz cup)	269	McDonald’s	1	720	180	20	12	1	60	300	119	1	98	15	2023-09-22 20:59:19.022995-03	\N
+4144	Chocolate McCafé® Shake (22 fl oz cup)	270	McDonald’s	1	880	220	24	15	1.5	75	370	147	1	121	18	2023-09-22 20:59:19.022995-03	\N
+4145	Chocolate Triple Thick® Shake (12 fl oz cup)	271	McDonald’s	1	440	90	10	6	0.5	40	190	76	1	63	10	2023-09-22 20:59:19.022995-03	\N
+4146	Chocolate Triple Thick® Shake (16 fl oz cup)	272	McDonald’s	1	580	120	14	8	1	50	250	102	1	84	13	2023-09-22 20:59:19.022995-03	\N
+4147	Chocolate Triple Thick® Shake (21 fl oz cup)	273	McDonald’s	1	770	160	18	11	1	70	330	134	1	111	18	2023-09-22 20:59:19.022995-03	\N
+4148	Chocolate Triple Thick® Shake (32 fl oz cup)	274	McDonald’s	1	1160	240	27	16	2	100	510	203	2	168	27	2023-09-22 20:59:19.022995-03	\N
+4149	Snack Size McFlurry® with M&M’S® Candies	275	McDonald’s	1	430	140	16	10	0.5	35	130	64	2	59	9	2023-09-22 20:59:19.022995-03	\N
+4150	Snack Size McFlurry® with OREO® Cookies	276	McDonald’s	1	340	100	12	6	0	30	200	53	2	43	8	2023-09-22 20:59:19.022995-03	\N
+4151	Strawberry McCafé® Shake (12 fl oz cup)	277	McDonald’s	1	570	150	17	10	1	50	170	92	0	79	11	2023-09-22 20:59:19.022995-03	\N
+4152	Strawberry McCafé® Shake (16 fl oz cup)	278	McDonald’s	1	710	180	20	12	1	65	210	116	0	100	14	2023-09-22 20:59:19.022995-03	\N
+4153	Strawberry McCafé® Shake (22 fl oz cup)	279	McDonald’s	1	860	220	24	15	1.5	75	260	144	0	124	18	2023-09-22 20:59:19.022995-03	\N
+4154	Strawberry Triple Thick® Shake (12 fl oz cup)	280	McDonald’s	1	420	90	10	6	0.5	40	130	73	0	63	10	2023-09-22 20:59:19.022995-03	\N
+4155	Strawberry Triple Thick® Shake (16 fl oz cup)	281	McDonald’s	1	560	120	13	8	1	50	170	97	0	84	13	2023-09-22 20:59:19.022995-03	\N
+4156	Strawberry Triple Thick® Shake (21 fl oz cup)	282	McDonald’s	1	740	160	18	11	1	70	230	128	0	111	17	2023-09-22 20:59:19.022995-03	\N
+4157	Strawberry Triple Thick® Shake (32 fl oz cup)	283	McDonald’s	1	1110	240	26	16	2	100	350	194	0	168	25	2023-09-22 20:59:19.022995-03	\N
+4158	Vanilla McCafé® Shake (12 fl oz cup)	284	McDonald’s	1	540	150	16	10	1	45	170	88	0	64	10	2023-09-22 20:59:19.022995-03	\N
+4159	Vanilla McCafé® Shake (16 fl oz cup)	285	McDonald’s	1	680	180	20	12	1	60	220	111	0	82	14	2023-09-22 20:59:19.022995-03	\N
+4160	Vanilla McCafé® Shake (22 fl oz cup)	286	McDonald’s	1	830	210	24	14	1.5	75	270	138	0	103	17	2023-09-22 20:59:19.022995-03	\N
+4161	Vanilla Triple Thick Shake® (32 fl oz cup)	287	McDonald’s	1	1110	240	26	16	2	100	370	193	0	145	25	2023-09-22 20:59:19.022995-03	\N
+4162	Vanilla Triple Thick® Shake (12 fl oz cup)	288	McDonald’s	1	420	90	10	6	0.5	40	140	72	0	54	9	2023-09-22 20:59:19.022995-03	\N
+4163	Vanilla Triple Thick® Shake (16 fl oz cup)	289	McDonald’s	1	550	120	13	8	1	50	190	96	0	72	13	2023-09-22 20:59:19.022995-03	\N
+4164	Vanilla Triple Thick® Shake (21 fl oz cup)	290	McDonald’s	1	740	160	18	11	1	70	250	128	0	96	17	2023-09-22 20:59:19.022995-03	\N
+4165	1% Low Fat Milk Jug	291	McDonald’s	1	100	20	2.5	1.5	0	10	125	12	0	12	8	2023-09-22 20:59:19.022995-03	\N
+4166	1% Low Fat Chocolate Milk Jug	292	McDonald’s	1	170	25	3	1.5	0	5	150	26	1	25	9	2023-09-22 20:59:19.022995-03	\N
+4167	Minute Maid® 100% Apple Juice Box	293	McDonald’s	1	100	0	0	0	0	0	15	23	0	22	0	2023-09-22 20:59:19.022995-03	\N
+4168	Dasani® Water	294	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4169	Minute Maid® Orange Juice (Small)	295	McDonald’s	1	150	0	0	0	0	0	0	30	0	30	2	2023-09-22 20:59:19.022995-03	\N
+4170	Minute Maid® Orange Juice (Medium)	296	McDonald’s	1	190	0	0	0	0	0	0	39	0	39	3	2023-09-22 20:59:19.022995-03	\N
+4171	Minute Maid® Orange Juice (Large)	297	McDonald’s	1	280	0	0	0	0	0	5	58	0	58	4	2023-09-22 20:59:19.022995-03	\N
+4172	Coca-Cola® Classic (Child)	298	McDonald’s	1	110	0	0	0	0	0	5	29	0	29	0	2023-09-22 20:59:19.022995-03	\N
+4173	Coca-Cola® Classic (Small)	299	McDonald’s	1	150	0	0	0	0	0	10	40	0	40	0	2023-09-22 20:59:19.022995-03	\N
+4174	Coca-Cola® Classic (Medium)	300	McDonald’s	1	210	0	0	0	0	0	15	58	0	58	0	2023-09-22 20:59:19.022995-03	\N
+4175	Coca-Cola® Classic (Large)	301	McDonald’s	1	310	0	0	0	0	0	20	86	0	86	0	2023-09-22 20:59:19.022995-03	\N
+4176	Diet Coke® (Child)	302	McDonald’s	1	0	0	0	0	0	0	15	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4177	Diet Coke® (Small)	303	McDonald’s	1	0	0	0	0	0	0	20	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4178	Diet Coke® (Medium)	304	McDonald’s	1	0	0	0	0	0	0	30	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4179	Diet Coke® (Large)	305	McDonald’s	1	0	0	0	0	0	0	45	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4180	Sprite® (Child)	306	McDonald’s	1	110	0	0	0	0	0	30	28	0	28	0	2023-09-22 20:59:19.022995-03	\N
+4181	Sprite® (Small)	307	McDonald’s	1	150	0	0	0	0	0	40	39	0	39	0	2023-09-22 20:59:19.022995-03	\N
+4182	Sprite® (Medium)	308	McDonald’s	1	210	0	0	0	0	0	55	56	0	56	0	2023-09-22 20:59:19.022995-03	\N
+4183	Sprite® (Large)	309	McDonald’s	1	310	0	0	0	0	0	80	83	0	83	0	2023-09-22 20:59:19.022995-03	\N
+4184	Hi-C® Orange Lavaburst (Child)	310	McDonald’s	1	120	0	0	0	0	0	0	32	0	32	0	2023-09-22 20:59:19.022995-03	\N
+4185	Hi-C® Orange Lavaburst (Small)	311	McDonald’s	1	160	0	0	0	0	0	5	44	0	44	0	2023-09-22 20:59:19.022995-03	\N
+4186	Hi-C® Orange Lavaburst (Medium)	312	McDonald’s	1	240	0	0	0	0	0	10	64	0	64	0	2023-09-22 20:59:19.022995-03	\N
+4187	Hi-C® Orange Lavaburst (Large)	313	McDonald’s	1	350	0	0	0	0	0	10	94	0	94	0	2023-09-22 20:59:19.022995-03	\N
+4188	POWERade® Mountain Blast (Child)	314	McDonald’s	1	70	0	0	0	0	0	65	20	0	16	0	2023-09-22 20:59:19.022995-03	\N
+4189	POWERade® Mountain Blast (Small)	315	McDonald’s	1	100	0	0	0	0	0	85	27	0	21	0	2023-09-22 20:59:19.022995-03	\N
+4190	POWERade® Mountain Blast (Medium)	316	McDonald’s	1	150	0	0	0	0	0	130	39	0	31	0	2023-09-22 20:59:19.022995-03	\N
+4191	Soft Serve Cone	317	Burger King	6	190	40	4.5	3	0	20	150	32	0	24	5	2023-09-22 20:59:19.022995-03	\N
+4192	POWERade® Mountain Blast (Large)	318	McDonald’s	1	220	0	0	0	0	0	190	58	0	46	0	2023-09-22 20:59:19.022995-03	\N
+4193	Iced Tea (Child)	319	McDonald’s	1	0	0	0	0	0	0	5	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4194	Iced Tea (Small)	320	McDonald’s	1	0	0	0	0	0	0	10	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4195	Iced Tea (Medium)	321	McDonald’s	1	0	0	0	0	0	0	15	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4196	Iced Tea (Large)	322	McDonald’s	1	0	0	0	0	0	0	20	1	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4197	Coffee (Small)	323	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4198	Coffee (Large)	324	McDonald’s	1	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4199	Coffee Cream	325	McDonald’s	1	20	20	2	1.5	0	10	15	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4200	Sugar Packet	326	McDonald’s	1	15	0	0	0	0	0	0	4	0	4	0	2023-09-22 20:59:19.022995-03	\N
+4201	EQUAL® 0\nCalorie Sweetener	327	McDonald’s	1	0	0	0	0	0	0	0	1	0	1	0	2023-09-22 20:59:19.022995-03	\N
+4202	16 fl oz	328	Burger King	6	190	0	0	0	0	0	60	52	0	51	0	2023-09-22 20:59:19.022995-03	\N
+4203	SPLENDA® No\nCalorie Sweetener	329	McDonald’s	1	0	0	0	0	0	0	0	1	0	1	0	2023-09-22 20:59:19.022995-03	\N
+4204	Iced Coffee– Caramel (Small)	330	McDonald’s	1	130	50	5	3.5	0	20	80	21	0	20	1	2023-09-22 20:59:19.022995-03	\N
+4205	Iced Coffee– Caramel (Medium)	331	McDonald’s	1	190	70	8	5	0	30	115	27	0	27	2	2023-09-22 20:59:19.022995-03	\N
+4206	Iced Coffee– Caramel (Large)	332	McDonald’s	1	270	100	11	7	0	40	160	41	0	41	2	2023-09-22 20:59:19.022995-03	\N
+4207	Iced Coffee– Hazelnut (Small)	333	McDonald’s	1	130	50	5	3.5	0	20	40	21	0	21	1	2023-09-22 20:59:19.022995-03	\N
+4208	Iced Coffee– Hazelnut (Medium)	334	McDonald’s	1	190	70	8	5	0	30	60	29	0	29	2	2023-09-22 20:59:19.022995-03	\N
+4209	Iced Coffee– Hazelnut (Large)	335	McDonald’s	1	270	100	11	7	0	40	85	43	0	43	2	2023-09-22 20:59:19.022995-03	\N
+4210	Iced Coffee– Regular (Small)	336	McDonald’s	1	140	50	5	3.5	0	20	40	22	0	22	1	2023-09-22 20:59:19.022995-03	\N
+4211	Iced Coffee– Regular (Medium)	337	McDonald’s	1	200	70	8	5	0	30	60	30	0	30	2	2023-09-22 20:59:19.022995-03	\N
+4212	Iced Coffee– Regular (Large)	338	McDonald’s	1	280	100	11	7	0	40	85	45	0	45	2	2023-09-22 20:59:19.022995-03	\N
+4213	Iced Coffee– Vanilla (Small)	339	McDonald’s	1	130	50	5	3.5	0	20	40	21	0	21	1	2023-09-22 20:59:19.022995-03	\N
+4214	Iced Coffee– Vanilla (Medium)	340	McDonald’s	1	190	70	8	5	0	30	60	29	0	28	2	2023-09-22 20:59:19.022995-03	\N
+4215	Iced Coffee– Vanilla (Large)	341	McDonald’s	1	270	100	11	7	0	40	80	43	0	43	2	2023-09-22 20:59:19.022995-03	\N
+4216	Iced Coffee with Sugar Free Vanilla Syrup (Small)	342	McDonald’s	1	60	50	5	3.5	0	20	70	8	0	1	1	2023-09-22 20:59:19.022995-03	\N
+4217	Iced Coffee with Sugar Free Vanilla Syrup (Medium)	343	McDonald’s	1	90	70	8	5	0	30	100	11	0	2	2	2023-09-22 20:59:19.022995-03	\N
+4218	Iced Coffee with Sugar Free Vanilla Syrup (Large)	344	McDonald’s	1	120	100	11	7	0	40	140	16	0	2	2	2023-09-22 20:59:19.022995-03	\N
+4219	Sweet Tea (Child)	345	McDonald’s	1	110	0	0	0	0	0	5	27	0	27	0	2023-09-22 20:59:19.022995-03	\N
+4220	Sweet Tea (Large)	346	McDonald’s	1	280	0	0	0	0	0	15	69	0	69	1	2023-09-22 20:59:19.022995-03	\N
+4221	Sweet Tea (Medium)	347	McDonald’s	1	180	0	0	0	0	0	10	45	0	45	1	2023-09-22 20:59:19.022995-03	\N
+4222	Sweet Tea (Small)	348	McDonald’s	1	150	0	0	0	0	0	10	36	0	36	1	2023-09-22 20:59:19.022995-03	\N
+4223	Nonfat Cappuccino (Small)	349	McDonald’s	1	60	0	0	0	0	5	85	9	0	9	6	2023-09-22 20:59:19.022995-03	\N
+4224	Nonfat Cappuccino (Medium)	350	McDonald’s	1	80	0	0	0	0	5	110	12	0	12	8	2023-09-22 20:59:19.022995-03	\N
+4225	Nonfat Cappuccino (Large)	351	McDonald’s	1	90	0	0	0	0	5	130	13	0	13	9	2023-09-22 20:59:19.022995-03	\N
+4226	Nonfat Latte (Small)	352	McDonald’s	1	90	0	0	0	0	5	115	13	0	13	9	2023-09-22 20:59:19.022995-03	\N
+4227	Nonfat Latte (Medium)	353	McDonald’s	1	110	0	0	0	0	5	140	15	0	15	10	2023-09-22 20:59:19.022995-03	\N
+4228	Nonfat Latte (Large)	354	McDonald’s	1	120	0	0	0	0	5	160	18	0	18	12	2023-09-22 20:59:19.022995-03	\N
+4229	Nonfat Caramel Cappuccino (Small)	355	McDonald’s	1	150	0	0	0	0	5	120	33	0	32	5	2023-09-22 20:59:19.022995-03	\N
+4230	Nonfat Caramel Cappuccino (Medium)	356	McDonald’s	1	190	0	0	0	0	5	150	41	0	41	6	2023-09-22 20:59:19.022995-03	\N
+4231	Nonfat Caramel Cappuccino (Large)	357	McDonald’s	1	230	0	0	0	0	5	180	49	0	49	7	2023-09-22 20:59:19.022995-03	\N
+4232	Nonfat Caramel Latte (Small)	358	McDonald’s	1	170	0	0	0	0	5	150	36	0	36	7	2023-09-22 20:59:19.022995-03	\N
+4233	Nonfat Caramel Latte (Medium)	359	McDonald’s	1	220	0	0	0	0	5	180	45	0	45	9	2023-09-22 20:59:19.022995-03	\N
+4234	Nonfat Caramel Latte (Large)	360	McDonald’s	1	260	0	0	0	0	5	220	53	0	53	10	2023-09-22 20:59:19.022995-03	\N
+4235	Nonfat Hazelnut Cappuccino (Small)	361	McDonald’s	1	150	0	0	0	0	5	70	34	0	34	5	2023-09-22 20:59:19.022995-03	\N
+4236	Nonfat Hazelnut Cappuccino (Medium)	362	McDonald’s	1	190	0	0	0	0	5	90	43	0	43	6	2023-09-22 20:59:19.022995-03	\N
+4237	Nonfat Hazelnut Cappuccino (Large)	363	McDonald’s	1	230	0	0	0	0	5	100	51	0	51	7	2023-09-22 20:59:19.022995-03	\N
+4238	Nonfat Hazelnut Latte (Small)	364	McDonald’s	1	180	0	0	0	0	5	95	37	0	37	7	2023-09-22 20:59:19.022995-03	\N
+4239	Nonfat Hazelnut Latte (Medium)	365	McDonald’s	1	220	0	0	0	0	5	115	46	0	46	9	2023-09-22 20:59:19.022995-03	\N
+4240	Nonfat Hazelnut Latte (Large)	366	McDonald’s	1	260	0	0	0	0	5	135	55	0	55	10	2023-09-22 20:59:19.022995-03	\N
+4241	Nonfat Vanilla Cappuccino (Small)	367	McDonald’s	1	150	0	0	0	0	5	70	34	0	34	5	2023-09-22 20:59:19.022995-03	\N
+4242	Nonfat Vanilla Cappuccino (Medium)	368	McDonald’s	1	190	0	0	0	0	5	90	42	0	42	6	2023-09-22 20:59:19.022995-03	\N
+4243	Nonfat Vanilla Cappuccino (Large)	369	McDonald’s	1	230	0	0	0	0	5	100	51	0	51	7	2023-09-22 20:59:19.022995-03	\N
+4244	Nonfat Vanilla Latte (Small)	370	McDonald’s	1	180	0	0	0	0	5	95	37	0	37	7	2023-09-22 20:59:19.022995-03	\N
+4245	Nonfat Vanilla Latte (Medium)	371	McDonald’s	1	220	0	0	0	0	5	115	46	0	46	9	2023-09-22 20:59:19.022995-03	\N
+4246	Nonfat Vanilla Latte (Large)	372	McDonald’s	1	260	0	0	0	0	5	135	55	0	55	10	2023-09-22 20:59:19.022995-03	\N
+4247	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Small)	373	McDonald’s	1	50	0	0	0	0	5	100	15	0	8	5	2023-09-22 20:59:19.022995-03	\N
+4248	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Medium)	374	McDonald’s	1	70	0	0	0	0	5	130	19	0	10	7	2023-09-22 20:59:19.022995-03	\N
+4249	Dutch Apple Pie	375	Burger King	6	340	130	14	6	0	0	310	51	1	25	3	2023-09-22 20:59:19.022995-03	\N
+4250	Nonfat Cappuccino with Sugar Free Vanilla Syrup (Large)	376	McDonald’s	1	80	0	0	0	0	5	150	22	0	11	8	2023-09-22 20:59:19.022995-03	\N
+4251	Nonfat Latte with Sugar Free Vanilla Syrup (Small)	377	McDonald’s	1	80	0	0	0	0	5	130	18	0	11	7	2023-09-22 20:59:19.022995-03	\N
+4252	Nonfat Latte with Sugar Free Vanilla Syrup (Medium)	378	McDonald’s	1	90	0	0	0	0	5	160	22	0	13	9	2023-09-22 20:59:19.022995-03	\N
+4253	Nonfat Latte with Sugar Free Vanilla Syrup (Large)	379	McDonald’s	1	110	0	0	0	0	5	190	27	0	15	11	2023-09-22 20:59:19.022995-03	\N
+4254	Mocha with Nonfat Milk (Small)	380	McDonald’s	1	240	45	5	3	0	5	130	41	0	34	7	2023-09-22 20:59:19.022995-03	\N
+4255	Mocha with Nonfat Milk (Medium)	381	McDonald’s	1	280	50	6	3.5	0	10	160	50	0	42	8	2023-09-22 20:59:19.022995-03	\N
+4256	20 fl oz	382	Burger King	6	0	0	0	0	0	0	85	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4257	Mocha with Nonfat Milk (Large)	383	McDonald’s	1	330	50	6	3.5	0	10	190	58	0	50	10	2023-09-22 20:59:19.022995-03	\N
+4258	Hot Chocolate with Nonfat Milk (Small)	384	McDonald’s	1	250	45	5	3	0	10	140	43	0	37	8	2023-09-22 20:59:19.022995-03	\N
+4259	Hot Chocolate with Nonfat Milk (Medium)	385	McDonald’s	1	310	50	6	3.5	0	10	190	55	0	47	11	2023-09-22 20:59:19.022995-03	\N
+4260	Hot Chocolate with Nonfat Milk (Large)	386	McDonald’s	1	390	50	6	3.5	0	10	250	68	0	59	16	2023-09-22 20:59:19.022995-03	\N
+4261	Iced Nonfat Latte (Small)	387	McDonald’s	1	50	0	0	0	0	5	70	7	0	7	5	2023-09-22 20:59:19.022995-03	\N
+4262	Iced Nonfat Latte (Medium)	388	McDonald’s	1	60	0	0	0	0	5	90	9	0	9	6	2023-09-22 20:59:19.022995-03	\N
+4263	Iced Nonfat Latte (Large)	389	McDonald’s	1	70	0	0	0	0	5	105	11	0	11	7	2023-09-22 20:59:19.022995-03	\N
+4264	Iced Nonfat Caramel Latte (Small)	390	McDonald’s	1	140	0	0	0	0	0	105	30	0	30	3	2023-09-22 20:59:19.022995-03	\N
+4265	Iced Nonfat Caramel Latte (Medium)	391	McDonald’s	1	150	0	0	0	0	5	120	32	0	32	5	2023-09-22 20:59:19.022995-03	\N
+4266	Iced Nonfat Caramel Latte (Large)	392	McDonald’s	1	190	0	0	0	0	5	150	40	0	40	6	2023-09-22 20:59:19.022995-03	\N
+4267	Iced Nonfat Hazelnut Latte (Small)	393	McDonald’s	1	140	0	0	0	0	0	50	32	0	32	3	2023-09-22 20:59:19.022995-03	\N
+4268	Iced Nonfat Hazelnut Latte (Medium)	394	McDonald’s	1	150	0	0	0	0	5	70	33	0	33	5	2023-09-22 20:59:19.022995-03	\N
+4269	Iced Nonfat Hazelnut Latte (Large)	395	McDonald’s	1	190	0	0	0	0	5	80	42	0	42	6	2023-09-22 20:59:19.022995-03	\N
+4270	Iced Nonfat Vanilla Latte (Small)	396	McDonald’s	1	140	0	0	0	0	0	50	31	0	31	3	2023-09-22 20:59:19.022995-03	\N
+4271	Iced Nonfat Vanilla Latte (Medium)	397	McDonald’s	1	150	0	0	0	0	5	70	33	0	33	5	2023-09-22 20:59:19.022995-03	\N
+4272	Iced Nonfat Vanilla Latte (Large)	398	McDonald’s	1	190	0	0	0	0	5	85	41	0	41	6	2023-09-22 20:59:19.022995-03	\N
+4273	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Small)	399	McDonald’s	1	40	0	0	0	0	0	85	13	0	5	4	2023-09-22 20:59:19.022995-03	\N
+4274	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Medium)	400	McDonald’s	1	50	0	0	0	0	5	100	14	0	6	5	2023-09-22 20:59:19.022995-03	\N
+4275	Iced Nonfat Latte with Sugar Free Vanilla Syrup (Large)	401	McDonald’s	1	60	0	0	0	0	5	130	19	0	8	6	2023-09-22 20:59:19.022995-03	\N
+4276	Iced Mocha with Nonfat Milk (Medium)	402	McDonald’s	1	270	70	8	4.5	0	10	140	43	0	35	7	2023-09-22 20:59:19.022995-03	\N
+4277	Iced Nonfat Caramel Mocha (Large)	403	McDonald’s	1	300	60	6	4	0	10	230	49	0	45	11	2023-09-22 20:59:19.022995-03	\N
+4278	Iced Nonfat Caramel Mocha (Medium)	404	McDonald’s	1	240	60	6	4	0	10	190	37	0	34	9	2023-09-22 20:59:19.022995-03	\N
+4279	Iced Nonfat Caramel Mocha (Small)	405	McDonald’s	1	200	50	6	4	0	10	140	29	0	26	6	2023-09-22 20:59:19.022995-03	\N
+4280	Nonfat Caramel Mocha (Large)	406	McDonald’s	1	280	35	4	2.5	0	10	260	49	0	46	12	2023-09-22 20:59:19.022995-03	\N
+4281	Nonfat Caramel Mocha (Medium)	407	McDonald’s	1	240	35	4	2.5	0	5	200	41	0	38	9	2023-09-22 20:59:19.022995-03	\N
+4282	Nonfat Caramel Mocha (Small)	408	McDonald’s	1	200	35	4	2.5	0	5	170	34	0	31	8	2023-09-22 20:59:19.022995-03	\N
+4283	Cappuccino (Small)	409	McDonald’s	1	120	60	7	4	0	20	85	9	0	9	6	2023-09-22 20:59:19.022995-03	\N
+4284	Cappuccino (Medium)	410	McDonald’s	1	140	70	8	4.5	0	25	105	11	0	11	8	2023-09-22 20:59:19.022995-03	\N
+4285	Cappuccino (Large)	411	McDonald’s	1	180	90	10	6	0	30	130	13	0	13	9	2023-09-22 20:59:19.022995-03	\N
+4286	Latte (Small) 	412	McDonald’s	1	150	70	8	4.5	0	25	105	11	0	11	8	2023-09-22 20:59:19.022995-03	\N
+4287	Latte (Medium)	413	McDonald’s	1	180	90	10	6	0	30	130	13	0	13	10	2023-09-22 20:59:19.022995-03	\N
+4288	Latte (Large)	414	McDonald’s	1	210	100	11	7	0	35	150	16	0	16	11	2023-09-22 20:59:19.022995-03	\N
+4289	40 fl oz	415	Burger King	6	240	0	0	0	0	0	0	71	0	71	0	2023-09-22 20:59:19.022995-03	\N
+4290	Caramel Cappuccino (Small)	416	McDonald’s	1	200	45	5	3	0	15	125	32	0	32	5	2023-09-22 20:59:19.022995-03	\N
+4291	Caramel Cappuccino (Medium)	417	McDonald’s	1	240	50	6	3.5	0	20	150	41	0	40	6	2023-09-22 20:59:19.022995-03	\N
+4292	Caramel Cappuccino (Large)	418	McDonald’s	1	290	70	8	4.5	0	25	190	49	0	49	8	2023-09-22 20:59:19.022995-03	\N
+4293	Caramel Latte (Small)	419	McDonald’s	1	230	60	7	4	0	20	140	35	0	35	7	2023-09-22 20:59:19.022995-03	\N
+4294	Caramel Latte (Medium)	420	McDonald’s	1	280	70	8	4.5	0	25	170	43	0	43	8	2023-09-22 20:59:19.022995-03	\N
+4295	Caramel Latte (Large)	421	McDonald’s	1	330	80	9	5	0	30	210	52	0	51	9	2023-09-22 20:59:19.022995-03	\N
+4296	Hazelnut Cappuccino (Small)	422	McDonald’s	1	200	45	5	3	0	15	70	34	0	34	5	2023-09-22 20:59:19.022995-03	\N
+4297	Hazelnut Cappuccino (Medium)	423	McDonald’s	1	240	50	6	3.5	0	20	85	42	0	42	6	2023-09-22 20:59:19.022995-03	\N
+4298	Hazelnut Cappuccino (Large)	424	McDonald’s	1	290	70	8	4.5	0	25	105	51	0	51	7	2023-09-22 20:59:19.022995-03	\N
+4299	Hazelnut Latte (Small)	425	McDonald’s	1	230	60	7	4	0	20	90	36	0	36	7	2023-09-22 20:59:19.022995-03	\N
+4300	Hazelnut Latte (Medium)	426	McDonald’s	1	280	70	8	4.5	0	25	110	45	0	45	8	2023-09-22 20:59:19.022995-03	\N
+4301	Hazelnut Latte (Large)	427	McDonald’s	1	330	80	9	5	0	30	130	53	0	53	9	2023-09-22 20:59:19.022995-03	\N
+4302	Vanilla Cappuccino (Small)	428	McDonald’s	1	200	45	5	3	0	15	70	34	0	34	5	2023-09-22 20:59:19.022995-03	\N
+4303	Vanilla Cappuccino (Medium)	429	McDonald’s	1	240	50	6	3.5	0	20	85	42	0	42	6	2023-09-22 20:59:19.022995-03	\N
+4304	Vanilla Cappuccino (Large)	430	McDonald’s	1	290	70	8	4.5	0	25	105	51	0	51	7	2023-09-22 20:59:19.022995-03	\N
+4305	Vanilla Latte (Small)	431	McDonald’s	1	230	60	7	4	0	20	90	36	0	36	7	2023-09-22 20:59:19.022995-03	\N
+4306	Vanilla Latte (Medium)	432	McDonald’s	1	280	70	8	4.5	0	25	110	44	0	44	8	2023-09-22 20:59:19.022995-03	\N
+4307	Vanilla Latte (Large)	433	McDonald’s	1	330	80	9	5	0	30	130	53	0	53	9	2023-09-22 20:59:19.022995-03	\N
+4308	Cappuccino with Sugar Free Vanilla Syrup (Small)	434	McDonald’s	1	100	50	5	3	0	15	105	15	0	7	5	2023-09-22 20:59:19.022995-03	\N
+4309	Cappuccino with Sugar Free Vanilla Syrup (Medium)	435	McDonald’s	1	120	60	6	3.5	0	20	130	18	0	9	6	2023-09-22 20:59:19.022995-03	\N
+4310	Cappuccino with Sugar Free Vanilla Syrup (Large)	436	McDonald’s	1	150	70	8	4.5	0	25	160	22	0	11	8	2023-09-22 20:59:19.022995-03	\N
+4311	Latte with Sugar Free Vanilla Syrup (Small)	437	McDonald’s	1	130	60	7	4	0	20	125	17	0	10	7	2023-09-22 20:59:19.022995-03	\N
+4312	Nacho Fries	438	Taco Bell	4	320	160	18	1.5	0	\N	630	35	4	2	4	2023-09-22 20:59:19.022995-03	\N
+4313	Latte with Sugar Free Vanilla Syrup (Medium)	439	McDonald’s	1	160	70	8	5	0	25	150	21	0	11	8	2023-09-22 20:59:19.022995-03	\N
+4314	Latte with Sugar Free Vanilla Syrup (Large)	440	McDonald’s	1	180	90	10	6	0	30	180	25	0	13	10	2023-09-22 20:59:19.022995-03	\N
+4315	Mocha (Small)	441	McDonald’s	1	280	100	11	6	0	20	125	40	0	33	6	2023-09-22 20:59:19.022995-03	\N
+4316	Mocha (Medium)	442	McDonald’s	1	330	110	12	7	0	25	150	48	0	41	7	2023-09-22 20:59:19.022995-03	\N
+4317	Mocha (Large)	443	McDonald’s	1	400	130	14	8	0.5	30	190	58	0	49	10	2023-09-22 20:59:19.022995-03	\N
+4318	Hot Chocolate (Small)	444	McDonald’s	1	300	110	12	7	0	25	135	41	0	35	8	2023-09-22 20:59:19.022995-03	\N
+4319	Hot Chocolate (Medium)	445	McDonald’s	1	380	130	15	9	0.5	30	170	53	0	45	10	2023-09-22 20:59:19.022995-03	\N
+4320	Hot Chocolate (Large)	446	McDonald’s	1	460	160	18	10	0.5	40	220	63	0	54	13	2023-09-22 20:59:19.022995-03	\N
+4321	Iced Latte (Small)	447	McDonald’s	1	80	40	4.5	2.5	0	15	65	6	0	6	4	2023-09-22 20:59:19.022995-03	\N
+4322	Iced Latte (Medium)	448	McDonald’s	1	100	50	6	3.5	0	15	80	8	0	8	6	2023-09-22 20:59:19.022995-03	\N
+4323	Iced Latte (Large)	449	McDonald’s	1	140	70	8	4.5	0	25	105	10	0	10	7	2023-09-22 20:59:19.022995-03	\N
+4324	Iced Caramel Latte (Small)	450	McDonald’s	1	160	25	3	1.5	0	10	100	29	0	29	3	2023-09-22 20:59:19.022995-03	\N
+4325	Iced Caramel Latte (Medium)	451	McDonald’s	1	180	40	4.5	2.5	0	15	120	31	0	31	4	2023-09-22 20:59:19.022995-03	\N
+4326	Iced Caramel Latte (Large)	452	McDonald’s	1	230	50	6	3.5	0	15	150	40	0	40	6	2023-09-22 20:59:19.022995-03	\N
+4327	Iced Hazelnut Latte (Small)	453	McDonald’s	1	160	25	3	1.5	0	10	45	31	0	31	3	2023-09-22 20:59:19.022995-03	\N
+4328	Iced Hazelnut Latte (Medium)	454	McDonald’s	1	180	40	4.5	2.5	0	15	65	33	0	33	4	2023-09-22 20:59:19.022995-03	\N
+4329	Iced Hazelnut Latte (Large)	455	McDonald’s	1	230	50	6	3.5	0	15	85	41	0	41	6	2023-09-22 20:59:19.022995-03	\N
+4330	Iced Vanilla Latte (Small)	456	McDonald’s	1	160	25	3	1.5	0	10	45	31	0	31	3	2023-09-22 20:59:19.022995-03	\N
+4331	Iced Vanilla Latte (Medium)	457	McDonald’s	1	190	40	4.5	2.5	0	15	70	33	0	33	5	2023-09-22 20:59:19.022995-03	\N
+4332	Iced Vanilla Latte (Large)	458	McDonald’s	1	230	50	6	3.5	0	15	85	41	0	41	6	2023-09-22 20:59:19.022995-03	\N
+4333	Iced Latte with Sugar Free Vanilla Syrup (Small)	459	McDonald’s	1	60	30	3	2	0	10	80	12	0	4	3	2023-09-22 20:59:19.022995-03	\N
+4334	Iced Latte with Sugar Free Vanilla Syrup (Medium)	460	McDonald’s	1	90	40	5	3	0	15	105	14	0	6	5	2023-09-22 20:59:19.022995-03	\N
+4335	Iced Latte with Sugar Free Vanilla Syrup (Large)	461	McDonald’s	1	110	50	6	3.5	0	15	130	19	0	8	6	2023-09-22 20:59:19.022995-03	\N
+4336	Iced Mocha (Medium)	462	McDonald’s	1	310	120	13	8	0	25	140	42	0	35	7	2023-09-22 20:59:19.022995-03	\N
+4337	Caramel Mocha (Large)	463	McDonald’s	1	360	130	14	8	0.5	35	220	47	0	46	10	2023-09-22 20:59:19.022995-03	\N
+4338	Caramel Mocha (Medium)	464	McDonald’s	1	290	100	12	7	0	25	180	39	0	38	8	2023-09-22 20:59:19.022995-03	\N
+4339	Caramel Mocha (Small)	465	McDonald’s	1	250	90	11	6	0	25	150	33	0	31	7	2023-09-22 20:59:19.022995-03	\N
+4340	Iced Caramel Mocha (Large)	466	McDonald’s	1	380	140	16	9	0.5	35	210	48	0	46	10	2023-09-22 20:59:19.022995-03	\N
+4341	Iced Caramel Mocha (Medium)	467	McDonald’s	1	300	120	14	8	0	30	160	36	0	33	8	2023-09-22 20:59:19.022995-03	\N
+4342	Iced Caramel Mocha (Small)	468	McDonald’s	1	240	100	12	7	0	25	130	29	0	26	6	2023-09-22 20:59:19.022995-03	\N
+4343	Frappe Caramel (Small)	469	McDonald’s	1	450	180	20	13	1	55	135	61	0	57	6	2023-09-22 20:59:19.022995-03	\N
+4344	Frappe Caramel (Medium)	470	McDonald’s	1	550	220	24	15	1	70	160	76	0	71	8	2023-09-22 20:59:19.022995-03	\N
+4345	Frappe Caramel (Large)	471	McDonald’s	1	680	260	29	18	1.5	85	200	94	0	88	10	2023-09-22 20:59:19.022995-03	\N
+4346	Frappe Mocha (Small)	472	McDonald’s	1	450	180	20	13	1	55	130	62	1	56	7	2023-09-22 20:59:19.022995-03	\N
+4347	Frappe Mocha (Medium)	473	McDonald’s	1	560	210	24	15	1	65	160	78	1	70	8	2023-09-22 20:59:19.022995-03	\N
+4348	Frappe Mocha (Large)	474	McDonald’s	1	680	250	28	18	1	80	200	96	1	87	10	2023-09-22 20:59:19.022995-03	\N
+4349	Strawberry Banana Smoothie (Large)	475	McDonald’s	1	330	10	1	0.5	0	5	55	77	4	70	3	2023-09-22 20:59:19.022995-03	\N
+4350	Strawberry Banana Smoothie (Medium)	476	McDonald’s	1	260	5	1	0	0	5	40	60	3	54	2	2023-09-22 20:59:19.022995-03	\N
+4351	Strawberry Banana Smoothie (Small)	477	McDonald’s	1	210	5	0.5	0	0	5	35	49	2	44	2	2023-09-22 20:59:19.022995-03	\N
+4352	Wild Berry Smoothie (Large)	478	McDonald’s	1	320	10	1	0.5	0	5	45	75	4	69	3	2023-09-22 20:59:19.022995-03	\N
+4353	Wild Berry Smoothie (Medium)	479	McDonald’s	1	260	5	1	0	0	5	35	60	4	55	3	2023-09-22 20:59:19.022995-03	\N
+4354	Wild Berry Smoothie (Small)	480	McDonald’s	1	210	5	0.5	0	0	5	30	48	3	44	2	2023-09-22 20:59:19.022995-03	\N
+4355	Whopper® Sandwich	481	Burger King	6	660	360	40	12	1.5	90	980	49	2	11	28	2023-09-22 20:59:19.022995-03	\N
+4356	Whopper® Sandwich with Cheese	482	Burger King	6	740	420	46	16	2	115	1340	50	2	11	32	2023-09-22 20:59:19.022995-03	\N
+4357	Bacon & Cheese Whopper® Sandwich	483	Burger King	6	790	460	51	17	2	125	1560	50	2	11	35	2023-09-22 20:59:19.022995-03	\N
+4358	Double Whopper® Sandwich	484	Burger King	6	900	520	58	20	3	175	1050	49	2	11	48	2023-09-22 20:59:19.022995-03	\N
+4359	Double Whopper® Sandwich with Cheese	485	Burger King	6	980	580	64	24	3	195	1410	50	2	11	52	2023-09-22 20:59:19.022995-03	\N
+4360	Triple Whopper® Sandwich	486	Burger King	6	1130	680	75	28	4	255	1120	49	2	11	67	2023-09-22 20:59:19.022995-03	\N
+4361	Triple Whopper® Sandwich with Cheese	487	Burger King	6	1220	740	82	32	4.5	280	1470	50	2	11	71	2023-09-22 20:59:19.022995-03	\N
+4362	Whopper JR.® Sandwich	488	Burger King	6	310	160	18	5	0.5	40	390	27	1	7	13	2023-09-22 20:59:19.022995-03	\N
+4363	Bacon King Sandwich	489	Burger King	6	1150	710	79	31	3.5	240	2150	49	2	10	61	2023-09-22 20:59:19.022995-03	\N
+4364	Cheddar Bacon King Sandwich	490	Burger King	6	1190	750	84	33	3.5	235	1930	50	2	11	64	2023-09-22 20:59:19.022995-03	\N
+4365	Single Quarter Pound King Sandwich	491	Burger King	6	580	260	29	13	1.5	105	1310	49	2	10	32	2023-09-22 20:59:19.022995-03	\N
+4366	Double Quarter Pound King Sandwich	492	Burger King	6	900	480	54	25	3	210	1740	50	2	11	56	2023-09-22 20:59:19.022995-03	\N
+4367	Single Stacker King	493	Burger King	6	700	380	42	16	2	125	1360	48	1	10	35	2023-09-22 20:59:19.022995-03	\N
+4368	Double Stacker King	494	Burger King	6	1050	610	68	28	3.5	235	1870	49	1	11	61	2023-09-22 20:59:19.022995-03	\N
+4369	IMPOSSIBLE Whopper® Sandwich	495	Burger King	6	630	310	34	11	0	10	1080	58	4	12	25	2023-09-22 20:59:19.022995-03	\N
+4370	Hamburger	496	Burger King	6	240	90	10	3.5	0.5	35	380	26	1	6	13	2023-09-22 20:59:19.022995-03	\N
+4371	Cheeseburger	497	Burger King	6	280	120	13	6	0.5	45	560	27	1	7	15	2023-09-22 20:59:19.022995-03	\N
+4372	Double Hamburger	498	Burger King	6	350	160	18	7	1	70	410	26	1	6	21	2023-09-22 20:59:19.022995-03	\N
+4373	Double Cheeseburger	499	Burger King	6	390	190	21	9	1.5	85	590	27	1	7	23	2023-09-22 20:59:19.022995-03	\N
+4374	Extra Long Cheeseburger	500	Burger King	6	630	330	37	14	1.5	100	1050	45	2	9	29	2023-09-22 20:59:19.022995-03	\N
+4375	Bacon Cheeseburger	501	Burger King	6	320	140	16	7	0.5	55	710	27	1	7	17	2023-09-22 20:59:19.022995-03	\N
+4376	Bacon Double Cheeseburger	502	Burger King	6	420	210	24	10	1.5	90	740	27	1	7	25	2023-09-22 20:59:19.022995-03	\N
+4377	Crispy Chicken Sandwich	503	Burger King	6	670	370	41	7	0	60	1080	54	2	8	23	2023-09-22 20:59:19.022995-03	\N
+4378	Spicy Crispy Chicken Sandwich	504	Burger King	6	700	370	42	7	0	65	1140	57	3	8	25	2023-09-22 20:59:19.022995-03	\N
+4379	Original Chicken Sandwich	505	Burger King	6	660	360	40	7	0	75	1170	48	2	5	28	2023-09-22 20:59:19.022995-03	\N
+4380	Bacon & Cheese Crispy Chicken Sandwich	506	Burger King	6	800	460	52	13	1	95	1650	55	2	8	30	2023-09-22 20:59:19.022995-03	\N
+4381	BBQ Bacon Crispy Chicken Sandwich	507	Burger King	6	790	440	49	10	0.5	80	1630	60	2	13	28	2023-09-22 20:59:19.022995-03	\N
+4382	Crispy Chicken Jr.	508	Burger King	6	450	270	30	5	0	30	780	34	2	5	12	2023-09-22 20:59:19.022995-03	\N
+4383	Spicy Crispy Chicken Jr.	509	Burger King	6	390	190	21	3.5	0	30	740	37	2	6	12	2023-09-22 20:59:19.022995-03	\N
+4384	Chicken Nuggets- 4pc	510	Burger King	6	170	100	11	1.5	0	25	310	11	1	0	8	2023-09-22 20:59:19.022995-03	\N
+4385	Chicken Nuggets- 6pc	511	Burger King	6	260	150	16	2.5	0	35	470	16	1	0	12	2023-09-22 20:59:19.022995-03	\N
+4386	Chicken Nuggets- 10pc	512	Burger King	6	430	240	27	4.5	0	55	780	27	2	0	20	2023-09-22 20:59:19.022995-03	\N
+4387	Chicken Nuggets- 20pc	513	Burger King	6	860	490	54	9	0	115	1570	53	3	1	39	2023-09-22 20:59:19.022995-03	\N
+4388	Spicy Chicken Nuggets- 4pc	514	Burger King	6	210	130	15	3	0	20	570	11	2	0	8	2023-09-22 20:59:19.022995-03	\N
+4389	Spicy Chicken Nuggets- 6pc	515	Burger King	6	320	200	22	4.5	0	35	850	17	3	0	12	2023-09-22 20:59:19.022995-03	\N
+4390	Spicy Chicken Nuggets- 10 pc	516	Burger King	6	530	330	37	7	0	55	1420	28	4	1	20	2023-09-22 20:59:19.022995-03	\N
+4391	Spicy Chicken Nuggets- 20 pc	517	Burger King	6	1050	670	74	15	0	110	2840	56	9	1	40	2023-09-22 20:59:19.022995-03	\N
+4392	Chicken Fries – 9 pc.	518	Burger King	6	280	150	17	2.5	0	35	850	20	1	1	13	2023-09-22 20:59:19.022995-03	\N
+4393	Crispy Taco	519	Burger King	6	170	80	9	3	0	10	410	19	2	1	5	2023-09-22 20:59:19.022995-03	\N
+4394	BIG FISH Sandwich	520	Burger King	6	510	250	28	4.5	0	30	1180	51	2	7	16	2023-09-22 20:59:19.022995-03	\N
+4395	Garden Chicken Salad with Crispy Chicken – no dressing	521	Burger King	6	440	220	25	7	0	75	930	31	3	4	25	2023-09-22 20:59:19.022995-03	\N
+4396	Club Salad with Crispy Chicken – no dressing	522	Burger King	6	540	300	33	10	0	95	1380	31	3	5	31	2023-09-22 20:59:19.022995-03	\N
+4397	Garden Side Salad – w/o dressing	523	Burger King	6	60	35	4	2.5	0	10	95	3	1	2	4	2023-09-22 20:59:19.022995-03	\N
+4398	Ken’s Ranch Dressing	524	Burger King	6	260	250	28	4	0	10	240	2	0	2	1	2023-09-22 20:59:19.022995-03	\N
+4399	Ken’s Golden Italian Dressing	525	Burger King	6	160	150	17	2.5	0	0	380	4	0	3	0	2023-09-22 20:59:19.022995-03	\N
+4400	Mayonnaise (Packet)	526	Burger King	6	80	80	9	0.5	0	10	75	1	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4401	Ken’s Lite Honey Balsamic Vinaigrette	527	Burger King	6	120	70	8	1	0	0	220	14	0	11	0	2023-09-22 20:59:19.022995-03	\N
+4502	29 fl oz	628	Burger King	6	380	0	0	0	0	0	170	102	0	102	0	2023-09-22 20:59:19.022995-03	\N
+4402	Buttery Garlic Croutons- Packet	528	Burger King	6	60	20	2.5	0	0	10	180	9	0	1	1	2023-09-22 20:59:19.022995-03	\N
+4403	Onion Rings – value	529	Burger King	6	150	70	8	1.5	0	0	400	19	1	2	1	2023-09-22 20:59:19.022995-03	\N
+4404	Onion Rings – small	530	Burger King	6	320	150	16	3	0	0	840	41	3	4	3	2023-09-22 20:59:19.022995-03	\N
+4405	Onion Rings – medium	531	Burger King	6	410	190	21	3.5	0	0	1080	53	4	5	4	2023-09-22 20:59:19.022995-03	\N
+4406	Onion Rings – large	532	Burger King	6	500	230	25	4.5	0	0	1310	64	5	7	5	2023-09-22 20:59:19.022995-03	\N
+4407	French Fries – value (unsalted)	533	Burger King	6	220	80	9	1.5	0	0	210	34	3	1	2	2023-09-22 20:59:19.022995-03	\N
+4408	French Fries – small	534	Burger King	6	320	120	13	2	0	0	300	49	5	1	4	2023-09-22 20:59:19.022995-03	\N
+4409	French Fries – medium	535	Burger King	6	380	140	16	2	0	0	360	58	6	1	4	2023-09-22 20:59:19.022995-03	\N
+4410	French Fries – large	536	Burger King	6	430	160	18	2.5	0	0	410	66	7	2	5	2023-09-22 20:59:19.022995-03	\N
+4411	Kids Oatmeal	537	Burger King	6	170	30	3	1.5	0	5	260	32	3	12	4	2023-09-22 20:59:19.022995-03	\N
+4412	Chicken Nuggets- 4pc	538	Burger King	6	170	100	11	1.5	0	25	310	11	1	0	8	2023-09-22 20:59:19.022995-03	\N
+4413	Chicken Nuggets- 6pc	539	Burger King	6	260	150	16	2.5	0	35	470	16	1	0	12	2023-09-22 20:59:19.022995-03	\N
+4414	Hamburger	540	Burger King	6	240	90	10	3.5	0.5	35	380	26	1	6	13	2023-09-22 20:59:19.022995-03	\N
+4415	Cheeseburger	541	Burger King	6	280	120	13	6	0.5	45	560	27	1	7	15	2023-09-22 20:59:19.022995-03	\N
+4416	Mott’s® Natural Applesauce	542	Burger King	6	50	0	0	0	0	0	0	13	1	11	0	2023-09-22 20:59:19.022995-03	\N
+4417	Fat FREE Milk (8 fl oz)	543	Burger King	6	90	0	0	0	0	5	125	13	0	12	9	2023-09-22 20:59:19.022995-03	\N
+4418	1% Low Fat Chocolate Milk (8 fl oz)	544	Burger King	6	160	25	2.5	1.5	0	15	150	26	0	25	8	2023-09-22 20:59:19.022995-03	\N
+4419	Capri Sun® 100% Apple Juice (6 fl oz)	545	Burger King	6	80	0	0	0	0	0	25	20	0	20	0	2023-09-22 20:59:19.022995-03	\N
+4420	PB&J Jamwich	546	Burger King	6	300	140	16	3	0	0	290	33	4	11	11	2023-09-22 20:59:19.022995-03	\N
+4421	HERSHEY®’S Sundae Pie	547	Burger King	6	310	170	19	12	0	10	220	32	1	22	3	2023-09-22 20:59:19.022995-03	\N
+4422	Pie made with TWIX®	548	Burger King	6	370	180	20	13	0	10	330	45	1	30	4	2023-09-22 20:59:19.022995-03	\N
+4423	OREO® Cookie Cheesecake	549	Burger King	6	350	170	18	8	0	35	310	41	1	25	6	2023-09-22 20:59:19.022995-03	\N
+4424	Soft Serve Cone	550	Burger King	6	190	40	4.5	3	0	20	150	32	0	24	5	2023-09-22 20:59:19.022995-03	\N
+4425	Soft Serve Cup	551	Burger King	6	170	40	4.5	3	0	20	150	28	0	24	5	2023-09-22 20:59:19.022995-03	\N
+4426	HERSHEY®’s Chocolate Sundae	552	Burger King	6	260	45	5	3	0	20	160	49	1	43	5	2023-09-22 20:59:19.022995-03	\N
+4427	Caramel Sundae	553	Burger King	6	240	50	5	3.5	0	20	210	42	0	33	5	2023-09-22 20:59:19.022995-03	\N
+4428	Chocolate Chip Cookies (each)	554	Burger King	6	160	70	8	4	0	10	125	24	1	15	2	2023-09-22 20:59:19.022995-03	\N
+4429	CROISSAN’WICH® Egg & Cheese	555	Burger King	6	340	170	18	8	0	160	610	29	1	4	12	2023-09-22 20:59:19.022995-03	\N
+4430	CROISSAN’WICH® Sausage, Egg & Cheese	556	Burger King	6	500	300	33	13	0	195	930	30	1	4	19	2023-09-22 20:59:19.022995-03	\N
+4431	CROISSAN’WICH® Ham, Egg & Cheese	557	Burger King	6	370	170	19	8	0	175	1030	30	1	5	17	2023-09-22 20:59:19.022995-03	\N
+4432	CROISSAN’WICH® Bacon, Egg & Cheese	558	Burger King	6	370	190	21	9	0	170	760	30	1	4	14	2023-09-22 20:59:19.022995-03	\N
+4433	Fully Loaded CROISSAN’WICH®	559	Burger King	6	610	360	40	17	0.5	225	1680	31	1	5	28	2023-09-22 20:59:19.022995-03	\N
+4434	Double CROISSAN’WICH® with Sausage & Bacon	560	Burger King	6	580	340	40	16	0.5	215	1260	31	1	5	23	2023-09-22 20:59:19.022995-03	\N
+4435	Double CROISSAN’WICH® with Sausage	561	Burger King	6	710	470	52	20	0.5	240	1420	31	1	5	29	2023-09-22 20:59:19.022995-03	\N
+4436	Double CROISSAN’WICH® with Ham & Sausage	562	Burger King	6	580	340	38	16	0.5	220	1530	31	1	5	27	2023-09-22 20:59:19.022995-03	\N
+4437	Fully Loaded Biscuit	563	Burger King	6	640	400	45	20	0	225	2190	31	1	4	28	2023-09-22 20:59:19.022995-03	\N
+4438	Ham, Egg, & Cheese Biscuit	564	Burger King	6	400	210	24	12	0	175	1550	29	1	3	17	2023-09-22 20:59:19.022995-03	\N
+4439	Sausage, Egg, & Cheese Biscuit	565	Burger King	6	530	340	38	17	0	195	1440	29	1	3	19	2023-09-22 20:59:19.022995-03	\N
+4440	Bacon, Egg & Cheese Biscuit	566	Burger King	6	400	230	26	13	0	170	1270	29	1	3	13	2023-09-22 20:59:19.022995-03	\N
+4441	Sausage Biscuit	567	Wendy’s	2	480	33	15	0	50	1010	35	1	5	12	488	2023-09-22 20:59:19.022995-03	\N
+4442	Breakfast Burrito Jr.	568	Burger King	6	370	210	23	8	0	150	930	27	3	2	15	2023-09-22 20:59:19.022995-03	\N
+4443	EGG-NORMOUS BURRITOΡ	569	Burger King	6	780	380	42	15	0	355	1960	68	3	4	32	2023-09-22 20:59:19.022995-03	\N
+4444	BK™ Ultimate Breakfast Platter	570	Burger King	6	930	390	44	11	0	390	2230	110	4	40	24	2023-09-22 20:59:19.022995-03	\N
+4445	NY Ultimate Platter (Regional menu item)	571	Burger King	6	900	420	46	12	0	380	1760	95	5	31	25	2023-09-22 20:59:19.022995-03	\N
+4446	Pancake and Sausage platter	572	Burger King	6	610	280	31	9	0	80	1010	72	1	30	12	2023-09-22 20:59:19.022995-03	\N
+4447	Hash Browns – small	573	Burger King	6	250	150	16	3.5	0	0	580	24	3	0	2	2023-09-22 20:59:19.022995-03	\N
+4448	Hash Browns – medium	574	Burger King	6	500	290	33	7	0	0	1140	48	7	0	4	2023-09-22 20:59:19.022995-03	\N
+4449	Hash Browns – large	575	Burger King	6	670	390	44	9	0	0	1530	65	9	0	5	2023-09-22 20:59:19.022995-03	\N
+4450	French Toast Sticks (3 piece)	576	Burger King	6	230	100	11	2	0	0	260	29	1	8	3	2023-09-22 20:59:19.022995-03	\N
+4451	French Toast Sticks (5 piece)	577	Burger King	6	380	160	18	3	0	0	430	49	2	13	5	2023-09-22 20:59:19.022995-03	\N
+4452	Additional Options	578	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4453	American Cheese (slice)	579	Burger King	6	40	30	3.5	2	0	10	180	1	0	0	2	2023-09-22 20:59:19.022995-03	\N
+4454	Ketchup (Packet)	580	Burger King	6	10	0	0	0	0	0	125	3	0	2	0	2023-09-22 20:59:19.022995-03	\N
+4455	Strawberry or Grape Jam (packet)	581	Burger King	6	30	0	0	0	0	0	0	7	0	6	0	2023-09-22 20:59:19.022995-03	\N
+4456	Breakfast Syrup (1 oz)	582	Burger King	6	120	0	0	0	0	0	15	30	0	18	0	2023-09-22 20:59:19.022995-03	\N
+4457	Barbecue Dipping Sauce (1 oz)	583	Burger King	6	40	0	0	0	0	0	310	11	0	10	0	2023-09-22 20:59:19.022995-03	\N
+4458	Ranch Dipping Sauce (1 oz)	584	Burger King	6	140	140	15	2.5	0	10	85	1	0	1	1	2023-09-22 20:59:19.022995-03	\N
+4459	Buffalo Dipping Sauce (1 oz)	585	Burger King	6	80	70	8	1.5	0	5	360	2	0	1	0	2023-09-22 20:59:19.022995-03	\N
+4460	BK® Café Coffee- 20 fl oz	586	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4461	Zesty Onion Ring Dipping Sauce (1 oz)	587	Burger King	6	150	140	15	2.5	0	20	240	3	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4462	Honey Mustard Dipping Sauce (1oz)	588	Burger King	6	90	60	6	1	0	10	180	8	0	7	0	2023-09-22 20:59:19.022995-03	\N
+4463	Fat FREE Milk (8 fl oz)	589	Burger King	6	90	0	0	0	0	5	125	13	0	12	9	2023-09-22 20:59:19.022995-03	\N
+4464	1% Low Fat Chocolate Milk (8 fl oz)	590	Burger King	6	160	25	2.5	1.5	0	15	150	26	0	25	8	2023-09-22 20:59:19.022995-03	\N
+4465	Smoothie: Strawberry Banana 16 fl oz	591	Burger King	6	310	10	1	0	0	0	55	71	3	50	4	2023-09-22 20:59:19.022995-03	\N
+4466	Oreo® Shake	592	Burger King	6	720	180	20	12	0.5	65	540	118	1	98	16	2023-09-22 20:59:19.022995-03	\N
+4467	Chocolate Oreo® Shake	593	Burger King	6	740	190	22	13	0.5	70	680	121	1	101	17	2023-09-22 20:59:19.022995-03	\N
+4468	Vanilla Milk Shake	594	Burger King	6	580	140	15	10	0	60	420	98	0	85	14	2023-09-22 20:59:19.022995-03	\N
+4469	HERSHEY®’S Chocolate Milk Shake	595	Burger King	6	610	140	16	10	0	60	500	103	1	88	14	2023-09-22 20:59:19.022995-03	\N
+4470	Strawberry Milk Shake	596	Burger King	6	640	140	15	10	0	60	440	113	0	99	14	2023-09-22 20:59:19.022995-03	\N
+4471	16 fl oz	597	Burger King	6	0	0	0	0	0	0	70	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4472	20 fl oz	598	Burger King	6	270	0	0	0	0	0	60	73	0	73	0	2023-09-22 20:59:19.022995-03	\N
+4473	29 fl oz	599	Burger King	6	410	0	0	0	0	0	100	110	0	110	0	2023-09-22 20:59:19.022995-03	\N
+4474	38 fl oz	600	Burger King	6	0	0	0	0	0	0	160	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4475	20 fl oz	601	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4476	29 fl oz	602	Burger King	6	410	0	0	0	0	0	105	113	0	111	0	2023-09-22 20:59:19.022995-03	\N
+4477	38 fl oz	603	Burger King	6	450	0	0	0	0	0	140	124	0	121	0	2023-09-22 20:59:19.022995-03	\N
+4478	29 fl oz	604	Burger King	6	350	0	0	0	0	0	105	94	0	93	0	2023-09-22 20:59:19.022995-03	\N
+4479	38 fl oz	605	Burger King	6	0	0	0	0	0	0	160	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4480	Dr. Pepper®‡	606	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4481	16 fl oz	607	Burger King	6	240	0	0	0	0	0	100	65	0	65	0	2023-09-22 20:59:19.022995-03	\N
+4482	20 fl oz	608	Burger King	6	0	0	0	0	0	0	85	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4483	29 fl oz	609	Burger King	6	410	0	0	0	0	0	135	111	0	109	0	2023-09-22 20:59:19.022995-03	\N
+4484	38 fl oz	610	Burger King	6	450	0	0	0	0	0	130	145	0	145	0	2023-09-22 20:59:19.022995-03	\N
+4485	Barq’s® Root Beer‡	611	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4486	16 fl oz	612	Burger King	6	190	0	0	0	0	0	60	52	0	51	0	2023-09-22 20:59:19.022995-03	\N
+4487	20 fl oz	613	Burger King	6	240	0	0	0	0	0	75	65	0	64	0	2023-09-22 20:59:19.022995-03	\N
+4488	29 fl oz	614	Burger King	6	290	0	0	0	0	0	85	105	0	105	0	2023-09-22 20:59:19.022995-03	\N
+4489	38 fl oz	615	Burger King	6	510	0	0	0	0	0	115	138	0	138	0	2023-09-22 20:59:19.022995-03	\N
+4490	Cherry Coke®‡	616	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4491	20 fl oz	617	Burger King	6	240	0	0	0	0	0	75	65	0	64	0	2023-09-22 20:59:19.022995-03	\N
+4492	29 fl oz	618	Burger King	6	410	0	0	0	0	0	105	113	0	111	0	2023-09-22 20:59:19.022995-03	\N
+4493	38 fl oz	619	Burger King	6	20	0	0	0	0	0	135	7	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4494	Fanta® Orange‡	620	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4495	16 fl oz	621	Burger King	6	10	0	0	0	0	0	60	3	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4496	20 fl oz	622	Burger King	6	270	0	0	0	0	0	60	73	0	73	0	2023-09-22 20:59:19.022995-03	\N
+4497	29 fl oz	623	Burger King	6	290	0	0	0	0	0	85	105	0	105	0	2023-09-22 20:59:19.022995-03	\N
+4498	38 fl oz	624	Burger King	6	450	0	0	0	0	0	230	155	0	155	0	2023-09-22 20:59:19.022995-03	\N
+4499	Hi-C® Fruit Punch‡	625	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4500	16 fl oz	626	Burger King	6	210	0	0	0	0	0	50	58	0	58	0	2023-09-22 20:59:19.022995-03	\N
+4501	20 fl oz	627	Burger King	6	270	0	0	0	0	0	60	73	0	73	0	2023-09-22 20:59:19.022995-03	\N
+4748	Diet Dr Pepper® (16 fl oz)	874	Taco Bell	4	0	\N	\N	\N	\N	95	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4503	38 fl oz	629	Burger King	6	530	0	0	0	0	0	135	148	0	146	0	2023-09-22 20:59:19.022995-03	\N
+4504	MINUTE MAID® Light Lemonade	630	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4505	16 fl oz	631	Burger King	6	0	0	0	0	0	0	70	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4506	20 fl oz	632	Burger King	6	240	0	0	0	0	0	75	65	0	64	0	2023-09-22 20:59:19.022995-03	\N
+4507	29 fl oz	633	Burger King	6	410	0	0	0	0	0	100	110	0	110	0	2023-09-22 20:59:19.022995-03	\N
+4508	Sweet Tea	634	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4509	20 fl oz	635	Burger King	6	280	0	0	0	0	0	95	77	0	75	0	2023-09-22 20:59:19.022995-03	\N
+4510	29 fl oz	636	Burger King	6	0	0	0	0	0	0	120	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4511	40 fl oz	637	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4512	Unsweetened Tea	638	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4513	Capri Sun® 100% Apple Juice	639	Burger King	6	80	0	0	0	0	0	25	20	0	20	0	2023-09-22 20:59:19.022995-03	\N
+4514	Minute Maid® Orange Juice	640	Burger King	6	140	0	0	0	0	0	20	33	0	30	2	2023-09-22 20:59:19.022995-03	\N
+4515	Frozen Coke® – 16 oz	641	Burger King	6	130	0	0	0	0	0	50	35	0	35	0	2023-09-22 20:59:19.022995-03	\N
+4516	Hot Coffees	642	Burger King	6	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4517	BK® Café Coffee- 12 fl oz	643	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4518	BK® Café Coffee- 16 fl oz	644	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4519	BK® Café Decaf Coffee- 12 fl oz	645	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4520	BK® Café Decaf Coffee- 16 fl oz	646	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4521	BK® Café Decaf Coffee- 20 fl oz	647	Burger King	6	0	0	0	0	0	0	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4522	BK® Café Iced Vanilla Coffee- 12 fl oz	648	Burger King	6	150	70	8	4	0	25	30	21	0	21	1	2023-09-22 20:59:19.022995-03	\N
+4523	BK® Café Iced Vanilla Coffee- 16 fl oz	649	Burger King	6	200	90	10	5	0	30	40	27	0	27	2	2023-09-22 20:59:19.022995-03	\N
+4524	BK® Café Iced Vanilla Coffee- 20 fl oz	650	Burger King	6	260	110	13	7	0	40	50	34	0	34	2	2023-09-22 20:59:19.022995-03	\N
+4525	BK® Café Iced Mocha Coffee- 12 fl oz	651	Burger King	6	180	70	8	4	0	25	40	27	1	25	2	2023-09-22 20:59:19.022995-03	\N
+4526	BK® Café Iced Mocha Coffee- 16 fl oz	652	Burger King	6	240	90	10	6	0	30	55	35	1	32	2	2023-09-22 20:59:19.022995-03	\N
+4527	BK® Café Iced Mocha Coffee- 20 fl oz	653	Burger King	6	300	120	13	7	0	40	70	45	2	41	3	2023-09-22 20:59:19.022995-03	\N
+4528	BK® Café Mocha Frappe- 12 fl oz	654	Burger King	6	300	80	8	5	0	30	200	50	1	41	7	2023-09-22 20:59:19.022995-03	\N
+4529	BK® Café Mocha Frappe- 16 fl oz	655	Burger King	6	400	90	10	7	0	40	270	68	1	58	9	2023-09-22 20:59:19.022995-03	\N
+4530	BK® Café Mocha Frappe- 20 fl oz	656	Burger King	6	510	110	13	8	0	50	350	87	1	71	12	2023-09-22 20:59:19.022995-03	\N
+4531	BK® Café Caramel Frappe- 12 fl oz	657	Burger King	6	300	80	8	5	0	35	210	50	0	41	7	2023-09-22 20:59:19.022995-03	\N
+4532	BK® Café Caramel Frappe- 16 fl oz	658	Burger King	6	400	90	10	7	0	40	280	68	0	56	9	2023-09-22 20:59:19.022995-03	\N
+4533	BK® Café Caramel Frappe- 20 fl oz	659	Burger King	6	500	110	12	8	0	50	350	86	0	71	11	2023-09-22 20:59:19.022995-03	\N
+4534	Baconator	660	Wendy’s	2	950	62	24	3	205	1630	40	2	8	59	923	2023-09-22 20:59:19.022995-03	\N
+4535	Dave’s Double	661	Wendy’s	2	810	51	20	3	175	1280	41	3	8	49	789	2023-09-22 20:59:19.022995-03	\N
+4536	Dave’s Single	662	Wendy’s	2	570	34	13	1.5	100	1110	40	3	9	30	562	2023-09-22 20:59:19.022995-03	\N
+4537	Dave’s Triple	663	Wendy’s	2	1090	72	30	4	260	1650	43	3	9	71	1058	2023-09-22 20:59:19.022995-03	\N
+4538	Double Stack	664	Wendy’s	2	390	21	9	1.5	90	740	26	1	6	25	380	2023-09-22 20:59:19.022995-03	\N
+4539	Jr. Bacon Cheeseburger	665	Wendy’s	2	380	22	8	1	65	680	25	1	5	19	374	2023-09-22 20:59:19.022995-03	\N
+4540	Jr. Cheeseburger	666	Wendy’s	2	280	13	6	1	50	660	26	1	6	16	276	2023-09-22 20:59:19.022995-03	\N
+4541	Jr. Cheeseburger Deluxe	667	Wendy’s	2	340	19	7	1	55	660	27	2	7	16	338	2023-09-22 20:59:19.022995-03	\N
+4542	Son of Baconator	668	Wendy’s	2	630	39	15	1.5	125	1280	37	2	7	34	618	2023-09-22 20:59:19.022995-03	\N
+4543	3 Piece Chicken Tenders	669	Wendy’s	2	330	16	2.5	0	75	1010	22	0	0	24	309	2023-09-22 20:59:19.022995-03	\N
+4544	4 Piece Chicken Nuggets	670	Wendy’s	2	170	11	2	0	35	340	10	0	0	9	163	2023-09-22 20:59:19.022995-03	\N
+4545	4 Piece Chicken Tenders	671	Wendy’s	2	430	21	3.5	0	100	1350	29	0	1	32	403	2023-09-22 20:59:19.022995-03	\N
+4546	6 Picece Chicken Nuggets	672	Wendy’s	2	250	16	3.5	0	50	510	14	1	0	13	241	2023-09-22 20:59:19.022995-03	\N
+4547	6 Piece Chicken Tenders	673	Wendy’s	2	650	32	5	0	150	2020	43	0	1	48	608	2023-09-22 20:59:19.022995-03	\N
+4548	10 Piece Chicken Nuggets	674	Wendy’s	2	420	27	5	0	80	850	24	1	0	22	403	2023-09-22 20:59:19.022995-03	\N
+4549	Crispy Chicken BLT	675	Wendy’s	2	420	23	6	0	50	950	35	2	5	20	411	2023-09-22 20:59:19.022995-03	\N
+4550	Crispy Chicken Sandwich	676	Wendy’s	2	330	16	3	0	30	600	33	2	4	14	323	2023-09-22 20:59:19.022995-03	\N
+4551	Grilled Asiago Ranch Club	677	Wendy’s	2	530	23	7	0	120	1220	36	3	6	43	500	2023-09-22 20:59:19.022995-03	\N
+4552	Grilled Chicken Sandwich	678	Wendy’s	2	370	10	2	0	90	830	38	3	8	34	346	2023-09-22 20:59:19.022995-03	\N
+4553	Grilled Chicken Wrap	679	Wendy’s	2	270	10	3.5	0	55	640	24	2	3	20	257	2023-09-22 20:59:19.022995-03	\N
+4554	Ketchup	680	KFC	5	30	0	0	0	0	250	8	0	6	0	36	2023-09-22 20:59:19.022995-03	\N
+4555	Homestyle Asiago Ranch Chicken Club	681	Wendy’s	2	660	34	9	0	100	1650	52	3	7	38	638	2023-09-22 20:59:19.022995-03	\N
+4556	Homestyle Chicken Sandwich	682	Wendy’s	2	510	22	4	0	70	1150	51	3	6	28	492	2023-09-22 20:59:19.022995-03	\N
+4557	S’Awesome Sauce	683	Wendy’s	2	120	12	2	0	0	170	4	1	3	1	124	2023-09-22 20:59:19.022995-03	\N
+4558	Spicy Asiago Ranch Club	684	Wendy’s	2	670	32	9	0	100	1530	55	4	6	38	647	2023-09-22 20:59:19.022995-03	\N
+4559	Spicy Chicken Sandwich	685	Wendy’s	2	510	20	3.5	0	65	1030	54	4	6	29	491	2023-09-22 20:59:19.022995-03	\N
+4560	Spicy Chicken Wrap	686	Wendy’s	2	370	20	5	0	50	850	30	2	2	18	359	2023-09-22 20:59:19.022995-03	\N
+4561	Apple Pecan Chicken Salad, Full Size	687	Wendy’s	2	560	24	7	0	115	1020	52	7	40	38	569	2023-09-22 20:59:19.022995-03	\N
+4562	Apple Pecan Chicken Salad, Half Size	688	Wendy’s	2	340	17	4	0	55	550	29	4	22	20	346	2023-09-22 20:59:19.022995-03	\N
+4563	Berry Burst Chicken Salad, Full Size	689	Wendy’s	2	460	17	4.5	0	105	1090	41	7	29	41	453	2023-09-22 20:59:19.022995-03	\N
+4564	Berry Burst Chicken Salad, Half Size	690	Wendy’s	2	290	13	2.5	0	50	570	23	5	15	23	285	2023-09-22 20:59:19.022995-03	\N
+4565	Caesar Side Salad	691	Wendy’s	2	240	15	4	0	30	500	19	3	4	8	240	2023-09-22 20:59:19.022995-03	\N
+4566	Garden Side Salad	692	Wendy’s	2	250	18	4	0	20	460	18	2	4	7	251	2023-09-22 20:59:19.022995-03	\N
+4567	Southwest Avocado Chicken Salad, Full Size	693	Wendy’s	2	600	41	11	0	135	1220	18	7	7	42	576	2023-09-22 20:59:19.022995-03	\N
+4568	Southwest Avocado Chicken Salad, Half Size	694	Wendy’s	2	300	20	6	0	70	620	10	4	4	21	289	2023-09-22 20:59:19.022995-03	\N
+4569	Diet Mountain Dew® (20 fl oz)	695	KFC	5	10	0	0	0	0	90	1	0	1	0	11	2023-09-22 20:59:19.022995-03	\N
+4570	Spicy Caesar Chicken Salad, Full Size	696	Wendy’s	2	720	42	12	1	150	1680	44	8	6	42	696	2023-09-22 20:59:19.022995-03	\N
+4571	Spicy Caesar Chicken Salad, Half Size	697	Wendy’s	2	410	23	6	0.5	75	930	30	5	4	23	397	2023-09-22 20:59:19.022995-03	\N
+4572	Taco Salad, Full Size	698	Wendy’s	2	660	32	13	1	85	1820	63	10	18	32	659	2023-09-22 20:59:19.022995-03	\N
+4573	Taco Salad, Half Size	699	Wendy’s	2	470	23	8	0.5	45	1320	49	7	12	19	471	2023-09-22 20:59:19.022995-03	\N
+4574	Apple Bites	700	Wendy’s	2	35	0	0	0	0	0	9	2	7	0	42	2023-09-22 20:59:19.022995-03	\N
+4575	Baconator Fries	701	Wendy’s	2	490	28	9	0	35	550	45	4	2	14	487	2023-09-22 20:59:19.022995-03	\N
+4576	Bacon Cheese Baked Potato	702	Wendy’s	2	440	14	6	0	35	550	64	7	4	17	433	2023-09-22 20:59:19.022995-03	\N
+4577	Cheese Baked Potato	703	Wendy’s	2	430	13	7	0	30	560	65	7	5	14	428	2023-09-22 20:59:19.022995-03	\N
+4578	Chili & Cheese Baked Potato	704	Wendy’s	2	460	11	5	0	35	710	71	8	7	19	453	2023-09-22 20:59:19.022995-03	\N
+4579	Chili, Large	705	Wendy’s	2	250	7	3	0.5	50	1170	23	5	9	23	239	2023-09-22 20:59:19.022995-03	\N
+4580	Chili Cheese Fries	706	Wendy’s	2	500	25	8	0.5	35	710	53	6	4	16	496	2023-09-22 20:59:19.022995-03	\N
+4581	Natural-Cut Fries, Junior	707	Wendy’s	2	230	10	2	0	0	15	30	3	0	3	229	2023-09-22 20:59:19.022995-03	\N
+4582	Natural-Cut Fries, Large	708	Wendy’s	2	530	24	4.5	0	0	520	70	6	0	7	528	2023-09-22 20:59:19.022995-03	\N
+4583	Natural-Cut Fries, Medium	709	Wendy’s	2	420	19	3.5	0	0	420	56	5	0	6	418	2023-09-22 20:59:19.022995-03	\N
+4584	Natural-Cut Fries, Small	710	Wendy’s	2	320	15	2.5	0	0	320	43	4	0	5	318	2023-09-22 20:59:19.022995-03	\N
+4585	Plain Baked Potato	711	Wendy’s	2	270	0	0	0	0	25	61	7	3	7	266	2023-09-22 20:59:19.022995-03	\N
+4586	Sour Cream and Chive Baked Potato	712	Wendy’s	2	310	\N	2.5	0	10	35	63	7	4	8	309	2023-09-22 20:59:19.022995-03	\N
+4587	Summer Berry Burst Fruit Cup	713	Wendy’s	2	20	0	0	0	0	0	5	1	3	0	23	2023-09-22 20:59:19.022995-03	\N
+4588	1% Chocolate Milk	714	Wendy’s	2	150	\N	1.5	0	10	170	26	0	23	7	168	2023-09-22 20:59:19.022995-03	\N
+4589	1% White Milk	715	Wendy’s	2	90	2	1.5	0	10	105	10	0	10	7	95	2023-09-22 20:59:19.022995-03	\N
+4590	All-Natural Lemonade, Large	716	Wendy’s	2	380	0	0	0	0	0	100	0	93	0	473	2023-09-22 20:59:19.022995-03	\N
+4591	All-Natural Lemonade, Medium	717	Wendy’s	2	330	0	0	0	0	0	86	0	81	0	411	2023-09-22 20:59:19.022995-03	\N
+4592	All-Natural Lemonade, Small	718	Wendy’s	2	190	0	0	0	0	0	50	0	47	0	237	2023-09-22 20:59:19.022995-03	\N
+4593	Apple Kiwi Fruit Tea, Large	719	Wendy’s	2	330	0	0	0	0	60	83	0	80	0	410	2023-09-22 20:59:19.022995-03	\N
+4594	Apple Kiwi Fruit Tea, Medium	720	Wendy’s	2	300	0	0	0	0	50	76	0	73	0	373	2023-09-22 20:59:19.022995-03	\N
+4595	Apple Kiwi Fruit Tea, Small	721	Wendy’s	2	170	0	0	0	0	30	44	0	42	0	212	2023-09-22 20:59:19.022995-03	\N
+4596	Barq’s Root Beer, Large	722	Wendy’s	2	450	0	0	0	0	180	122	0	122	0	572	2023-09-22 20:59:19.022995-03	\N
+4597	Barq’s Root Beer, Medium	723	Wendy’s	2	360	0	0	0	0	150	98	0	98	0	458	2023-09-22 20:59:19.022995-03	\N
+4598	Barq’s Root Beer, Small	724	Wendy’s	2	220	0	0	0	0	90	61	0	61	0	281	2023-09-22 20:59:19.022995-03	\N
+4599	Brewed Unsweetened Iced Tea, Large	725	Wendy’s	2	5	0	0	0	0	25	2	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4600	Brewed Unsweetened Iced Tea, Medium	726	Wendy’s	2	0	0	0	0	0	15	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4601	Brewed Unsweetened Iced Tea, Small	727	Wendy’s	2	0	0	0	0	0	10	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4602	Caramel Iced Coffee, Medium	728	Wendy’s	2	240	8	5	0	25	45	40	0	36	3	278	2023-09-22 20:59:19.022995-03	\N
+4603	Caramel Iced Coffee, Small	729	Wendy’s	2	160	6	3.5	0	20	30	26	0	24	2	186	2023-09-22 20:59:19.022995-03	\N
+4604	Coca-Cola, Large	730	Wendy’s	2	400	0	0	0	0	90	109	0	109	0	509	2023-09-22 20:59:19.022995-03	\N
+4605	Coca-Cola, Medium	731	Wendy’s	2	320	0	0	0	0	70	87	0	87	0	407	2023-09-22 20:59:19.022995-03	\N
+4606	Coca-Cola, Small	732	Wendy’s	2	200	0	0	0	0	45	54	0	54	0	254	2023-09-22 20:59:19.022995-03	\N
+4607	Coca-Cola Zero Sugar, Large	733	Wendy’s	2	0	0	0	0	0	100	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4608	Coca-Cola Zero Sugar, Medium	734	Wendy’s	2	0	0	0	0	0	80	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4609	Coca-Cola Zero Sugar, Small	735	Wendy’s	2	0	0	0	0	0	50	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4610	Diet Coke, Large	736	Wendy’s	2	0	0	0	0	0	125	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4611	Diet Coke, Medium	737	Wendy’s	2	0	0	0	0	0	100	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4612	Diet Coke, Small	738	Wendy’s	2	0	0	0	0	0	45	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4613	Dr Pepper, Large	739	Wendy’s	2	240	0	0	0	0	70	66	0	64	0	304	2023-09-22 20:59:19.022995-03	\N
+4614	Dr Pepper, Medium	740	Wendy’s	2	190	0	0	0	0	55	53	0	51	0	241	2023-09-22 20:59:19.022995-03	\N
+4615	Dr Pepper, Small	741	Wendy’s	2	120	0	0	0	0	35	33	0	32	0	152	2023-09-22 20:59:19.022995-03	\N
+4616	Fanta Orange, Large	742	Wendy’s	2	430	0	0	0	0	110	117	0	115	0	545	2023-09-22 20:59:19.022995-03	\N
+4617	Fanta Orange, Medium	743	Wendy’s	2	340	0	0	0	0	85	94	0	92	0	432	2023-09-22 20:59:19.022995-03	\N
+4618	Fanta Orange, Small	744	Wendy’s	2	210	0	0	0	0	55	59	0	58	0	268	2023-09-22 20:59:19.022995-03	\N
+4619	Hi-C Flashin’ Fruit Punch, Large	745	Wendy’s	2	420	0	0	0	0	140	115	0	113	0	533	2023-09-22 20:59:19.022995-03	\N
+4620	Hi-C Flashin’ Fruit Punch, Medium	746	Wendy’s	2	340	0	0	0	0	115	92	0	90	0	430	2023-09-22 20:59:19.022995-03	\N
+4621	Hi-C Flashin’ Fruit Punch, Small	747	Wendy’s	2	210	0	0	0	0	70	58	0	56	0	266	2023-09-22 20:59:19.022995-03	\N
+4622	Honest Tropical Green Tea, Large	748	Wendy’s	2	110	0	0	0	0	55	29	0	29	0	139	2023-09-22 20:59:19.022995-03	\N
+4623	Honest Tropical Green Tea, Medium	749	Wendy’s	2	90	0	0	0	0	40	22	0	22	0	112	2023-09-22 20:59:19.022995-03	\N
+4624	Honest Tropical Green Tea, Small	750	Wendy’s	2	60	0	0	0	0	25	14	0	14	0	74	2023-09-22 20:59:19.022995-03	\N
+4625	Hot Tea	751	Wendy’s	2	0	0	0	0	0	0	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4626	Limeade, Large	752	Wendy’s	2	460	0	0	0	0	55	117	0	111	0	571	2023-09-22 20:59:19.022995-03	\N
+4627	Limeade, Medium	753	Wendy’s	2	380	0	0	0	0	45	98	0	93	0	473	2023-09-22 20:59:19.022995-03	\N
+4628	Limeade, Small	754	Wendy’s	2	230	0	0	0	0	30	59	0	56	0	286	2023-09-22 20:59:19.022995-03	\N
+4629	Minute Maid Light Lemonade, Large	755	Wendy’s	2	15	0	0	0	0	10	2	0	0	0	15	2023-09-22 20:59:19.022995-03	\N
+4630	Minute Maid Light Lemonade, Medium	756	Wendy’s	2	10	0	0	0	0	10	1	0	0	0	10	2023-09-22 20:59:19.022995-03	\N
+4631	Minute Maid Light Lemonade, Small	757	Wendy’s	2	5	0	0	0	0	5	1	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4632	Mocha Iced Coffee, Medium	758	Wendy’s	2	210	8	5	0	25	40	32	0	28	3	240	2023-09-22 20:59:19.022995-03	\N
+4633	Mocha Iced Coffee, Small	759	Wendy’s	2	170	6	3.5	0	20	30	28	0	25	2	197	2023-09-22 20:59:19.022995-03	\N
+4634	Pear Berry Fruit Tea, Large	760	Wendy’s	2	320	0	0	0	0	60	82	0	76	0	396	2023-09-22 20:59:19.022995-03	\N
+4635	Pear Berry Fruit Tea, Medium	761	Wendy’s	2	300	0	0	0	0	50	76	0	70	0	370	2023-09-22 20:59:19.022995-03	\N
+4636	Pear Berry Fruit Tea, Small	762	Wendy’s	2	170	0	0	0	0	30	44	0	40	0	210	2023-09-22 20:59:19.022995-03	\N
+4637	Skinny Vanilla Iced Coffee, Medium	763	Wendy’s	2	100	8	5	0	25	45	14	0	0	3	102	2023-09-22 20:59:19.022995-03	\N
+4638	Skinny Vanilla Iced Coffee, Small	764	Wendy’s	2	70	5	3.5	0	15	30	6	0	0	2	72	2023-09-22 20:59:19.022995-03	\N
+4639	Small Sprite, Small	765	Wendy’s	2	200	0	0	0	0	90	53	0	53	0	253	2023-09-22 20:59:19.022995-03	\N
+4640	Sprite, Large	766	Wendy’s	2	390	0	0	0	0	180	105	0	105	0	495	2023-09-22 20:59:19.022995-03	\N
+4641	Sprite, Medium	767	Wendy’s	2	310	0	0	0	0	140	84	0	84	0	394	2023-09-22 20:59:19.022995-03	\N
+4642	Strawberry Lemonade, Large	768	Wendy’s	2	480	0	0	0	0	55	121	0	114	0	594	2023-09-22 20:59:19.022995-03	\N
+4643	Strawberry Lemonade, Medium	769	Wendy’s	2	380	0	0	0	0	45	98	0	92	0	472	2023-09-22 20:59:19.022995-03	\N
+4644	Strawberry Lemonade, Small	770	Wendy’s	2	230	0	0	0	0	30	58	0	54	0	284	2023-09-22 20:59:19.022995-03	\N
+4645	Strawberry Sweet Tea, Large	771	Wendy’s	2	270	0	0	0	0	15	69	0	67	0	337	2023-09-22 20:59:19.022995-03	\N
+4646	Strawberry Sweet Tea, Medium	772	Wendy’s	2	240	0	0	0	0	15	60	0	59	0	299	2023-09-22 20:59:19.022995-03	\N
+4647	Strawberry Sweet Tea, Small	773	Wendy’s	2	140	0	0	0	0	10	36	0	35	0	175	2023-09-22 20:59:19.022995-03	\N
+4648	Strawberry Tea, Large	774	Wendy’s	2	90	0	0	0	0	20	22	0	20	0	110	2023-09-22 20:59:19.022995-03	\N
+4649	Strawberry Tea, Medium	775	Wendy’s	2	60	0	0	0	0	15	16	0	14	0	74	2023-09-22 20:59:19.022995-03	\N
+4650	Strawberry Tea, Small	776	Wendy’s	2	45	0	0	0	0	10	11	0	10	0	55	2023-09-22 20:59:19.022995-03	\N
+4651	Sweetened Iced Tea, Large	777	Wendy’s	2	300	0	0	0	0	25	77	0	75	0	375	2023-09-22 20:59:19.022995-03	\N
+4652	Sweetened Iced Tea, Medium	778	Wendy’s	2	220	0	0	0	0	20	58	0	56	0	276	2023-09-22 20:59:19.022995-03	\N
+4653	Sweetened Iced Tea, Small	779	Wendy’s	2	160	0	0	0	0	10	41	0	40	0	200	2023-09-22 20:59:19.022995-03	\N
+4654	Vanilla Iced Coffee, Medium	780	Wendy’s	2	250	8	5	0	25	40	42	0	39	3	291	2023-09-22 20:59:19.022995-03	\N
+4655	Vanilla Iced Coffee, Small	781	Wendy’s	2	170	6	3.5	0	20	30	28	0	26	2	198	2023-09-22 20:59:19.022995-03	\N
+4656	Classic Chocolate Frosty, Junior	782	Wendy’s	2	200	5	3	0	20	90	33	0	27	6	224	2023-09-22 20:59:19.022995-03	\N
+4657	Classic Chocolate Frosty, Large	783	Wendy’s	2	590	15	10	0.5	60	260	99	0	81	17	664	2023-09-22 20:59:19.022995-03	\N
+4658	Classic Chocolate Frosty, Medium	784	Wendy’s	2	470	12	8	0.5	50	210	79	0	65	13	530	2023-09-22 20:59:19.022995-03	\N
+4659	Classic Chocolate Frosty, Small	785	Wendy’s	2	350	9	6	0	35	150	58	0	47	10	393	2023-09-22 20:59:19.022995-03	\N
+4660	Vanilla Frosty, Junior	786	Wendy’s	2	190	5	3.5	0	25	90	32	0	27	5	216	2023-09-22 20:59:19.022995-03	\N
+4661	Vanilla Frosty, Large	787	Wendy’s	2	570	15	10	0.5	70	260	94	0	78	15	643	2023-09-22 20:59:19.022995-03	\N
+4662	Vanilla Frosty, Medium	788	Wendy’s	2	450	12	8	0.5	55	210	75	0	63	12	509	2023-09-22 20:59:19.022995-03	\N
+4663	Vanilla Frosty, Small	789	Wendy’s	2	340	9	6	0	45	160	56	0	47	9	384	2023-09-22 20:59:19.022995-03	\N
+4664	Chocolate Chunk Cookie	790	Wendy’s	2	310	16	8	0	20	210	40	2	24	3	339	2023-09-22 20:59:19.022995-03	\N
+4665	Double Chocolate Chunk Cookie	791	Wendy’s	2	290	14	7	0	20	230	39	4	21	4	314	2023-09-22 20:59:19.022995-03	\N
+4666	Sugar Cookie	792	Wendy’s	2	330	16	8	0	25	300	43	1	24	3	359	2023-09-22 20:59:19.022995-03	\N
+4667	Wendy’s Kids’ Meal	793	Wendy’s	2	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4668	Kids 2 Piece Chicken Tenders	794	Wendy’s	2	200	10	1.5	0	45	620	13	0	0	15	187	2023-09-22 20:59:19.022995-03	\N
+4669	Kids 4 Piece Chicken Nuggets	795	Wendy’s	2	170	11	2	0	35	340	10	0	0	9	163	2023-09-22 20:59:19.022995-03	\N
+4670	Kids Cheeseburger	796	Wendy’s	2	280	13	6	0.5	50	540	25	1	5	15	276	2023-09-22 20:59:19.022995-03	\N
+4671	Kids Grilled Chicken Wrap	797	Wendy’s	2	270	10	3.5	0	55	640	24	2	3	20	257	2023-09-22 20:59:19.022995-03	\N
+4672	Kids Hamburger	798	Wendy’s	2	240	9	3.5	0.5	40	350	24	1	5	13	236	2023-09-22 20:59:19.022995-03	\N
+4673	Artisan Egg Sandwich with Bacon	799	Wendy’s	2	320	17	8	0	245	750	25	1	4	18	314	2023-09-22 20:59:19.022995-03	\N
+4674	Artisan Egg Sandwich with Sausage	800	Wendy’s	2	480	33	13	0	275	980	27	1	4	21	476	2023-09-22 20:59:19.022995-03	\N
+4675	Bacon Breakfast Bowl	801	Wendy’s	2	510	28	9	0	245	1390	44	4	2	19	502	2023-09-22 20:59:19.022995-03	\N
+4676	Biggie Breakfast Sandwich	802	Wendy’s	2	610	40	15	0	290	1400	37	2	7	27	605	2023-09-22 20:59:19.022995-03	\N
+4677	Fresh-Baked Biscuit with Applewood Smoked Bacon	803	Wendy’s	2	410	24	13	0	235	970	34	1	5	15	413	2023-09-22 20:59:19.022995-03	\N
+4678	Fresh Baked Biscuit with Natural Sausage	804	Wendy’s	2	590	41	19	0	270	1270	36	1	6	20	595	2023-09-22 20:59:19.022995-03	\N
+4679	Gravy and Sausage Bowl	805	Wendy’s	2	450	22	6	0	220	1260	50	4	2	12	446	2023-09-22 20:59:19.022995-03	\N
+4680	Honey Butter Chicken Biscuit	806	Wendy’s	2	500	26	12	0	50	1120	48	1	9	19	502	2023-09-22 20:59:19.022995-03	\N
+4681	Sausage and Egg Burrito	807	Wendy’s	2	360	20	8	0	210	920	29	1	2	17	353	2023-09-22 20:59:19.022995-03	\N
+4682	Sausage and Gravy Biscuit	808	Wendy’s	2	490	29	14	0	20	1400	49	2	6	8	502	2023-09-22 20:59:19.022995-03	\N
+4683	Sausage Biscuit	809	Wendy’s	2	480	33	15	0	50	1010	35	1	5	12	488	2023-09-22 20:59:19.022995-03	\N
+4684	Sausage Breakfast Bowl	810	Wendy’s	2	640	42	14	0	270	1540	46	4	3	21	636	2023-09-22 20:59:19.022995-03	\N
+4685	Seasoned Home-Style Potatoes, Large	811	Wendy’s	2	360	13	2.5	0	0	1080	57	6	1	5	359	2023-09-22 20:59:19.022995-03	\N
+4686	Seasoned Home-Style Potatoes, Medium	812	Wendy’s	2	250	9	1.5	0	0	750	39	4	1	4	249	2023-09-22 20:59:19.022995-03	\N
+4687	Seasoned Home-Style Potatoes, Small	813	Wendy’s	2	230	8	1.5	0	0	680	35	4	0	3	229	2023-09-22 20:59:19.022995-03	\N
+4688	Two Sausage and Egg Burritos	814	Wendy’s	2	720	41	16	0	420	1830	59	2	5	34	707	2023-09-22 20:59:19.022995-03	\N
+4689	Two Sausage Biscuits	815	Wendy’s	2	960	65	31	0	95	2020	70	3	10	23	978	2023-09-22 20:59:19.022995-03	\N
+4690	Limited Time Cinnabon Dessert  Biscuits	816	KFC	5	290	13	7	0	\N	580	40	2	17	4	310	2023-09-22 20:59:19.022995-03	\N
+4691	Limited Time ORIGINAL RECIPE CHICKEN Chicken Breast	817	KFC	5	390	21	4	0	120	1190	11	2	0	39	355	2023-09-22 20:59:19.022995-03	\N
+4692	Limited Time ORIGINAL RECIPE CHICKEN Chicken Limited Time Drumstick	818	KFC	5	130	8	1.5	0	55	430	4	1	0	12	119.5	2023-09-22 20:59:19.022995-03	\N
+4693	Limited Time ORIGINAL RECIPE CHICKEN Chicken Thigh	819	KFC	5	280	19	4.5	0	100	910	8	1	0	19	265.5	2023-09-22 20:59:19.022995-03	\N
+4694	Limited Time ORIGINAL RECIPE CHICKEN Chicken Whole Wing	820	KFC	5	130	8	2	0	55	380	3	0	0	10	122	2023-09-22 20:59:19.022995-03	\N
+4695	Chicken Drumstick	821	KFC	5	250	21	3.5	0	50	530	6	1	0	11	242.5	2023-09-22 20:59:19.022995-03	\N
+4696	Chicken Thigh	822	KFC	5	500	40	7	0	100	970	11	1	1	22	486	2023-09-22 20:59:19.022995-03	\N
+4697	Chicken Whole Wing	823	KFC	5	290	25	4	0	45	520	6	1	1	10	285	2023-09-22 20:59:19.022995-03	\N
+4698	Breast	824	KFC	5	260	12	3	0	130	790	1	0	0	38	225	2023-09-22 20:59:19.022995-03	\N
+4699	Drumstick	825	KFC	5	100	6	1.5	0	55	260	0	0	0	11	90.5	2023-09-22 20:59:19.022995-03	\N
+4700	Thigh	826	KFC	5	180	12	3.5	0	90	470	0	0	0	17	166.5	2023-09-22 20:59:19.022995-03	\N
+4701	Whole Wing	827	KFC	5	180	15	2.5	0	35	450	5	1	0	8	174.5	2023-09-22 20:59:19.022995-03	\N
+4702	Thigh	828	KFC	5	180	12	3.5	0	90	470	0	0	0	17	166.5	2023-09-22 20:59:19.022995-03	\N
+4703	Whole Wing	829	KFC	5	180	15	2.5	0	35	450	5	1	0	8	174.5	2023-09-22 20:59:19.022995-03	\N
+4704	EXTRA CRISPY  Chicken Breast	830	KFC	5	530	35	6	0	105	1150	18	0	0	35	501	2023-09-22 20:59:19.022995-03	\N
+4705	EXTRA CRISPY  Chicken Drumstick	831	KFC	5	170	12	2	0	50	390	5	0	0	10	162	2023-09-22 20:59:19.022995-03	\N
+4706	EXTRA CRISPY  Chicken Thigh	832	KFC	5	330	23	4.5	0	100	700	9	0	0	22	312.5	2023-09-22 20:59:19.022995-03	\N
+4707	EXTRA CRISPY  Chicken Whole Wing	833	KFC	5	170	13	2	0	45	340	5	0	0	10	162	2023-09-22 20:59:19.022995-03	\N
+4708	KENTUCKY GRILLED CHICKEN Breast	834	KFC	5	210	7	2	0	130	710	0	0	0	38	174	2023-09-22 20:59:19.022995-03	\N
+4709	KENTUCKY GRILLED CHICKEN Drumstick	835	KFC	5	80	4	1	0	55	220	0	0	0	11	70	2023-09-22 20:59:19.022995-03	\N
+4710	KENTUCKY GRILLED CHICKEN Thigh	836	KFC	5	150	9	3	0	90	420	0	0	0	17	136	2023-09-22 20:59:19.022995-03	\N
+4711	KENTUCKY GRILLED CHICKEN Whole Wing	837	KFC	5	70	3	1	0	45	180	0	0	0	9	62	2023-09-22 20:59:19.022995-03	\N
+4712	SPICY CRISPY CHICKEN Breast	838	KFC	5	350	20	3.5	0	100	1100	11	1	0	30	323.5	2023-09-22 20:59:19.022995-03	\N
+4713	SPICY CRISPY CHICKEN Drumstick	839	KFC	5	130	8	1.5	0	40	420	5	1	0	9	122.5	2023-09-22 20:59:19.022995-03	\N
+4714	SPICY CRISPY CHICKEN Thigh	840	KFC	5	270	20	3.5	0	65	720	10	1	0	13	260.5	2023-09-22 20:59:19.022995-03	\N
+4715	SPICY CRISPY CHICKEN Whole Wing	841	KFC	5	120	8	1.5	0	35	350	5	0	0	7	114.5	2023-09-22 20:59:19.022995-03	\N
+4716	EXTRA CRISPY  Tender (each)	842	KFC	5	220	16	2.5	0	25	460	9	\N	0	10	212.5	2023-09-22 20:59:19.022995-03	\N
+4717	EXTRA CRISPY  Tender (each)	843	KFC	5	220	16	2.5	0	25	460	9	\N	0	10	212.5	2023-09-22 20:59:19.022995-03	\N
+4718	KENTUCKY FRIED WINGS Buffalo	844	KFC	5	100	7	1.5	0	20	310	3	0	0	5	96.5	2023-09-22 20:59:19.022995-03	\N
+4719	KENTUCKY FRIED WINGS Honey BBQ	845	KFC	5	100	6	1	0	20	210	8	0	4	5	100	2023-09-22 20:59:19.022995-03	\N
+4720	KENTUCKY FRIED WINGS Nashville Hot	846	KFC	5	130	11	2	0	20	230	4	0	0	5	127	2023-09-22 20:59:19.022995-03	\N
+4721	KENTUCKY FRIED WINGS Unsauced	847	KFC	5	80	6	1	0	20	150	3	0	0	5	76	2023-09-22 20:59:19.022995-03	\N
+4722	POPCORN NUGGETS Kids	848	KFC	5	290	19	2.5	0	30	870	19	1	0	13	279.5	2023-09-22 20:59:19.022995-03	\N
+4723	POPCORN NUGGETS Large	849	KFC	5	620	39	5	0	65	1820	39	2	0	27	598	2023-09-22 20:59:19.022995-03	\N
+4724	BBQ Baked Beans	850	KFC	5	190	1	0	0	0	650	34	7	15	11	194	2023-09-22 20:59:19.022995-03	\N
+4725	Biscuit	851	KFC	5	180	8	4.5	0	0	520	22	1	1	4	181.5	2023-09-22 20:59:19.022995-03	\N
+4726	Coleslaw	852	KFC	5	170	12	2	0	\N	180	14	4	10	1	181	2023-09-22 20:59:19.022995-03	\N
+4727	Corn on the Cob	853	KFC	5	70	\N	0	0	0	0	17	2	3	2	71	2023-09-22 20:59:19.022995-03	\N
+4728	Honey Mustard – Dipping Sauce Cup	854	KFC	5	110	9	1.5	0	\N	120	6	0	6	0	117.5	2023-09-22 20:59:19.022995-03	\N
+4729	Honey Sauce Packet	855	KFC	5	30	0	0	0	0	0	8	0	5	0	35	2023-09-22 20:59:19.022995-03	\N
+4730	KFC Sauce – Dipping Sauce Cup	856	KFC	5	90	8	1.5	0	10	170	5	0	5	0	96.5	2023-09-22 20:59:19.022995-03	\N
+4731	Lemon Juice Packet	857	KFC	5	5	0	0	0	0	20	1	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4732	Ranch – Dipping Sauce Cup	858	KFC	5	130	14	2.5	0	10	240	2	0	1	0	133.5	2023-09-22 20:59:19.022995-03	\N
+4733	Strawberry Jam Packet	859	KFC	5	35	0	0	0	0	0	9	0	6	0	41	2023-09-22 20:59:19.022995-03	\N
+4734	Capri Sun® 100% Juice Fruit Punch	860	KFC	5	80	0	0	0	0	25	21	0	20	0	100	2023-09-22 20:59:19.022995-03	\N
+4735	Chocolate Milk 1%	861	KFC	5	150	\N	1.5	0	10	170	26	0	23	7	167.5	2023-09-22 20:59:19.022995-03	\N
+4736	Musselman’s™ Applesauce	862	KFC	5	45	0	0	0	0	0	12	1	8	0	53	2023-09-22 20:59:19.022995-03	\N
+4737	7UP® (12 fl oz)	863	KFC	5	140	0	0	0	0	50	35	0	35	0	175	2023-09-22 20:59:19.022995-03	\N
+4738	7UP® (16 fl oz)	864	KFC	5	190	0	0	0	0	70	46	0	46	0	236	2023-09-22 20:59:19.022995-03	\N
+4739	7UP® (20 fl oz)	865	KFC	5	240	0	0	0	0	85	58	0	58	0	298	2023-09-22 20:59:19.022995-03	\N
+4740	7UP® (30 fl oz)	866	KFC	5	350	0	0	0	0	125	87	0	87	0	437	2023-09-22 20:59:19.022995-03	\N
+4741	Classic Lemonade (1/2 Gallon)	867	KFC	5	880	0	0	0	0	780	234	0	228	0	1108	2023-09-22 20:59:19.022995-03	\N
+4742	Classic Lemonade (20 fl oz)	868	KFC	5	140	0	0	0	0	130	39	0	38	0	178	2023-09-22 20:59:19.022995-03	\N
+4743	Code Red Mountain Dew® (12 fl oz)	869	KFC	5	170	0	0	0	0	50	46	0	46	0	216	2023-09-22 20:59:19.022995-03	\N
+4744	Code Red Mountain Dew® (16 fl oz)	870	KFC	5	230	0	0	0	0	65	62	0	62	0	292	2023-09-22 20:59:19.022995-03	\N
+4745	Code Red Mountain Dew® (20 fl oz)	871	KFC	5	290	0	0	0	0	85	77	0	77	0	367	2023-09-22 20:59:19.022995-03	\N
+4746	Code Red Mountain Dew® (30 fl oz)	872	KFC	5	430	0	0	0	0	125	116	0	115	0	545	2023-09-22 20:59:19.022995-03	\N
+4747	Diet Dr Pepper® (12 fl oz)	873	KFC	5	0	0	0	0	0	70	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4749	Diet Dr Pepper® (20 fl oz)	875	KFC	5	0	0	0	0	0	120	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4750	Diet Dr Pepper® (30 fl oz)	876	KFC	5	0	0	0	0	0	180	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4751	Diet Mist Twst® (12 fl oz)	877	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4752	Diet Mist Twst® (16 fl oz)	878	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4753	Diet Mist Twst® (20 fl oz)	879	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4754	Diet Mist Twst® (30 fl oz)	880	KFC	5	5	0	0	0	0	95	0	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4755	Diet Mountain Dew® (12 fl oz)	881	KFC	5	0	0	0	0	0	55	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4756	Diet Mountain Dew® (16 fl oz)	882	KFC	5	5	0	0	0	0	75	1	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4757	Diet Mountain Dew® (30 fl oz)	883	KFC	5	10	0	0	0	0	140	1	0	1	0	11	2023-09-22 20:59:19.022995-03	\N
+4758	Diet Pepsi® (12 fl oz)	884	KFC	5	0	0	0	0	0	55	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4759	Diet Pepsi® (16 fl oz)	885	Taco Bell	4	0	\N	\N	\N	\N	75	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4760	Diet Pepsi® (20 fl oz)	886	KFC	5	0	0	0	0	0	95	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4761	Diet Pepsi® (30 fl oz)	887	KFC	5	0	0	0	0	0	140	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4762	Diet Pepsi® Wild Cherry Pepsi® (12 fl oz)	888	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4763	Diet Pepsi® Wild Cherry Pepsi® (16 fl oz)	889	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4764	Diet Pepsi® Wild Cherry Pepsi® (20 fl oz)	890	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4765	Diet Pepsi® Wild Cherry Pepsi® (30 fl oz)	891	KFC	5	0	0	0	0	0	95	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4766	Dr Pepper® (12 fl oz)	892	KFC	5	140	0	0	0	0	45	39	0	38	0	178	2023-09-22 20:59:19.022995-03	\N
+4767	Dr Pepper® (16 fl oz)	893	KFC	5	190	0	0	0	0	60	52	0	51	0	241	2023-09-22 20:59:19.022995-03	\N
+4768	Dr Pepper® (20 fl oz)	894	KFC	5	240	0	0	0	0	75	65	0	64	0	304	2023-09-22 20:59:19.022995-03	\N
+4769	Dr Pepper® (30 fl oz)	895	KFC	5	360	0	0	0	0	110	98	0	96	0	456	2023-09-22 20:59:19.022995-03	\N
+4770	Lipton® Brisk® Lemon Tea (12 fl oz)	896	KFC	5	80	0	0	0	0	40	22	0	22	0	102	2023-09-22 20:59:19.022995-03	\N
+4771	Lipton® Brisk® Lemon Tea (16 fl oz)	897	KFC	5	110	0	0	0	0	55	29	0	29	0	139	2023-09-22 20:59:19.022995-03	\N
+4772	Lipton® Brisk® Lemon Tea (20 fl oz)	898	KFC	5	140	0	0	0	0	70	36	0	36	0	176	2023-09-22 20:59:19.022995-03	\N
+4773	Lipton® Brisk® Lemon Tea (30 fl oz)	899	KFC	5	210	0	0	0	0	105	55	0	54	0	264	2023-09-22 20:59:19.022995-03	\N
+4774	Lipton® Brisk® No Calorie Peach Iced Green Tea (12 fl oz)	900	KFC	5	0	0	0	0	0	105	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4775	Lipton® Brisk® No Calorie Peach Iced Green Tea (16 fl oz)	901	KFC	5	0	0	0	0	0	140	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4776	Lipton® Brisk® No Calorie Peach Iced Green Tea (20 fl oz)	902	KFC	5	5	0	0	0	0	180	0	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4777	Lipton® Brisk® No Calorie Peach Iced Green Tea (30 fl oz)	903	KFC	5	10	0	0	0	0	270	0	0	0	0	10	2023-09-22 20:59:19.022995-03	\N
+4778	Lipton® Brisk® Raspberry Tea (12 fl oz)	904	KFC	5	80	0	0	0	0	45	20	0	20	0	100	2023-09-22 20:59:19.022995-03	\N
+4779	Lipton® Brisk® Raspberry Tea (16 fl oz)	905	KFC	5	100	0	0	0	0	55	26	0	26	0	126	2023-09-22 20:59:19.022995-03	\N
+4780	Lipton® Brisk® Raspberry Tea (20 fl oz)	906	KFC	5	130	0	0	0	0	70	33	0	33	0	163	2023-09-22 20:59:19.022995-03	\N
+4781	Lipton® Brisk® Raspberry Tea (30 fl oz)	907	KFC	5	190	0	0	0	0	110	49	0	49	0	239	2023-09-22 20:59:19.022995-03	\N
+4782	Lipton® Brisk® Sweet Iced Tea (12 fl oz)	908	KFC	5	80	0	0	0	0	45	22	0	21	0	101	2023-09-22 20:59:19.022995-03	\N
+4783	Lipton® Brisk® Sweet Iced Tea (16 fl oz)	909	KFC	5	110	0	0	0	0	65	29	0	29	0	139	2023-09-22 20:59:19.022995-03	\N
+4784	Lipton® Brisk® Sweet Iced Tea (20 fl oz)	910	KFC	5	130	0	0	0	0	80	36	0	36	0	166	2023-09-22 20:59:19.022995-03	\N
+4785	Lipton® Brisk® Sweet Iced Tea (30 fl oz)	911	KFC	5	200	0	0	0	0	120	54	0	54	0	254	2023-09-22 20:59:19.022995-03	\N
+4786	Lipton® Brisk® Unsweetened No Lemon Iced Tea (12 fl oz)	912	KFC	5	0	0	0	0	0	45	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4787	Lipton® Brisk® Unsweetened No Lemon Iced Tea (16 fl oz)	913	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4788	Lipton® Brisk® Unsweetened No Lemon Iced Tea (20 fl oz)	914	KFC	5	0	0	0	0	0	75	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4789	Lipton® Brisk® Unsweetened No Lemon Iced Tea (30 fl oz)	915	KFC	5	0	0	0	0	0	115	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4790	Manzanita Sol® (12 fl oz)	916	KFC	5	160	0	0	0	0	35	42	0	42	0	202	2023-09-22 20:59:19.022995-03	\N
+4791	Manzanita Sol® (16 fl oz)	917	KFC	5	210	0	0	0	0	45	57	0	57	0	267	2023-09-22 20:59:19.022995-03	\N
+4792	Manzanita Sol® (20 fl oz)	918	KFC	5	260	0	0	0	0	55	71	0	71	0	331	2023-09-22 20:59:19.022995-03	\N
+4793	Manzanita Sol® (30 fl oz)	919	KFC	5	400	0	0	0	0	80	106	0	106	0	506	2023-09-22 20:59:19.022995-03	\N
+4794	Miranda® Strawberry (12 fl oz)	920	KFC	5	160	0	0	0	0	70	44	0	44	0	204	2023-09-22 20:59:19.022995-03	\N
+4795	Miranda® Strawberry (16 fl oz)	921	KFC	5	220	0	0	0	0	95	58	0	58	0	278	2023-09-22 20:59:19.022995-03	\N
+4796	Miranda® Strawberry (20 fl oz)	922	KFC	5	270	0	0	0	0	120	73	0	73	0	343	2023-09-22 20:59:19.022995-03	\N
+4797	Miranda® Strawberry (30 fl oz)	923	KFC	5	410	0	0	0	0	180	109	0	109	0	519	2023-09-22 20:59:19.022995-03	\N
+4798	Mist Twst® (12 fl oz)	924	KFC	5	150	0	0	0	0	35	41	0	41	0	191	2023-09-22 20:59:19.022995-03	\N
+4799	Mist Twst® (16 fl oz)	925	KFC	5	200	0	0	0	0	45	54	0	54	0	254	2023-09-22 20:59:19.022995-03	\N
+4800	Mist Twst® (20 fl oz)	926	KFC	5	260	0	0	0	0	55	68	0	68	0	328	2023-09-22 20:59:19.022995-03	\N
+4801	Mist Twst® (30 fl oz)	927	KFC	5	380	0	0	0	0	80	101	0	101	0	481	2023-09-22 20:59:19.022995-03	\N
+4802	MNT DEW Sweet Lightning (20 fl oz)	928	KFC	5	120	0	0	0	0	190	32	0	25	0	145	2023-09-22 20:59:19.022995-03	\N
+4803	Mountain Dew® (12 fl oz)	929	KFC	5	160	0	0	0	0	50	44	0	44	0	204	2023-09-22 20:59:19.022995-03	\N
+4804	Mountain Dew® (16 fl oz)	930	KFC	5	220	0	0	0	0	70	59	0	58	0	278	2023-09-22 20:59:19.022995-03	\N
+4805	Mountain Dew® (20 fl oz)	931	KFC	5	270	0	0	0	0	85	73	0	73	0	343	2023-09-22 20:59:19.022995-03	\N
+4806	Mountain Dew® (30 fl oz)	932	KFC	5	410	0	0	0	0	125	110	0	109	0	519	2023-09-22 20:59:19.022995-03	\N
+4807	Mug Root Beer® (12 fl oz)	933	KFC	5	140	0	0	0	0	45	39	0	39	0	179	2023-09-22 20:59:19.022995-03	\N
+4808	Mug Root Beer® (16 fl oz)	934	KFC	5	190	0	0	0	0	60	52	0	52	0	242	2023-09-22 20:59:19.022995-03	\N
+4809	Mug Root Beer® (20 fl oz)	935	KFC	5	240	0	0	0	0	75	65	0	65	0	305	2023-09-22 20:59:19.022995-03	\N
+4810	Mug Root Beer® (30 fl oz)	936	KFC	5	360	0	0	0	0	110	98	0	98	0	458	2023-09-22 20:59:19.022995-03	\N
+4811	Pepsi Zero Sugar® (12 fl oz)	937	KFC	5	0	0	0	0	0	35	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4812	Pepsi Zero Sugar® (16 fl oz)	938	KFC	5	0	0	0	0	0	50	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4813	Pepsi Zero Sugar® (20 fl oz)	939	KFC	5	0	0	0	0	0	60	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4814	Pepsi Zero Sugar® (30 fl oz)	940	KFC	5	0	0	0	0	0	95	1	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4815	Pepsi® (12 fl oz)	941	KFC	5	150	0	0	0	0	30	41	0	41	0	191	2023-09-22 20:59:19.022995-03	\N
+4816	Pepsi® (16 fl oz)	942	Taco Bell	4	200	\N	\N	\N	\N	45	55	\N	\N	55	\N	2023-09-22 20:59:19.022995-03	\N
+4817	Pepsi® (20 fl oz)	943	Taco Bell	4	250	\N	\N	\N	\N	55	69	\N	\N	69	\N	2023-09-22 20:59:19.022995-03	\N
+4818	Pepsi® (30 fl oz)	944	KFC	5	380	0	0	0	0	80	104	0	103	0	483	2023-09-22 20:59:19.022995-03	\N
+4819	Sobe Lifewater Yumberry Pomegranate (12 fl oz)	945	KFC	5	0	0	0	0	0	45	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4820	Sobe Lifewater Yumberry Pomegranate (16 fl oz)	946	KFC	5	0	0	0	0	0	65	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4821	Sobe Lifewater Yumberry Pomegranate (20 fl oz)	947	KFC	5	0	0	0	0	0	80	0	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4822	Sobe Lifewater Yumberry Pomegranate (30 fl oz)	948	KFC	5	5	0	0	0	0	120	1	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4823	Strawberry Lemonade (1/2 Gallon)	949	KFC	5	950	0	0	0	0	790	270	0	264	0	1214	2023-09-22 20:59:19.022995-03	\N
+4824	Strawberry Lemonade (20 fl oz)	950	KFC	5	170	0	0	0	0	130	45	0	44	0	214	2023-09-22 20:59:19.022995-03	\N
+4825	Tropicana® Fruit Punch (12 fl oz)	951	KFC	5	170	0	0	0	0	35	45	0	45	0	215	2023-09-22 20:59:19.022995-03	\N
+4826	Tropicana® Fruit Punch (16 fl oz)	952	KFC	5	230	0	0	0	0	45	60	0	60	0	290	2023-09-22 20:59:19.022995-03	\N
+4827	Tropicana® Fruit Punch (20 fl oz)	953	KFC	5	280	0	0	0	0	60	75	0	75	0	355	2023-09-22 20:59:19.022995-03	\N
+4828	Tropicana® Fruit Punch (30 fl oz)	954	KFC	5	420	0	0	0	0	90	113	0	112	0	532	2023-09-22 20:59:19.022995-03	\N
+4829	Tropicana® Light Lemonade (12 fl oz)	955	KFC	5	5	0	0	0	0	140	0	0	0	0	5	2023-09-22 20:59:19.022995-03	\N
+4830	Tropicana® Light Lemonade (16 fl oz)	956	KFC	5	10	0	0	0	0	190	0	0	0	0	10	2023-09-22 20:59:19.022995-03	\N
+4831	Tropicana® Light Lemonade (20 fl oz)	957	KFC	5	10	0	0	0	0	240	0	0	0	0	10	2023-09-22 20:59:19.022995-03	\N
+4832	Tropicana® Light Lemonade (30 fl oz)	958	KFC	5	15	0	0	0	0	350	1	0	0	0	15	2023-09-22 20:59:19.022995-03	\N
+4833	Tropicana® Pink Lemonade (12 fl oz)	959	KFC	5	150	0	0	0	0	160	40	0	40	0	190	2023-09-22 20:59:19.022995-03	\N
+4834	Power Menu Bowl – Chicken	960	Taco Bell	4	470	170	19	6	0	70	1200	50	7	2	26	2023-09-22 20:59:19.022995-03	\N
+4835	Tropicana® Pink Lemonade (16 fl oz)	961	KFC	5	210	0	0	0	0	210	53	0	53	0	263	2023-09-22 20:59:19.022995-03	\N
+4836	Tropicana® Pink Lemonade (20 fl oz)	962	Taco Bell	4	260	\N	\N	\N	\N	260	67	\N	\N	67	\N	2023-09-22 20:59:19.022995-03	\N
+4837	Tropicana® Pink Lemonade (30 fl oz)	963	KFC	5	390	0	0	0	0	390	100	0	100	0	490	2023-09-22 20:59:19.022995-03	\N
+4838	Tropicana® Twister® Orange (12 fl oz)	964	KFC	5	170	0	0	0	0	35	46	0	46	0	216	2023-09-22 20:59:19.022995-03	\N
+4839	Tropicana® Twister® Orange (16 fl oz)	965	KFC	5	230	0	0	0	0	50	61	0	61	0	291	2023-09-22 20:59:19.022995-03	\N
+4840	Tropicana® Twister® Orange (20 fl oz)	966	KFC	5	290	0	0	0	0	60	76	0	76	0	366	2023-09-22 20:59:19.022995-03	\N
+4841	Tropicana® Twister® Orange (30 fl oz)	967	KFC	5	430	0	0	0	0	90	115	0	114	0	544	2023-09-22 20:59:19.022995-03	\N
+4842	Wild Cherry Pepsi® (12 fl oz)	968	KFC	5	160	0	0	0	0	30	42	0	42	0	202	2023-09-22 20:59:19.022995-03	\N
+4843	Wild Cherry Pepsi® (16 fl oz)	969	KFC	5	210	0	0	0	0	40	56	0	56	0	266	2023-09-22 20:59:19.022995-03	\N
+4844	Wild Cherry Pepsi® (20 fl oz)	970	KFC	5	260	0	0	0	0	50	70	0	70	0	330	2023-09-22 20:59:19.022995-03	\N
+4845	Wild Cherry Pepsi® (30 fl oz)	971	KFC	5	390	0	0	0	0	80	105	0	105	0	495	2023-09-22 20:59:19.022995-03	\N
+4846	Country Fried Steak without Peppered White Gravy	972	KFC	5	360	24	7	1	35	750	22	2	0	13	354	2023-09-22 20:59:19.022995-03	\N
+4847	Country Fried Steak with Peppered White Gravy	973	KFC	5	390	26	7	1	35	910	26	2	0	13	384	2023-09-22 20:59:19.022995-03	\N
+4848	Bacon Club Chalupa	974	Taco Bell	4	440	240	27	5	0	50	840	31	2	3	20	2023-09-22 20:59:19.022995-03	\N
+4849	Blue Raspberry Freeze™ (16 oz)	975	Taco Bell	4	120	0	0	0	0	0	35	30	0	30	0	2023-09-22 20:59:19.022995-03	\N
+4850	Blue Raspberry Freeze™ (20 oz)	976	Taco Bell	4	150	0	0	0	0	0	40	38	0	38	0	2023-09-22 20:59:19.022995-03	\N
+4851	Loaded Nacho Taco	977	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-22 20:59:19.022995-03	\N
+4852	Midnight Berry Freeze™ (16 oz)	978	Taco Bell	4	140	0	0	0	0	0	35	35	0	34	0	2023-09-22 20:59:19.022995-03	\N
+4853	Midnight Berry Freeze™ (20 oz)	979	Taco Bell	4	170	0	0	0	0	0	40	43	0	42	0	2023-09-22 20:59:19.022995-03	\N
+4854	Nacho Fries BellGrande®	980	Taco Bell	4	710	360	40	6	0	30	1440	73	10	4	13	2023-09-22 20:59:19.022995-03	\N
+4855	Black Bean Chalupa – Online Exclusive	981	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-22 20:59:19.022995-03	\N
+4856	Black Bean Quesarito – Online Exclusive	982	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-22 20:59:19.022995-03	\N
+4857	Quesarito – Online Exclusive	983	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-22 20:59:19.022995-03	\N
+4858	Chalupa Supreme® – Beef	984	Taco Bell	4	350	170	18	5	0	25	560	33	4	3	13	2023-09-22 20:59:19.022995-03	\N
+4859	Chalupa Supreme® – Chicken	985	Taco Bell	4	330	140	15	3.5	0	35	560	31	2	3	16	2023-09-22 20:59:19.022995-03	\N
+4860	Chalupa Supreme® – Steak	986	Taco Bell	4	330	140	16	4	0	30	530	32	2	3	15	2023-09-22 20:59:19.022995-03	\N
+4861	Cheesy Gordita Crunch	987	Taco Bell	4	500	250	28	10	0.5	55	850	41	5	4	20	2023-09-22 20:59:19.022995-03	\N
+4862	Crunchy Taco	988	Taco Bell	4	170	80	9	3.5	0	25	310	13	3	\N	8	2023-09-22 20:59:19.022995-03	\N
+4863	Crunchy Taco Supreme®	989	Taco Bell	4	190	100	11	4.5	0	25	340	15	3	2	8	2023-09-22 20:59:19.022995-03	\N
+4864	Loaded Nacho Taco (New)	990	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-22 20:59:19.022995-03	\N
+4865	Nacho Cheese Doritos® Locos Taco	991	Taco Bell	4	170	80	9	3.5	0	25	360	13	3	\N	8	2023-09-22 20:59:19.022995-03	\N
+4866	Nacho Cheese Doritos® Locos Taco Supreme®	992	Taco Bell	4	190	100	11	4.5	0	30	380	15	3	2	8	2023-09-22 20:59:19.022995-03	\N
+4867	Soft Taco – Beef	993	Taco Bell	4	180	80	9	4	0	25	500	17	3	1	9	2023-09-22 20:59:19.022995-03	\N
+4868	Soft Taco – Chicken	994	Taco Bell	4	180	60	7	3.5	0	35	520	18	2	2	13	2023-09-22 20:59:19.022995-03	\N
+4869	Soft Taco Supreme®	995	Taco Bell	4	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	2023-09-22 20:59:19.022995-03	\N
+4870	Soft Taco – Beef	996	Taco Bell	4	180	80	9	4	0	25	500	17	3	1	9	2023-09-22 20:59:19.022995-03	\N
+4871	Soft Taco – Chicken	997	Taco Bell	4	180	60	7	3.5	0	35	520	18	2	2	13	2023-09-22 20:59:19.022995-03	\N
+4872	Bean Burrito (V)	998	Taco Bell	4	350	80	9	3.5	0	5	1000	54	11	3	13	2023-09-22 20:59:19.022995-03	\N
+4873	Beefy 5-Layer Burrito	999	Taco Bell	4	490	160	18	7	0	30	1250	63	9	5	18	2023-09-22 20:59:19.022995-03	\N
+4874	Burrito Supreme® – Beef	1000	Taco Bell	4	390	130	14	6	0	25	1110	51	9	4	16	2023-09-22 20:59:19.022995-03	\N
+4875	Burrito Supreme® – Chicken	1001	Taco Bell	4	370	100	11	4.5	0	35	1110	49	8	4	19	2023-09-22 20:59:19.022995-03	\N
+4876	Burrito Supreme® – Steak	1002	Taco Bell	4	370	110	12	5	0	30	1090	49	7	4	18	2023-09-22 20:59:19.022995-03	\N
+4877	Chili Cheese Burrito (regional)	1003	Taco Bell	4	370	150	17	8	0	35	970	40	4	2	16	2023-09-22 20:59:19.022995-03	\N
+4878	Quesarito – Beef	1004	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-22 20:59:19.022995-03	\N
+4879	Quesarito – Chicken	1005	Taco Bell	4	620	270	29	11	0	65	1390	66	4	4	25	2023-09-22 20:59:19.022995-03	\N
+4880	Quesarito – Steak	1006	Taco Bell	4	630	270	30	11	0	60	1370	66	4	4	24	2023-09-22 20:59:19.022995-03	\N
+4881	Chips and Nacho Cheese Sauce (V)	1007	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-22 20:59:19.022995-03	\N
+4882	Nacho Fries (V) (New)	1008	Taco Bell	4	320	160	18	1.5	0	\N	630	35	4	2	4	2023-09-22 20:59:19.022995-03	\N
+4883	Nacho Fries BellGrande® (New)	1009	Taco Bell	4	710	360	40	6	0	30	1440	73	10	4	13	2023-09-22 20:59:19.022995-03	\N
+4884	Nachos BellGrande® – Beef	1010	Taco Bell	4	740	340	38	7	0	25	1050	82	15	5	16	2023-09-22 20:59:19.022995-03	\N
+4885	Nachos BellGrande® – Chicken	1011	Taco Bell	4	720	310	35	6	0	35	1050	81	14	5	20	2023-09-22 20:59:19.022995-03	\N
+4886	Nachos BellGrande® – Steak	1012	Taco Bell	4	720	320	36	6	0	30	1030	81	14	5	19	2023-09-22 20:59:19.022995-03	\N
+4887	Beef Quesarito	1013	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-22 20:59:19.022995-03	\N
+4888	Black Bean Quesarito (V)	1014	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-22 20:59:19.022995-03	\N
+4889	Quesadilla – Cheese (V)	1015	Taco Bell	4	470	230	25	12	0.5	50	990	37	4	2	19	2023-09-22 20:59:19.022995-03	\N
+4890	Quesadilla – Chicken	1016	Taco Bell	4	510	240	26	12	0.5	75	1250	38	4	2	27	2023-09-22 20:59:19.022995-03	\N
+4891	Quesadilla – Steak	1017	Taco Bell	4	520	240	27	12	0.5	70	1230	38	4	2	27	2023-09-22 20:59:19.022995-03	\N
+4892	Bacon Club Chalupa – Specialties	1018	Taco Bell	4	440	240	27	5	0	50	840	31	2	3	20	2023-09-22 20:59:19.022995-03	\N
+4893	Black Bean Chalupa – Specialties	1019	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-22 20:59:19.022995-03	\N
+4894	Black Bean Crunchwrap Supreme – Specialties	1020	Taco Bell	4	510	160	17	4.5	0	5	1080	77	8	6	13	2023-09-22 20:59:19.022995-03	\N
+4895	Black Bean Quesarito – Specialties	1021	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-22 20:59:19.022995-03	\N
+4896	Chalupa Supreme® – Specialties	1022	Taco Bell	4	350	170	18	5	0	25	560	33	4	3	13	2023-09-22 20:59:19.022995-03	\N
+4897	Cheesy Gordita Crunch – Specialties	1023	Taco Bell	4	500	250	28	10	0.5	55	850	41	5	4	20	2023-09-22 20:59:19.022995-03	\N
+4898	Cheesy Roll Up – Specialties	1024	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-22 20:59:19.022995-03	\N
+4899	Crunchwrap Supreme® – Specialties	1025	Taco Bell	4	530	190	21	6	0	25	1200	71	6	6	16	2023-09-22 20:59:19.022995-03	\N
+4900	Crunchy Taco – Specialties	1026	Taco Bell	4	170	80	9	3.5	0	25	310	13	3	\N	8	2023-09-22 20:59:19.022995-03	\N
+4901	Nacho Cheese Doritos® Locos Taco – Specialties	1027	Taco Bell	4	170	80	9	3.5	0	25	360	13	3	\N	8	2023-09-22 20:59:19.022995-03	\N
+4902	Nachos BellGrande® – Specialties	1028	Taco Bell	4	740	340	38	7	0	25	1050	82	15	5	16	2023-09-22 20:59:19.022995-03	\N
+4903	Power Menu Bowl – Specialties	1029	Taco Bell	4	470	170	19	6	0	70	1200	50	7	2	26	2023-09-22 20:59:19.022995-03	\N
+4904	Quesadilla – Specialties	1030	Taco Bell	4	510	240	26	12	0.5	75	1250	38	4	2	27	2023-09-22 20:59:19.022995-03	\N
+4905	Quesarito – Specialties	1031	Taco Bell	4	650	300	33	12	0.5	55	1390	67	6	5	22	2023-09-22 20:59:19.022995-03	\N
+4906	Soft Taco – Specialties	1032	Taco Bell	4	180	80	9	4	0	25	500	17	3	1	9	2023-09-22 20:59:19.022995-03	\N
+4907	Soft Taco Supreme – Specialties	1033	Taco Bell	4	210	90	10	5	0	25	520	20	3	2	10	2023-09-22 20:59:19.022995-03	\N
+4908	Veggie Power Menu Bowl – Specialties	1034	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-22 20:59:19.022995-03	\N
+4909	Black Beans (V)	1035	Taco Bell	4	50	10	1	0	0	0	135	8	3	0	2	2023-09-22 20:59:19.022995-03	\N
+4910	Cinnabon® Delights™ (2 Pk) (V)	1036	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-22 20:59:19.022995-03	\N
+4911	Cinnabon® Delights™ (12 Pk – Serves 4) (V)	1037	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-22 20:59:19.022995-03	\N
+4912	Cinnamon Twists (V)	1038	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-22 20:59:19.022995-03	\N
+4913	Diablo Sauce Packet (V)	1039	Taco Bell	4	0	0	0	0	0	0	30	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4914	Fire Sauce Packet (V)	1040	Taco Bell	4	0	0	0	0	0	0	55	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4915	Hot Sauce Packet (V)	1041	Taco Bell	4	0	0	0	0	0	0	45	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4916	Mild Sauce Packet (V)	1042	Taco Bell	4	0	0	0	0	0	0	30	0	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4917	Blue Raspberry Freeze™ (16 oz) (New)	1043	Taco Bell	4	120	0	0	0	0	0	35	30	0	30	0	2023-09-22 20:59:19.022995-03	\N
+4918	Blue Raspberry Freeze™ (20 oz) (New)	1044	Taco Bell	4	150	0	0	0	0	0	40	38	0	38	0	2023-09-22 20:59:19.022995-03	\N
+4919	Dragon Fruit Freeze (16 oz)	1045	Taco Bell	4	190	0	0	0	0	0	50	49	0	47	0	2023-09-22 20:59:19.022995-03	\N
+4920	Dragon Fruit Freeze (20 oz)	1046	Taco Bell	4	230	0	0	0	0	0	60	59	0	57	0	2023-09-22 20:59:19.022995-03	\N
+4921	Lowfat Milk – CA (Regional)	1047	Taco Bell	4	100	20	2	1.5	0	10	130	13	0	12	9	2023-09-22 20:59:19.022995-03	\N
+4922	Lowfat Milk – Federal (Regional)	1048	Taco Bell	4	80	20	2	1.5	0	10	100	10	0	9	7	2023-09-22 20:59:19.022995-03	\N
+4923	Midnight Berry Freeze™ (16 oz) (New)	1049	Taco Bell	4	140	0	0	0	0	0	35	35	0	34	0	2023-09-22 20:59:19.022995-03	\N
+4924	Midnight Berry Freeze™ (20 oz) (New)	1050	Taco Bell	4	170	0	0	0	0	0	40	43	0	42	0	2023-09-22 20:59:19.022995-03	\N
+4925	Mtn Dew® Baja Blast Freeze™ (16 oz)	1051	Taco Bell	4	150	0	0	0	0	0	45	41	0	41	0	2023-09-22 20:59:19.022995-03	\N
+4926	Mtn Dew® Baja Blast Freeze™ (20 oz)	1052	Taco Bell	4	190	0	0	0	0	0	55	51	0	51	0	2023-09-22 20:59:19.022995-03	\N
+4927	Premium Hot Coffee	1053	Taco Bell	4	10	0	0	0	0	0	0	0	0	0	2	2023-09-22 20:59:19.022995-03	\N
+4928	Regular Iced Coffee	1054	Taco Bell	4	10	0	0	0	0	0	0	0	0	0	2	2023-09-22 20:59:19.022995-03	\N
+4929	Wild Strawberry Freeze™ (16 oz)	1055	Taco Bell	4	150	0	0	0	0	0	40	41	0	41	0	2023-09-22 20:59:19.022995-03	\N
+4930	Wild Strawberry Freeze™ (20 oz)	1056	Taco Bell	4	190	0	0	0	0	0	55	51	0	51	0	2023-09-22 20:59:19.022995-03	\N
+4931	Beef Burrito – Value Menu	1057	Taco Bell	4	430	170	19	5	0	20	970	51	4	3	12	2023-09-22 20:59:19.022995-03	\N
+4932	Cheesy Bean & Rice Burrito – Value Menu	1058	Taco Bell	4	420	140	16	4	0	\N	880	56	7	3	10	2023-09-22 20:59:19.022995-03	\N
+4933	Cheesy Roll Up – Value Menu	1059	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-22 20:59:19.022995-03	\N
+4934	Chicken Chipotle Melt – Value Menu	1060	Taco Bell	4	190	80	9	3	0	35	530	15	1	\N	12	2023-09-22 20:59:19.022995-03	\N
+4935	Chips and Nacho Cheese Sauce – Value Menu	1061	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-22 20:59:19.022995-03	\N
+4936	Cinnamon Twists – Value Menu	1062	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-22 20:59:19.022995-03	\N
+4937	Loaded Nacho Taco – Value Menu	1063	Taco Bell	4	250	110	12	4.5	0	25	610	24	3	2	10	2023-09-22 20:59:19.022995-03	\N
+4938	Bean Burrito	1064	Taco Bell	4	350	80	9	3.5	0	5	1000	54	11	3	13	2023-09-22 20:59:19.022995-03	\N
+4939	Black Bean Chalupa	1065	Taco Bell	4	330	140	15	3	0	10	430	39	5	3	10	2023-09-22 20:59:19.022995-03	\N
+4940	Black Bean Crunchwrap Supreme	1066	Taco Bell	4	510	160	17	4.5	0	5	1080	77	8	6	13	2023-09-22 20:59:19.022995-03	\N
+4941	Black Bean Quesarito	1067	Taco Bell	4	630	270	29	10	0	35	1260	73	7	5	19	2023-09-22 20:59:19.022995-03	\N
+4942	Black Beans & Rice	1068	Taco Bell	4	170	30	3.5	0	0	0	320	31	4	0	4	2023-09-22 20:59:19.022995-03	\N
+4943	Cheese Quesadilla	1069	Taco Bell	4	470	230	25	12	0.5	50	990	37	4	2	19	2023-09-22 20:59:19.022995-03	\N
+4944	Cheesy Bean & Rice Burrito	1070	Taco Bell	4	420	140	16	4	0	\N	880	56	7	3	10	2023-09-22 20:59:19.022995-03	\N
+4945	Cheesy Roll Up	1071	Taco Bell	4	180	80	9	5	0	20	430	15	2	\N	9	2023-09-22 20:59:19.022995-03	\N
+4946	Chips and Nacho Cheese Sauce	1072	Taco Bell	4	220	120	13	1.5	0	\N	250	24	2	2	2	2023-09-22 20:59:19.022995-03	\N
+4947	Cinnabon® Delights™ (2 Pack)	1073	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-22 20:59:19.022995-03	\N
+4948	Cinnabon® Delights™ (12 Pack – Serves 4)	1074	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-22 20:59:19.022995-03	\N
+4949	Cinnamon Twists	1075	Taco Bell	4	170	50	6	0	0	0	210	27	\N	13	1	2023-09-22 20:59:19.022995-03	\N
+4950	Hash Brown	1076	Taco Bell	4	160	100	12	1	0	0	270	13	2	0	1	2023-09-22 20:59:19.022995-03	\N
+4951	Power Menu Bowl – Veggie	1077	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-22 20:59:19.022995-03	\N
+4952	Power Menu Bowl – Steak	1078	Taco Bell	4	480	180	20	7	0	60	1150	51	7	2	25	2023-09-22 20:59:19.022995-03	\N
+4953	Power Menu Bowl – Veggie (V)	1079	Taco Bell	4	430	160	17	5	0	20	810	57	10	2	12	2023-09-22 20:59:19.022995-03	\N
+4954	Breakfast Crunchwrap – Bacon	1080	Taco Bell	4	670	370	41	12	0	140	1270	50	4	3	21	2023-09-22 20:59:19.022995-03	\N
+4955	Breakfast Crunchwrap – Sausage	1081	Taco Bell	4	720	430	47	15	0	145	1210	51	4	3	21	2023-09-22 20:59:19.022995-03	\N
+4956	Breakfast Crunchwrap – Steak	1082	Taco Bell	4	660	350	38	12	0	145	1300	51	4	3	24	2023-09-22 20:59:19.022995-03	\N
+4957	Breakfast Salsa Packet (V)	1083	Taco Bell	4	0	0	0	0	0	0	50	\N	0	0	0	2023-09-22 20:59:19.022995-03	\N
+4958	Cheesy Toasted Breakfast Burrito – Bacon	1084	Taco Bell	4	350	150	16	4.5	0	115	870	36	2	3	13	2023-09-22 20:59:19.022995-03	\N
+4959	Cheesy Toasted Breakfast Burrito – Fiesta Potato (V)	1085	Taco Bell	4	340	130	14	3.5	0	100	750	43	3	3	10	2023-09-22 20:59:19.022995-03	\N
+4960	Cheesy Toasted Breakfast Burrito – Sausage	1086	Taco Bell	4	340	160	17	5	0	110	730	36	2	3	11	2023-09-22 20:59:19.022995-03	\N
+4961	Cinnabon® Delights™ (2 Pack) (V)	1087	Taco Bell	4	160	80	9	2	0	5	80	17	0	10	2	2023-09-22 20:59:19.022995-03	\N
+4962	Cinnabon® Delights™ (12 Pack – Serves 4) (V)	1088	Taco Bell	4	930	480	53	13	2	40	480	104	3	59	9	2023-09-22 20:59:19.022995-03	\N
+4963	Grande Toasted Breakfast Burrito – Bacon	1089	Taco Bell	4	560	270	30	10	0	230	1290	49	4	3	24	2023-09-22 20:59:19.022995-03	\N
+4964	Grande Toasted Breakfast Burrito – Sausage	1090	Taco Bell	4	560	280	31	10	0	230	1150	49	4	3	22	2023-09-22 20:59:19.022995-03	\N
+4965	Grande Toasted Breakfast Burrito – Steak	1091	Taco Bell	4	560	250	28	9	0	240	1310	50	4	3	27	2023-09-22 20:59:19.022995-03	\N
+4966	Hash Brown Toasted Breakfast Burrito – Bacon	1092	Taco Bell	4	570	300	33	10	0	135	1270	49	4	2	21	2023-09-22 20:59:19.022995-03	\N
+4967	Hash Brown Toasted Breakfast Burrito – Sausage	1093	Taco Bell	4	570	300	34	10	0	130	1130	49	4	2	18	2023-09-22 20:59:19.022995-03	\N
+4968	Hash Brown Toasted Breakfast Burrito – Steak	1094	Taco Bell	4	570	270	30	9	0	140	1290	50	4	2	24	2023-09-22 20:59:19.022995-03	\N
+4969	Brisk® Mango Iced Tea (16 fl oz)	1095	Taco Bell	4	100	\N	\N	\N	\N	50	26	\N	\N	26	\N	2023-09-22 20:59:19.022995-03	\N
+4970	Brisk® Unsweetened No Lemon Iced Tea (16 fl oz)	1096	Taco Bell	4	0	\N	\N	\N	\N	60	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4971	Diet Dr Pepper® (16 fl oz)	1097	Taco Bell	4	0	\N	\N	\N	\N	95	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4972	Diet Mtn Dew® (16 fl oz)	1098	Taco Bell	4	5	\N	\N	\N	\N	75	1	\N	\N	1	\N	2023-09-22 20:59:19.022995-03	\N
+4973	Diet Pepsi® (16 fl oz)	1099	Taco Bell	4	0	\N	\N	\N	\N	75	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4974	Dr Pepper® (16 fl oz)	1100	Taco Bell	4	190	\N	\N	\N	\N	60	52	\N	\N	51	\N	2023-09-22 20:59:19.022995-03	\N
+4975	G2 – Fruit Punch (16 fl oz)	1101	Taco Bell	4	30	\N	\N	\N	\N	140	7	\N	\N	6	\N	2023-09-22 20:59:19.022995-03	\N
+4976	Mtn Dew® (16 fl oz)	1102	Taco Bell	4	220	\N	\N	\N	\N	70	59	\N	\N	58	\N	2023-09-22 20:59:19.022995-03	\N
+4977	Mtn Dew® Baja Blast™ (16 fl oz)	1103	Taco Bell	4	220	\N	\N	\N	\N	65	59	\N	\N	59	\N	2023-09-22 20:59:19.022995-03	\N
+4978	Mtn Dew® Baja Blast Zero Sugar (16 fl oz)	1104	Taco Bell	4	5	\N	\N	\N	\N	70	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4979	Mtn Dew® Kickstart™ Orange Citrus (16 fl oz)	1105	Taco Bell	4	70	\N	\N	\N	\N	75	18	\N	\N	18	\N	2023-09-22 20:59:19.022995-03	\N
+4980	Mug® Root Beer (16 fl oz)	1106	Taco Bell	4	190	\N	\N	\N	\N	60	52	\N	\N	52	\N	2023-09-22 20:59:19.022995-03	\N
+4981	Pepsi® Wild Cherry (16 fl oz)	1107	Taco Bell	4	210	\N	\N	\N	\N	40	56	\N	\N	56	\N	2023-09-22 20:59:19.022995-03	\N
+4982	Pepsi® Zero Sugar (16 fl oz)	1108	Taco Bell	4	0	\N	\N	\N	\N	85	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4983	Sierra Mist® (16 fl oz)	1109	Taco Bell	4	200	\N	\N	\N	\N	45	54	\N	\N	54	\N	2023-09-22 20:59:19.022995-03	\N
+4984	Tropicana® Pink Lemonade (16 fl oz)	1110	Taco Bell	4	210	\N	\N	\N	\N	210	53	\N	\N	53	\N	2023-09-22 20:59:19.022995-03	\N
+4985	7-Up (20 fl oz)	1111	Taco Bell	4	240	\N	\N	\N	\N	85	58	\N	\N	58	\N	2023-09-22 20:59:19.022995-03	\N
+4986	Brisk® Mango Iced Tea (20 fl oz)	1112	Taco Bell	4	120	\N	\N	\N	\N	60	32	\N	\N	32	\N	2023-09-22 20:59:19.022995-03	\N
+4987	Brisk® Unsweetened No Lemon Iced Tea (20 fl oz)	1113	Taco Bell	4	0	\N	\N	\N	\N	75	0	\N	\N	0	\N	2023-09-22 20:59:19.022995-03	\N
+4988	Pan Pizza Slices Pepperoni Lover’s® Personal Pan	1114	Pizza Hut	3	180	9	3.5	0	20	370	17	1	2	8	\N	2023-09-22 20:59:19.022995-03	\N
+4989	Pan Pizza Slices Pepperoni Lover’s® Medium	1115	Pizza Hut	3	300	15	6	0	35	580	28	2	1	13	\N	2023-09-22 20:59:19.022995-03	\N
+4990	Pan Pizza Slices Pepperoni Lover’s® Large	1116	Pizza Hut	3	440	24	9	0.5	50	850	37	3	2	19	\N	2023-09-22 20:59:19.022995-03	\N
+4991	Pan Pizza Slices Supreme Personal Pan	1117	Pizza Hut	3	170	8	3	0	15	360	18	1	2	7	\N	2023-09-22 20:59:19.022995-03	\N
+4992	Pan Pizza Slices Supreme Medium	1118	Pizza Hut	3	270	13	5	0	25	500	29	2	2	11	\N	2023-09-22 20:59:19.022995-03	\N
+4993	Pan Pizza Slices Supreme Large	1119	Pizza Hut	3	390	20	7	0	40	740	37	2	2	16	\N	2023-09-22 20:59:19.022995-03	\N
+4994	Pan Pizza Slices Ultimate Cheese Lover’s® Personal Pan	1120	Pizza Hut	3	170	8	3.5	0	15	330	17	1	2	8	\N	2023-09-22 20:59:19.022995-03	\N
+4995	Pan Pizza Slices Ultimate Cheese Lover’s® Medium	1121	Pizza Hut	3	270	13	5	0	25	470	27	2	1	12	\N	2023-09-22 20:59:19.022995-03	\N
+4996	Pan Pizza Slices Ultimate Cheese Lover’s® Large	1122	Pizza Hut	3	390	20	8	0	40	670	36	2	2	17	\N	2023-09-22 20:59:19.022995-03	\N
+4997	Pan Pizza Slices Veggie Lover’s® Personal Pan	1123	Pizza Hut	3	140	5	2	0	10	290	18	1	2	6	\N	2023-09-22 20:59:19.022995-03	\N
+4998	Pan Pizza Slices Veggie Lover’s® Medium	1124	Pizza Hut	3	230	9	3.5	0	15	420	29	2	2	9	\N	2023-09-22 20:59:19.022995-03	\N
+4999	Pan Pizza Slices Veggie Lover’s® Large	1125	Pizza Hut	3	330	15	5	0	25	620	38	3	3	14	\N	2023-09-22 20:59:19.022995-03	\N
+5000	Hand Tossed Slices Backyard BBQ Chicken Small	1126	Pizza Hut	3	140	4	2	0	15	250	20	1	4	6	\N	2023-09-22 20:59:19.022995-03	\N
+5001	Hand Tossed Slices Backyard BBQ Chicken Medium	1127	Pizza Hut	3	220	7	3	0	20	390	31	2	6	10	\N	2023-09-22 20:59:19.022995-03	\N
+5002	Hand Tossed Slices Backyard BBQ Chicken Large	1128	Pizza Hut	3	300	10	4.5	0	30	530	40	2	7	14	\N	2023-09-22 20:59:19.022995-03	\N
+5003	Hand Tossed Slices Beyond Meat® Pepperoni Medium	1129	Pizza Hut	3	200	7	3.5	0	15	410	26	2	1	9	\N	2023-09-22 20:59:19.022995-03	\N
+5004	Hand Tossed Slices Beyond Meat® Pepperoni Large	1130	Pizza Hut	3	280	10	5	0	20	560	35	3	2	12	\N	2023-09-22 20:59:19.022995-03	\N
+5005	Hand Tossed Slices  Buffalo Chicken Small	1131	Pizza Hut	3	130	\N	1.5	0	10	380	19	\N	\N	6	\N	2023-09-22 20:59:19.022995-03	\N
+5006	Hand Tossed Slices  Buffalo Chicken Medium	1132	Pizza Hut	3	200	5	2.5	0	20	560	28	2	1	9	\N	2023-09-22 20:59:19.022995-03	\N
+5007	Hand Tossed Slices  Buffalo Chicken Large	1133	Pizza Hut	3	270	8	4	0	30	740	37	2	2	13	\N	2023-09-22 20:59:19.022995-03	\N
+5008	Hand Tossed Slices Cheese Small	1134	Pizza Hut	3	130	\N	2	0	10	250	17	1	\N	6	\N	2023-09-22 20:59:19.022995-03	\N
+5009	Hand Tossed Slices Cheese Medium	1135	Pizza Hut	3	210	8	3.5	0	20	390	26	2	1	10	\N	2023-09-22 20:59:19.022995-03	\N
+5010	Hand Tossed Slices Cheese Large	1136	Pizza Hut	3	290	10	5	0	30	540	34	3	2	13	\N	2023-09-22 20:59:19.022995-03	\N
+5011	Hand Tossed Slices Chicken Bacon Parmesan Small	1137	Pizza Hut	3	150	6	2.5	0	15	270	16	1	\N	7	\N	2023-09-22 20:59:19.022995-03	\N
+5012	Hand Tossed Slices Chicken Bacon Parmesan Medium	1138	Pizza Hut	3	230	9	4	0	25	410	25	2	1	11	\N	2023-09-22 20:59:19.022995-03	\N
+5013	Hand Tossed Slices Chicken Bacon Parmesan Large	1139	Pizza Hut	3	310	13	5	0	35	560	33	2	1	16	\N	2023-09-22 20:59:19.022995-03	\N
+5014	Hand Tossed Slices Hawaiian Chicken Small	1140	Pizza Hut	3	130	4	1.5	0	10	270	17	1	1	7	\N	2023-09-22 20:59:19.022995-03	\N
+5015	Hand Tossed Slices Hawaiian Chicken Medium	1141	Pizza Hut	3	210	6	3	0	20	420	27	2	2	10	\N	2023-09-22 20:59:19.022995-03	\N
+5016	Hand Tossed Slices Hawaiian Chicken Large	1142	Pizza Hut	3	280	9	4	0	30	580	36	3	3	15	\N	2023-09-22 20:59:19.022995-03	\N
+5017	Hand Tossed Slices Meat Lover’s® Small	1143	Pizza Hut	3	180	9	3.5	0	20	370	17	1	\N	7	\N	2023-09-22 20:59:19.022995-03	\N
+5018	Hand Tossed Slices Meat Lover’s® Medium	1144	Pizza Hut	3	290	15	6	0	30	590	26	2	1	12	\N	2023-09-22 20:59:19.022995-03	\N
+5019	Hand Tossed Slices Meat Lover’s® Large	1145	Pizza Hut	3	390	21	8	0	45	830	34	3	2	17	\N	2023-09-22 20:59:19.022995-03	\N
+5020	Hand Tossed Slices Pepperoni Medium	1146	Pizza Hut	3	220	9	4	0	20	420	25	2	1	9	\N	2023-09-22 20:59:19.022995-03	\N
+5021	Hand Tossed Slices Pepperoni Large	1147	Pizza Hut	3	300	13	6	0	30	590	34	3	2	13	\N	2023-09-22 20:59:19.022995-03	\N
+5022	Hand Tossed Slices Pepperoni Lover’s® Small	1148	Pizza Hut	3	160	7	3	0	20	310	17	1	\N	7	\N	2023-09-22 20:59:19.022995-03	\N
+5023	Hand Tossed Slices Pepperoni Lover’s® Medium	1149	Pizza Hut	3	270	13	6	0	35	530	26	2	1	12	\N	2023-09-22 20:59:19.022995-03	\N
+5024	Hand Tossed Slices Pepperoni Lover’s® Large	1150	Pizza Hut	3	370	18	8	0	50	740	35	3	2	17	\N	2023-09-22 20:59:19.022995-03	\N
+5025	Hand Tossed Slices Supreme Small	1151	Pizza Hut	3	150	6	2.5	0	15	280	17	1	1	6	\N	2023-09-22 20:59:19.022995-03	\N
+5026	Hand Tossed Slices Supreme Medium	1152	Pizza Hut	3	240	10	4	0	25	450	26	2	2	10	\N	2023-09-22 20:59:19.022995-03	\N
+5027	Hand Tossed Slices Supreme Large	1153	Pizza Hut	3	320	14	6	0	35	630	35	3	2	14	\N	2023-09-22 20:59:19.022995-03	\N
+5028	Hand Tossed Slices Ultimate Cheese Lover’s® Small	1154	Pizza Hut	3	150	6	2.5	0	15	250	16	1	\N	6	\N	2023-09-22 20:59:19.022995-03	\N
+5029	Hand Tossed Slices Ultimate Cheese Lover’s® Medium	1155	Pizza Hut	3	230	10	4.5	0	25	390	25	2	1	11	\N	2023-09-22 20:59:19.022995-03	\N
+5030	Hand Tossed Slices Ultimate Cheese Lover’s® Large	1156	Pizza Hut	3	310	13	6	0	35	540	33	2	1	15	\N	2023-09-22 20:59:19.022995-03	\N
+5031	Hand Tossed Slices Veggie Lover’s® Small	1157	Pizza Hut	3	120	4	1.5	0	10	230	17	1	1	5	\N	2023-09-22 20:59:19.022995-03	\N
+5032	Hand Tossed Slices Veggie Lover’s® Medium	1158	Pizza Hut	3	200	6	2.5	0	15	370	27	2	2	8	\N	2023-09-22 20:59:19.022995-03	\N
+5033	Hand Tossed Slices Veggie Lover’s® Large	1159	Pizza Hut	3	260	9	4	0	20	510	36	3	3	11	\N	2023-09-22 20:59:19.022995-03	\N
 \.
 
 
@@ -4895,7 +4946,7 @@ SELECT pg_catalog.setval('public.fast_food_nutrition_menu_id_seq', 1159, true);
 -- Name: nutritional_info_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.nutritional_info_id_seq', 1108, true);
+SELECT pg_catalog.setval('public.nutritional_info_id_seq', 5033, true);
 
 
 --
